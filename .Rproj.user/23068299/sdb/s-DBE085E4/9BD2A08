@@ -1,0 +1,17 @@
+{
+    "contents" : "datMean <- data.frame(a=rnorm(10, 3), b=rnorm(10, 3), d=rnorm(10, 3))\ndatSE <- data.frame(a=rnorm(10, 3)/100, b=rnorm(10, 3)/100, d=rnorm(10, 3)/100)\n\nlibrary(abind)\n\ndatArray <- round(abind(datMean,datSE,along=3),3)\n\n\napply(datArray,1:2,function(x)paste(x[1]-x[2],\"-\",x[1]+x[2]))\n\n\n?abind\n",
+    "created" : 1436730442711.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "984540335",
+    "id" : "9BD2A08",
+    "lastKnownWriteTime" : 32088645568102510,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,154 @@
+%fontawesomeupdated.sty and fontawesome.otf must be 
+%in same folder
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% Packages and Settings %%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,a4paper]{book} %must be first line of code
+\pagenumbering{gobble} %remove page numbers (and reset to 1)
+\pagestyle{plain}      %remove page numbers
+\setlength{\parindent}{0pt}
+
+\usepackage[showframe, inner=2.5cm, outer=2cm, top=2cm, bottom=2cm]{geometry}%,
+\usepackage{afterpage} %no blank page before landscape switch
+\usepackage{pdflscape} 
+%pdflscape only turns page, but does not ajdust not frame
+%fix from http://tex.stackexchange.com/a/116521
+%fix must come AFTER geometry and pdflscape package
+\makeatletter
+\newcommand*{\gmshow@textheight}{\textheight}
+\newdimen\gmshow@@textheight
+\g@addto@macro\landscape{%
+  \gmshow@@textheight=\hsize
+  \renewcommand*{\gmshow@textheight}{\gmshow@@textheight}%
+}
+\def\Gm@vrule{%
+  \vrule width 0.2pt height\gmshow@textheight depth\z@
+}%
+\makeatother
+
+\usepackage{graphicx}           %for jpg, pdf, ...
+\usepackage{colortbl, xcolor}   %colorbtl used to highlight monthly overview
+\definecolor{textgray}{gray}{0.40}
+\definecolor{framegray}{gray}{0.60}
+\definecolor{lightgray}{gray}{0.90}
+
+\usepackage{lmodern}  % or any other vector / postscript font (required by tcolorbox)
+\usepackage{fontawesomeupdated} %for fontawesome glyph icons
+
+\usepackage[most]{tcolorbox}    %for fitting text into box
+
+\usepackage{tikz}
+\usepackage{booktabs}           %for nicer tables
+\usepackage{array}
+\usepackage{longtable}          %for multipage tables
+\usepackage{bigstrut}
+\setlength\bigstrutjot{3pt}     %http://tex.stackexchange.com/a/18114/62746
+\usepackage{tabularx}           %for tables from R
+
+% \usepackage{tabu}
+% \usepackage{colortbl}
+% \usepackage{ctable}
+
+% \usepackage{caption}
+% \captionsetup{labelformat=empty} %Removes Table 1. from Table 1. January
+
+% Master-Child structure from: 
+% https://github.com/yihui/knitr-examples/blob/master/020-for-loop.Rnw
+%https://github.com/yihui/knitr-examples/blob/master/020-for-template.rnw
+<<weekly, include=FALSE>>=
+invisible(Sys.setlocale("LC_ALL","English"))
+#POSIXlt(yyyy/mm/dd)
+date <- as.POSIXlt(seq(as.Date("2015/07/06"), as.Date("2017/01/01"), "days")) #start on a Monday and end on Sunday
+dates <- format(date, "%d.%m") #31.01
+ds <- format(date, "%d")       #31
+days <- format(date, "%A")     #Monday
+weeks <- strftime(date,format="%W") #1
+months <- format(date, "%B")   #January
+years <- format(date, "%Y")    #2015
+wknds  <- ifelse(date$wday %in% c(6,0), TRUE, FALSE)  #weekends
+df <- data.frame(date, dates, ds, days, weeks, months, years)
+week = NULL
+a <- 1:nrow(df) 
+b <- seq.int(1L, length(a), 7L)
+#b <- c(1,8) #for testing
+for (i in b) {week = c(week, knit_child('calendarChild.Rnw'))}
+#change for loop http://yihui.name/en/2010/10/on-the-gory-loops-in-r/
+@
+\usepackage{listings} 
+\def\lsin{\lstinline[basicstyle=\ttfamily,breaklines=true,]} %for inline verbatim (knitr on title)
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% Main Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\title{Agenda 2015/2016\\Created with \lsin{knitR}}
+\author{Florian Wanders}
+\date{}
+\maketitle
+<<monthly, include=FALSE, message=FALSE>>=
+library(reshape2)
+invisible(Sys.setlocale("LC_ALL","English"))
+date <- as.POSIXlt(seq(as.Date("2015/07/01"), as.Date("2016/12/31"), "days")) #start on a Jul 01, end on Dec 31
+dates <- format(date, "%d.%m") #31.01
+ds <- format(date, "%d")       #31
+days <- format(date, "%A")     #Monday
+weeks <- strftime(date,format="%W") #1
+months <- format(date, "%B")   #January
+years <- format(date, "%Y")    #2015
+df <- data.frame(date, dates, ds, days, weeks, months, years)
+#dcast looses date format --> create dfcar with character entries of df
+dfcar <- df
+dfcar$days <- format(dfcar$date, "%a") #Mon
+dfcar$days <- paste(dfcar$dates, dfcar$days, sep=" ") #31.01 Mon
+dfcar <- apply(dfcar,1:2, function(x) as.character(x))
+dfcar <- as.data.frame(dfcar)
+#dcast will sort by alphabet --> create sort variable for later sorting
+#http://seananderson.ca/2013/10/19/reshape.html
+dfcar$sort <- ifelse(dfcar$months=="January", 1, 
+                     ifelse(df$months=="February", 2, 
+                     ifelse(df$months=="March", 3, 
+                     ifelse(df$months=="April", 4, 
+                     ifelse(df$months=="May", 5,
+                     ifelse(df$months=="June", 6, 
+                     ifelse(df$months=="July", 7, 
+                     ifelse(df$months=="August", 8, 
+                     ifelse(df$months=="September", 9, 
+                     ifelse(df$months=="October", 10, 
+                     ifelse(df$months=="November", 11, 12)))))))))))
+dfcar$int <- interaction(df$months, df$years, sep=" ")
+dfcast <- dcast(dfcar, int + years + months + sort ~ ds, value.var="days")
+dfcast <- dfcast[order(dfcast$years, dfcast$sort),] #sort by month instead of by alphabet
+rownames(dfcast) <- dfcast$int
+drops <- colnames(dfcast) %in% c("int", "years", "months", "sort")
+dfcast <- dfcast[,!drops]
+overview <- t(dfcast)
+overview <- as.data.frame(overview)
+colnames(overview)[!grepl("January", names(overview))] <- gsub('([A-z]+) .*', '\\1', colnames(overview))[!grepl("January", names(overview))]
+## weekends in overview
+wknds <- apply(overview, 1:2, function(x) grepl("(Sat)|(Sun)", x))
+###
+d <- 1:ncol(overview)
+max <- 6
+x <- seq_along(d)
+d1 <- split(d, ceiling(x/max))
+monthc <- NULL
+for (i in d1) monthc <- c(monthc, knit_child('calendarChildOverview.Rnw'))
+@
+
+%\cleardoublepage%clears also headers/footers
+%\raggedbottom
+
+
+\begin{landscape}
+\Sexpr{paste0(monthc)}
+\end{landscape}
+
+
+
+\Sexpr{paste0(week)}
+
+
+\end{document}
