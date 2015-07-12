@@ -22,6 +22,6 @@ Then run the [Master file](https://github.com/FlorianWanders/agenda/blob/master/
 
 ## Errors
 
-Erros might stem from attempting to load uninstalled packages. 
+Errors might stem from attempting to load uninstalled packages. 
 Check that all required packages are installed. 
 Will automate this in a future version. 
