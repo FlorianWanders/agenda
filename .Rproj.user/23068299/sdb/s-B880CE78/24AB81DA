@@ -1,0 +1,16 @@
+{
+    "contents" : "%no code above here\n\\centering{{\\color{textgray}Week~\\Sexpr{weekly_df$weeks[i]}}}\n\\vspace{2 mm}\\\\\n%\n\\tcbset{height=(\\textheight-10mm)/3, fit, nobeforeafter, before=\\noindent, arc=1mm,\n        left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\\textwidth,\n        colback=white, colframe=framegray, coltext=textgray}\n%\n\\begin{tcolorbox}\n\\Sexpr{weekly_df$days[i]}~\\Sexpr{weekly_df$dates[i]}\\\\\n{\\tcbfontsize{0.5} \n$07^{00}$\\\\\n$08^{00}$\\\\\n$09^{00}$\\\\\n$10^{00}$\\\\\n$11^{00}$\\\\\n$12^{00}$\\\\\n$13^{00}$\\\\\n$14^{00}$\\\\\n$15^{00}$\\\\\n$16^{00}$\\\\\n$17^{00}$\\\\\n$18^{00}$\\\\\n$19^{00}$\\\\\n$20^{00}$\\\\\n$21^{00}$}\\\\\n\\end{tcolorbox}\n%\n\\begin{tcolorbox}\n\\Sexpr{weekly_df$days[i+1]}~\\Sexpr{weekly_df$dates[i+1]}\\\\\n{\\tcbfontsize{0.5} \n$07^{00}$\\\\\n$08^{00}$\\\\\n$09^{00}$\\\\\n$10^{00}$\\\\\n$11^{00}$\\\\\n$12^{00}$\\\\\n$13^{00}$\\\\\n$14^{00}$\\\\\n$15^{00}$\\\\\n$16^{00}$\\\\\n$17^{00}$\\\\\n$18^{00}$\\\\\n$19^{00}$\\\\\n$20^{00}$\\\\\n$21^{00}$}\\\\\n\\end{tcolorbox}\n%\n\\begin{tcolorbox}\n\\Sexpr{weekly_df$days[i+2]}~\\Sexpr{weekly_df$dates[i+2]}\\\\\n{\\tcbfontsize{0.5} \n$07^{00}$\\\\\n$08^{00}$\\\\\n$09^{00}$\\\\\n$10^{00}$\\\\\n$11^{00}$\\\\\n$12^{00}$\\\\\n$13^{00}$\\\\\n$14^{00}$\\\\\n$15^{00}$\\\\\n$16^{00}$\\\\\n$17^{00}$\\\\\n$18^{00}$\\\\\n$19^{00}$\\\\\n$20^{00}$\\\\\n$21^{00}$}\\\\\n\\end{tcolorbox}\n\\clearpage\n%\n\\centering{{\\color{textgray}\\Sexpr{weekly_df$months[i]}~\\Sexpr{weekly_df$years[i]}}\n\\vspace{2 mm}\\\\\n%\n\\begin{tcolorbox}\n\\Sexpr{weekly_df$days[i+3]}~\\Sexpr{weekly_df$dates[i+3]}\\\\\n{\\tcbfontsize{0.5} \n$07^{00}$\\\\\n$08^{00}$\\\\\n$09^{00}$\\\\\n$10^{00}$\\\\\n$11^{00}$\\\\\n$12^{00}$\\\\\n$13^{00}$\\\\\n$14^{00}$\\\\\n$15^{00}$\\\\\n$16^{00}$\\\\\n$17^{00}$\\\\\n$18^{00}$\\\\\n$19^{00}$\\\\\n$20^{00}$\\\\\n$21^{00}$}\\\\\n\\end{tcolorbox} \n%\n\\begin{tcolorbox}\n\\Sexpr{weekly_df$days[i+4]}~\\Sexpr{weekly_df$dates[i+4]}\\\\\n{\\tcbfontsize{0.5} \n$07^{00}$\\\\\n$08^{00}$\\\\\n$09^{00}$\\\\\n$10^{00}$\\\\\n$11^{00}$\\\\\n$12^{00}$\\\\\n$13^{00}$\\\\\n$14^{00}$\\\\\n$15^{00}$\\\\\n$16^{00}$\\\\\n$17^{00}$\\\\\n$18^{00}$\\\\\n$19^{00}$\\\\\n$20^{00}$\\\\\n$21^{00}$}\\\\\n\\end{tcolorbox} \n%\n\\begin{tcolorbox}[height=(\\textheight-10mm)/6]\n\\Sexpr{weekly_df$days[i+5]}~\\Sexpr{weekly_df$dates[i+5]}\n\\tcblower\n\\Sexpr{weekly_df$days[i+6]}~\\Sexpr{weekly_df$dates[i+6]}\n\\end{tcolorbox} %single space required here\n%\n\\begin{tcolorbox}[height=(\\textheight-10mm)/6,sidebyside=false]\nNotes\n\\end{tcolorbox}\n\\clearpage\n%no code allowed below",
+    "created" : 1436729345061.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2080156200",
+    "id" : "24AB81DA",
+    "lastKnownWriteTime" : 1438028792,
+    "path" : "~/UvA/knitr/calendar1/calendarChild.Rnw",
+    "project_path" : "calendarChild.Rnw",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "sweave"
+}

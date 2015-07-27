@@ -1,5 +1,5 @@
-%fontawesomeupdated.sty and fontawesome.otf must be 
-%in same folder
+%fontawesomeupdated.sty and fontawesome.otf must be in same folder 
+%(not currently used but will give error otherwise)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%% Packages and Settings %%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -55,12 +55,12 @@
 \usepackage{alltt} %must be first line of code
 \pagenumbering{gobble} %remove page numbers (and reset to 1)
 \pagestyle{plain}      %remove page numbers
-\setlength{\parindent}{0pt}
+\setlength{\parindent}{0pt} %no indenting of first line
 
 \usepackage[showframe, inner=2.5cm, outer=2cm, top=2cm, bottom=2cm]{geometry}%,
 \usepackage{afterpage} %no blank page before landscape switch
 \usepackage{pdflscape} 
-%pdflscape only turns page, but does not ajdust not frame
+%pdflscape only turns page, but does not ajdust frame
 %fix from http://tex.stackexchange.com/a/116521
 %fix must come AFTER geometry and pdflscape package
 \makeatletter
@@ -75,7 +75,7 @@
 }%
 \makeatother
 
-\usepackage{graphicx}           %for jpg, pdf, ...
+%\usepackage{graphicx}           %for jpg, pdf, ...
 \usepackage{colortbl, xcolor}   %colorbtl used to highlight monthly overview
 \definecolor{textgray}{gray}{0.40}
 \definecolor{framegray}{gray}{0.60}
@@ -86,24 +86,18 @@
 
 \usepackage[most]{tcolorbox}    %for fitting text into box
 
-\usepackage{tikz}
-\usepackage{booktabs}           %for nicer tables
-\usepackage{array}
-\usepackage{longtable}          %for multipage tables
-\usepackage{bigstrut}
-\setlength\bigstrutjot{3pt}     %http://tex.stackexchange.com/a/18114/62746
-\usepackage{tabularx}           %for tables from R
-
-% \usepackage{tabu}
-% \usepackage{colortbl}
-% \usepackage{ctable}
-
-% \usepackage{caption}
-% \captionsetup{labelformat=empty} %Removes Table 1. from Table 1. January
+\usepackage{tikz}               %for monthly overview with rounded corners
+%\usepackage{booktabs}           %for nicer tables
+%\usepackage{array}
+%\usepackage{longtable}          %for multipage tables
+%\usepackage{bigstrut}
+%\setlength\bigstrutjot{3pt}     %http://tex.stackexchange.com/a/18114/62746
+%\usepackage{tabularx}           %for tables from R
 
 % Master-Child structure from: 
 % https://github.com/yihui/knitr-examples/blob/master/020-for-loop.Rnw
 %https://github.com/yihui/knitr-examples/blob/master/020-for-template.rnw
+
 
 \usepackage{listings} 
 \def\lsin{\lstinline[basicstyle=\ttfamily,breaklines=true,]} %for inline verbatim (knitr on title)
@@ -142,71 +136,71 @@
 \begin{tikzpicture}[line width=.1mm,rounded corners=.5em]
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Mon Jul 27 08:14:49 2015
+% Tue Jul 28 00:25:45 2015
 \begin{tabular}{p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}}
  July & August & September & October & November & December \\ 
   \hline
-01.07 Wed & \cellcolor[gray]{0.95}01.08 Sat & 01.09 Tue & 01.10 Thu & \cellcolor[gray]{0.95}01.11 Sun & 01.12 Tue \\ 
+01 Wed & \cellcolor[gray]{0.95}01 Sat & 01 Tue & 01 Thu & \cellcolor[gray]{0.95}01 Sun & 01 Tue \\ 
    \hline
-02.07 Thu & \cellcolor[gray]{0.95}02.08 Sun & 02.09 Wed & 02.10 Fri & 02.11 Mon & 02.12 Wed \\ 
+02 Thu & \cellcolor[gray]{0.95}02 Sun & 02 Wed & 02 Fri & 02 Mon & 02 Wed \\ 
    \hline
-03.07 Fri & 03.08 Mon & 03.09 Thu & \cellcolor[gray]{0.95}03.10 Sat & 03.11 Tue & 03.12 Thu \\ 
+03 Fri & 03 Mon & 03 Thu & \cellcolor[gray]{0.95}03 Sat & 03 Tue & 03 Thu \\ 
    \hline
-\cellcolor[gray]{0.95}04.07 Sat & 04.08 Tue & 04.09 Fri & \cellcolor[gray]{0.95}04.10 Sun & 04.11 Wed & 04.12 Fri \\ 
+\cellcolor[gray]{0.95}04 Sat & 04 Tue & 04 Fri & \cellcolor[gray]{0.95}04 Sun & 04 Wed & 04 Fri \\ 
    \hline
-\cellcolor[gray]{0.95}05.07 Sun & 05.08 Wed & \cellcolor[gray]{0.95}05.09 Sat & 05.10 Mon & 05.11 Thu & \cellcolor[gray]{0.95}05.12 Sat \\ 
+\cellcolor[gray]{0.95}05 Sun & 05 Wed & \cellcolor[gray]{0.95}05 Sat & 05 Mon & 05 Thu & \cellcolor[gray]{0.95}05 Sat \\ 
    \hline
-06.07 Mon & 06.08 Thu & \cellcolor[gray]{0.95}06.09 Sun & 06.10 Tue & 06.11 Fri & \cellcolor[gray]{0.95}06.12 Sun \\ 
+06 Mon & 06 Thu & \cellcolor[gray]{0.95}06 Sun & 06 Tue & 06 Fri & \cellcolor[gray]{0.95}06 Sun \\ 
    \hline
-07.07 Tue & 07.08 Fri & 07.09 Mon & 07.10 Wed & \cellcolor[gray]{0.95}07.11 Sat & 07.12 Mon \\ 
+07 Tue & 07 Fri & 07 Mon & 07 Wed & \cellcolor[gray]{0.95}07 Sat & 07 Mon \\ 
    \hline
-08.07 Wed & \cellcolor[gray]{0.95}08.08 Sat & 08.09 Tue & 08.10 Thu & \cellcolor[gray]{0.95}08.11 Sun & 08.12 Tue \\ 
+08 Wed & \cellcolor[gray]{0.95}08 Sat & 08 Tue & 08 Thu & \cellcolor[gray]{0.95}08 Sun & 08 Tue \\ 
    \hline
-09.07 Thu & \cellcolor[gray]{0.95}09.08 Sun & 09.09 Wed & 09.10 Fri & 09.11 Mon & 09.12 Wed \\ 
+09 Thu & \cellcolor[gray]{0.95}09 Sun & 09 Wed & 09 Fri & 09 Mon & 09 Wed \\ 
    \hline
-10.07 Fri & 10.08 Mon & 10.09 Thu & \cellcolor[gray]{0.95}10.10 Sat & 10.11 Tue & 10.12 Thu \\ 
+10 Fri & 10 Mon & 10 Thu & \cellcolor[gray]{0.95}10 Sat & 10 Tue & 10 Thu \\ 
    \hline
-\cellcolor[gray]{0.95}11.07 Sat & 11.08 Tue & 11.09 Fri & \cellcolor[gray]{0.95}11.10 Sun & 11.11 Wed & 11.12 Fri \\ 
+\cellcolor[gray]{0.95}11 Sat & 11 Tue & 11 Fri & \cellcolor[gray]{0.95}11 Sun & 11 Wed & 11 Fri \\ 
    \hline
-\cellcolor[gray]{0.95}12.07 Sun & 12.08 Wed & \cellcolor[gray]{0.95}12.09 Sat & 12.10 Mon & 12.11 Thu & \cellcolor[gray]{0.95}12.12 Sat \\ 
+\cellcolor[gray]{0.95}12 Sun & 12 Wed & \cellcolor[gray]{0.95}12 Sat & 12 Mon & 12 Thu & \cellcolor[gray]{0.95}12 Sat \\ 
    \hline
-13.07 Mon & 13.08 Thu & \cellcolor[gray]{0.95}13.09 Sun & 13.10 Tue & 13.11 Fri & \cellcolor[gray]{0.95}13.12 Sun \\ 
+13 Mon & 13 Thu & \cellcolor[gray]{0.95}13 Sun & 13 Tue & 13 Fri & \cellcolor[gray]{0.95}13 Sun \\ 
    \hline
-14.07 Tue & 14.08 Fri & 14.09 Mon & 14.10 Wed & \cellcolor[gray]{0.95}14.11 Sat & 14.12 Mon \\ 
+14 Tue & 14 Fri & 14 Mon & 14 Wed & \cellcolor[gray]{0.95}14 Sat & 14 Mon \\ 
    \hline
-15.07 Wed & \cellcolor[gray]{0.95}15.08 Sat & 15.09 Tue & 15.10 Thu & \cellcolor[gray]{0.95}15.11 Sun & 15.12 Tue \\ 
+15 Wed & \cellcolor[gray]{0.95}15 Sat & 15 Tue & 15 Thu & \cellcolor[gray]{0.95}15 Sun & 15 Tue \\ 
    \hline
-16.07 Thu & \cellcolor[gray]{0.95}16.08 Sun & 16.09 Wed & 16.10 Fri & 16.11 Mon & 16.12 Wed \\ 
+16 Thu & \cellcolor[gray]{0.95}16 Sun & 16 Wed & 16 Fri & 16 Mon & 16 Wed \\ 
    \hline
-17.07 Fri & 17.08 Mon & 17.09 Thu & \cellcolor[gray]{0.95}17.10 Sat & 17.11 Tue & 17.12 Thu \\ 
+17 Fri & 17 Mon & 17 Thu & \cellcolor[gray]{0.95}17 Sat & 17 Tue & 17 Thu \\ 
    \hline
-\cellcolor[gray]{0.95}18.07 Sat & 18.08 Tue & 18.09 Fri & \cellcolor[gray]{0.95}18.10 Sun & 18.11 Wed & 18.12 Fri \\ 
+\cellcolor[gray]{0.95}18 Sat & 18 Tue & 18 Fri & \cellcolor[gray]{0.95}18 Sun & 18 Wed & 18 Fri \\ 
    \hline
-\cellcolor[gray]{0.95}19.07 Sun & 19.08 Wed & \cellcolor[gray]{0.95}19.09 Sat & 19.10 Mon & 19.11 Thu & \cellcolor[gray]{0.95}19.12 Sat \\ 
+\cellcolor[gray]{0.95}19 Sun & 19 Wed & \cellcolor[gray]{0.95}19 Sat & 19 Mon & 19 Thu & \cellcolor[gray]{0.95}19 Sat \\ 
    \hline
-20.07 Mon & 20.08 Thu & \cellcolor[gray]{0.95}20.09 Sun & 20.10 Tue & 20.11 Fri & \cellcolor[gray]{0.95}20.12 Sun \\ 
+20 Mon & 20 Thu & \cellcolor[gray]{0.95}20 Sun & 20 Tue & 20 Fri & \cellcolor[gray]{0.95}20 Sun \\ 
    \hline
-21.07 Tue & 21.08 Fri & 21.09 Mon & 21.10 Wed & \cellcolor[gray]{0.95}21.11 Sat & 21.12 Mon \\ 
+21 Tue & 21 Fri & 21 Mon & 21 Wed & \cellcolor[gray]{0.95}21 Sat & 21 Mon \\ 
    \hline
-22.07 Wed & \cellcolor[gray]{0.95}22.08 Sat & 22.09 Tue & 22.10 Thu & \cellcolor[gray]{0.95}22.11 Sun & 22.12 Tue \\ 
+22 Wed & \cellcolor[gray]{0.95}22 Sat & 22 Tue & 22 Thu & \cellcolor[gray]{0.95}22 Sun & 22 Tue \\ 
    \hline
-23.07 Thu & \cellcolor[gray]{0.95}23.08 Sun & 23.09 Wed & 23.10 Fri & 23.11 Mon & 23.12 Wed \\ 
+23 Thu & \cellcolor[gray]{0.95}23 Sun & 23 Wed & 23 Fri & 23 Mon & 23 Wed \\ 
    \hline
-24.07 Fri & 24.08 Mon & 24.09 Thu & \cellcolor[gray]{0.95}24.10 Sat & 24.11 Tue & 24.12 Thu \\ 
+24 Fri & 24 Mon & 24 Thu & \cellcolor[gray]{0.95}24 Sat & 24 Tue & 24 Thu \\ 
    \hline
-\cellcolor[gray]{0.95}25.07 Sat & 25.08 Tue & 25.09 Fri & \cellcolor[gray]{0.95}25.10 Sun & 25.11 Wed & 25.12 Fri \\ 
+\cellcolor[gray]{0.95}25 Sat & 25 Tue & 25 Fri & \cellcolor[gray]{0.95}25 Sun & 25 Wed & 25 Fri \\ 
    \hline
-\cellcolor[gray]{0.95}26.07 Sun & 26.08 Wed & \cellcolor[gray]{0.95}26.09 Sat & 26.10 Mon & 26.11 Thu & \cellcolor[gray]{0.95}26.12 Sat \\ 
+\cellcolor[gray]{0.95}26 Sun & 26 Wed & \cellcolor[gray]{0.95}26 Sat & 26 Mon & 26 Thu & \cellcolor[gray]{0.95}26 Sat \\ 
    \hline
-27.07 Mon & 27.08 Thu & \cellcolor[gray]{0.95}27.09 Sun & 27.10 Tue & 27.11 Fri & \cellcolor[gray]{0.95}27.12 Sun \\ 
+27 Mon & 27 Thu & \cellcolor[gray]{0.95}27 Sun & 27 Tue & 27 Fri & \cellcolor[gray]{0.95}27 Sun \\ 
    \hline
-28.07 Tue & 28.08 Fri & 28.09 Mon & 28.10 Wed & \cellcolor[gray]{0.95}28.11 Sat & 28.12 Mon \\ 
+28 Tue & 28 Fri & 28 Mon & 28 Wed & \cellcolor[gray]{0.95}28 Sat & 28 Mon \\ 
    \hline
-29.07 Wed & \cellcolor[gray]{0.95}29.08 Sat & 29.09 Tue & 29.10 Thu & \cellcolor[gray]{0.95}29.11 Sun & 29.12 Tue \\ 
+29 Wed & \cellcolor[gray]{0.95}29 Sat & 29 Tue & 29 Thu & \cellcolor[gray]{0.95}29 Sun & 29 Tue \\ 
    \hline
-30.07 Thu & \cellcolor[gray]{0.95}30.08 Sun & 30.09 Wed & 30.10 Fri & 30.11 Mon & 30.12 Wed \\ 
+30 Thu & \cellcolor[gray]{0.95}30 Sun & 30 Wed & 30 Fri & 30 Mon & 30 Wed \\ 
    \hline
-31.07 Fri & 31.08 Mon &  & \cellcolor[gray]{0.95}31.10 Sat &  & 31.12 Thu \\ 
+31 Fri & 31 Mon &  & \cellcolor[gray]{0.95}31 Sat &  & 31 Thu \\ 
   \end{tabular}
 
 };
@@ -232,71 +226,71 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 \begin{tikzpicture}[line width=.1mm,rounded corners=.5em]
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Mon Jul 27 08:14:49 2015
+% Tue Jul 28 00:25:45 2015
 \begin{tabular}{p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}}
  January 2016 & February & March & April & May & June \\ 
   \hline
-01.01 Fri & 01.02 Mon & 01.03 Tue & 01.04 Fri & \cellcolor[gray]{0.95}01.05 Sun & 01.06 Wed \\ 
+01 Fri & 01 Mon & 01 Tue & 01 Fri & \cellcolor[gray]{0.95}01 Sun & 01 Wed \\ 
    \hline
-\cellcolor[gray]{0.95}02.01 Sat & 02.02 Tue & 02.03 Wed & \cellcolor[gray]{0.95}02.04 Sat & 02.05 Mon & 02.06 Thu \\ 
+\cellcolor[gray]{0.95}02 Sat & 02 Tue & 02 Wed & \cellcolor[gray]{0.95}02 Sat & 02 Mon & 02 Thu \\ 
    \hline
-\cellcolor[gray]{0.95}03.01 Sun & 03.02 Wed & 03.03 Thu & \cellcolor[gray]{0.95}03.04 Sun & 03.05 Tue & 03.06 Fri \\ 
+\cellcolor[gray]{0.95}03 Sun & 03 Wed & 03 Thu & \cellcolor[gray]{0.95}03 Sun & 03 Tue & 03 Fri \\ 
    \hline
-04.01 Mon & 04.02 Thu & 04.03 Fri & 04.04 Mon & 04.05 Wed & \cellcolor[gray]{0.95}04.06 Sat \\ 
+04 Mon & 04 Thu & 04 Fri & 04 Mon & 04 Wed & \cellcolor[gray]{0.95}04 Sat \\ 
    \hline
-05.01 Tue & 05.02 Fri & \cellcolor[gray]{0.95}05.03 Sat & 05.04 Tue & 05.05 Thu & \cellcolor[gray]{0.95}05.06 Sun \\ 
+05 Tue & 05 Fri & \cellcolor[gray]{0.95}05 Sat & 05 Tue & 05 Thu & \cellcolor[gray]{0.95}05 Sun \\ 
    \hline
-06.01 Wed & \cellcolor[gray]{0.95}06.02 Sat & \cellcolor[gray]{0.95}06.03 Sun & 06.04 Wed & 06.05 Fri & 06.06 Mon \\ 
+06 Wed & \cellcolor[gray]{0.95}06 Sat & \cellcolor[gray]{0.95}06 Sun & 06 Wed & 06 Fri & 06 Mon \\ 
    \hline
-07.01 Thu & \cellcolor[gray]{0.95}07.02 Sun & 07.03 Mon & 07.04 Thu & \cellcolor[gray]{0.95}07.05 Sat & 07.06 Tue \\ 
+07 Thu & \cellcolor[gray]{0.95}07 Sun & 07 Mon & 07 Thu & \cellcolor[gray]{0.95}07 Sat & 07 Tue \\ 
    \hline
-08.01 Fri & 08.02 Mon & 08.03 Tue & 08.04 Fri & \cellcolor[gray]{0.95}08.05 Sun & 08.06 Wed \\ 
+08 Fri & 08 Mon & 08 Tue & 08 Fri & \cellcolor[gray]{0.95}08 Sun & 08 Wed \\ 
    \hline
-\cellcolor[gray]{0.95}09.01 Sat & 09.02 Tue & 09.03 Wed & \cellcolor[gray]{0.95}09.04 Sat & 09.05 Mon & 09.06 Thu \\ 
+\cellcolor[gray]{0.95}09 Sat & 09 Tue & 09 Wed & \cellcolor[gray]{0.95}09 Sat & 09 Mon & 09 Thu \\ 
    \hline
-\cellcolor[gray]{0.95}10.01 Sun & 10.02 Wed & 10.03 Thu & \cellcolor[gray]{0.95}10.04 Sun & 10.05 Tue & 10.06 Fri \\ 
+\cellcolor[gray]{0.95}10 Sun & 10 Wed & 10 Thu & \cellcolor[gray]{0.95}10 Sun & 10 Tue & 10 Fri \\ 
    \hline
-11.01 Mon & 11.02 Thu & 11.03 Fri & 11.04 Mon & 11.05 Wed & \cellcolor[gray]{0.95}11.06 Sat \\ 
+11 Mon & 11 Thu & 11 Fri & 11 Mon & 11 Wed & \cellcolor[gray]{0.95}11 Sat \\ 
    \hline
-12.01 Tue & 12.02 Fri & \cellcolor[gray]{0.95}12.03 Sat & 12.04 Tue & 12.05 Thu & \cellcolor[gray]{0.95}12.06 Sun \\ 
+12 Tue & 12 Fri & \cellcolor[gray]{0.95}12 Sat & 12 Tue & 12 Thu & \cellcolor[gray]{0.95}12 Sun \\ 
    \hline
-13.01 Wed & \cellcolor[gray]{0.95}13.02 Sat & \cellcolor[gray]{0.95}13.03 Sun & 13.04 Wed & 13.05 Fri & 13.06 Mon \\ 
+13 Wed & \cellcolor[gray]{0.95}13 Sat & \cellcolor[gray]{0.95}13 Sun & 13 Wed & 13 Fri & 13 Mon \\ 
    \hline
-14.01 Thu & \cellcolor[gray]{0.95}14.02 Sun & 14.03 Mon & 14.04 Thu & \cellcolor[gray]{0.95}14.05 Sat & 14.06 Tue \\ 
+14 Thu & \cellcolor[gray]{0.95}14 Sun & 14 Mon & 14 Thu & \cellcolor[gray]{0.95}14 Sat & 14 Tue \\ 
    \hline
-15.01 Fri & 15.02 Mon & 15.03 Tue & 15.04 Fri & \cellcolor[gray]{0.95}15.05 Sun & 15.06 Wed \\ 
+15 Fri & 15 Mon & 15 Tue & 15 Fri & \cellcolor[gray]{0.95}15 Sun & 15 Wed \\ 
    \hline
-\cellcolor[gray]{0.95}16.01 Sat & 16.02 Tue & 16.03 Wed & \cellcolor[gray]{0.95}16.04 Sat & 16.05 Mon & 16.06 Thu \\ 
+\cellcolor[gray]{0.95}16 Sat & 16 Tue & 16 Wed & \cellcolor[gray]{0.95}16 Sat & 16 Mon & 16 Thu \\ 
    \hline
-\cellcolor[gray]{0.95}17.01 Sun & 17.02 Wed & 17.03 Thu & \cellcolor[gray]{0.95}17.04 Sun & 17.05 Tue & 17.06 Fri \\ 
+\cellcolor[gray]{0.95}17 Sun & 17 Wed & 17 Thu & \cellcolor[gray]{0.95}17 Sun & 17 Tue & 17 Fri \\ 
    \hline
-18.01 Mon & 18.02 Thu & 18.03 Fri & 18.04 Mon & 18.05 Wed & \cellcolor[gray]{0.95}18.06 Sat \\ 
+18 Mon & 18 Thu & 18 Fri & 18 Mon & 18 Wed & \cellcolor[gray]{0.95}18 Sat \\ 
    \hline
-19.01 Tue & 19.02 Fri & \cellcolor[gray]{0.95}19.03 Sat & 19.04 Tue & 19.05 Thu & \cellcolor[gray]{0.95}19.06 Sun \\ 
+19 Tue & 19 Fri & \cellcolor[gray]{0.95}19 Sat & 19 Tue & 19 Thu & \cellcolor[gray]{0.95}19 Sun \\ 
    \hline
-20.01 Wed & \cellcolor[gray]{0.95}20.02 Sat & \cellcolor[gray]{0.95}20.03 Sun & 20.04 Wed & 20.05 Fri & 20.06 Mon \\ 
+20 Wed & \cellcolor[gray]{0.95}20 Sat & \cellcolor[gray]{0.95}20 Sun & 20 Wed & 20 Fri & 20 Mon \\ 
    \hline
-21.01 Thu & \cellcolor[gray]{0.95}21.02 Sun & 21.03 Mon & 21.04 Thu & \cellcolor[gray]{0.95}21.05 Sat & 21.06 Tue \\ 
+21 Thu & \cellcolor[gray]{0.95}21 Sun & 21 Mon & 21 Thu & \cellcolor[gray]{0.95}21 Sat & 21 Tue \\ 
    \hline
-22.01 Fri & 22.02 Mon & 22.03 Tue & 22.04 Fri & \cellcolor[gray]{0.95}22.05 Sun & 22.06 Wed \\ 
+22 Fri & 22 Mon & 22 Tue & 22 Fri & \cellcolor[gray]{0.95}22 Sun & 22 Wed \\ 
    \hline
-\cellcolor[gray]{0.95}23.01 Sat & 23.02 Tue & 23.03 Wed & \cellcolor[gray]{0.95}23.04 Sat & 23.05 Mon & 23.06 Thu \\ 
+\cellcolor[gray]{0.95}23 Sat & 23 Tue & 23 Wed & \cellcolor[gray]{0.95}23 Sat & 23 Mon & 23 Thu \\ 
    \hline
-\cellcolor[gray]{0.95}24.01 Sun & 24.02 Wed & 24.03 Thu & \cellcolor[gray]{0.95}24.04 Sun & 24.05 Tue & 24.06 Fri \\ 
+\cellcolor[gray]{0.95}24 Sun & 24 Wed & 24 Thu & \cellcolor[gray]{0.95}24 Sun & 24 Tue & 24 Fri \\ 
    \hline
-25.01 Mon & 25.02 Thu & 25.03 Fri & 25.04 Mon & 25.05 Wed & \cellcolor[gray]{0.95}25.06 Sat \\ 
+25 Mon & 25 Thu & 25 Fri & 25 Mon & 25 Wed & \cellcolor[gray]{0.95}25 Sat \\ 
    \hline
-26.01 Tue & 26.02 Fri & \cellcolor[gray]{0.95}26.03 Sat & 26.04 Tue & 26.05 Thu & \cellcolor[gray]{0.95}26.06 Sun \\ 
+26 Tue & 26 Fri & \cellcolor[gray]{0.95}26 Sat & 26 Tue & 26 Thu & \cellcolor[gray]{0.95}26 Sun \\ 
    \hline
-27.01 Wed & \cellcolor[gray]{0.95}27.02 Sat & \cellcolor[gray]{0.95}27.03 Sun & 27.04 Wed & 27.05 Fri & 27.06 Mon \\ 
+27 Wed & \cellcolor[gray]{0.95}27 Sat & \cellcolor[gray]{0.95}27 Sun & 27 Wed & 27 Fri & 27 Mon \\ 
    \hline
-28.01 Thu & \cellcolor[gray]{0.95}28.02 Sun & 28.03 Mon & 28.04 Thu & \cellcolor[gray]{0.95}28.05 Sat & 28.06 Tue \\ 
+28 Thu & \cellcolor[gray]{0.95}28 Sun & 28 Mon & 28 Thu & \cellcolor[gray]{0.95}28 Sat & 28 Tue \\ 
    \hline
-29.01 Fri & 29.02 Mon & 29.03 Tue & 29.04 Fri & \cellcolor[gray]{0.95}29.05 Sun & 29.06 Wed \\ 
+29 Fri & 29 Mon & 29 Tue & 29 Fri & \cellcolor[gray]{0.95}29 Sun & 29 Wed \\ 
    \hline
-\cellcolor[gray]{0.95}30.01 Sat &  & 30.03 Wed & \cellcolor[gray]{0.95}30.04 Sat & 30.05 Mon & 30.06 Thu \\ 
+\cellcolor[gray]{0.95}30 Sat &  & 30 Wed & \cellcolor[gray]{0.95}30 Sat & 30 Mon & 30 Thu \\ 
    \hline
-\cellcolor[gray]{0.95}31.01 Sun &  & 31.03 Thu &  & 31.05 Tue &  \\ 
+\cellcolor[gray]{0.95}31 Sun &  & 31 Thu &  & 31 Tue &  \\ 
   \end{tabular}
 
 };
@@ -322,71 +316,71 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 \begin{tikzpicture}[line width=.1mm,rounded corners=.5em]
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Mon Jul 27 08:14:49 2015
+% Tue Jul 28 00:25:45 2015
 \begin{tabular}{p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}}
  July & August & September & October & November & December \\ 
   \hline
-01.07 Fri & 01.08 Mon & 01.09 Thu & \cellcolor[gray]{0.95}01.10 Sat & 01.11 Tue & 01.12 Thu \\ 
+01 Fri & 01 Mon & 01 Thu & \cellcolor[gray]{0.95}01 Sat & 01 Tue & 01 Thu \\ 
    \hline
-\cellcolor[gray]{0.95}02.07 Sat & 02.08 Tue & 02.09 Fri & \cellcolor[gray]{0.95}02.10 Sun & 02.11 Wed & 02.12 Fri \\ 
+\cellcolor[gray]{0.95}02 Sat & 02 Tue & 02 Fri & \cellcolor[gray]{0.95}02 Sun & 02 Wed & 02 Fri \\ 
    \hline
-\cellcolor[gray]{0.95}03.07 Sun & 03.08 Wed & \cellcolor[gray]{0.95}03.09 Sat & 03.10 Mon & 03.11 Thu & \cellcolor[gray]{0.95}03.12 Sat \\ 
+\cellcolor[gray]{0.95}03 Sun & 03 Wed & \cellcolor[gray]{0.95}03 Sat & 03 Mon & 03 Thu & \cellcolor[gray]{0.95}03 Sat \\ 
    \hline
-04.07 Mon & 04.08 Thu & \cellcolor[gray]{0.95}04.09 Sun & 04.10 Tue & 04.11 Fri & \cellcolor[gray]{0.95}04.12 Sun \\ 
+04 Mon & 04 Thu & \cellcolor[gray]{0.95}04 Sun & 04 Tue & 04 Fri & \cellcolor[gray]{0.95}04 Sun \\ 
    \hline
-05.07 Tue & 05.08 Fri & 05.09 Mon & 05.10 Wed & \cellcolor[gray]{0.95}05.11 Sat & 05.12 Mon \\ 
+05 Tue & 05 Fri & 05 Mon & 05 Wed & \cellcolor[gray]{0.95}05 Sat & 05 Mon \\ 
    \hline
-06.07 Wed & \cellcolor[gray]{0.95}06.08 Sat & 06.09 Tue & 06.10 Thu & \cellcolor[gray]{0.95}06.11 Sun & 06.12 Tue \\ 
+06 Wed & \cellcolor[gray]{0.95}06 Sat & 06 Tue & 06 Thu & \cellcolor[gray]{0.95}06 Sun & 06 Tue \\ 
    \hline
-07.07 Thu & \cellcolor[gray]{0.95}07.08 Sun & 07.09 Wed & 07.10 Fri & 07.11 Mon & 07.12 Wed \\ 
+07 Thu & \cellcolor[gray]{0.95}07 Sun & 07 Wed & 07 Fri & 07 Mon & 07 Wed \\ 
    \hline
-08.07 Fri & 08.08 Mon & 08.09 Thu & \cellcolor[gray]{0.95}08.10 Sat & 08.11 Tue & 08.12 Thu \\ 
+08 Fri & 08 Mon & 08 Thu & \cellcolor[gray]{0.95}08 Sat & 08 Tue & 08 Thu \\ 
    \hline
-\cellcolor[gray]{0.95}09.07 Sat & 09.08 Tue & 09.09 Fri & \cellcolor[gray]{0.95}09.10 Sun & 09.11 Wed & 09.12 Fri \\ 
+\cellcolor[gray]{0.95}09 Sat & 09 Tue & 09 Fri & \cellcolor[gray]{0.95}09 Sun & 09 Wed & 09 Fri \\ 
    \hline
-\cellcolor[gray]{0.95}10.07 Sun & 10.08 Wed & \cellcolor[gray]{0.95}10.09 Sat & 10.10 Mon & 10.11 Thu & \cellcolor[gray]{0.95}10.12 Sat \\ 
+\cellcolor[gray]{0.95}10 Sun & 10 Wed & \cellcolor[gray]{0.95}10 Sat & 10 Mon & 10 Thu & \cellcolor[gray]{0.95}10 Sat \\ 
    \hline
-11.07 Mon & 11.08 Thu & \cellcolor[gray]{0.95}11.09 Sun & 11.10 Tue & 11.11 Fri & \cellcolor[gray]{0.95}11.12 Sun \\ 
+11 Mon & 11 Thu & \cellcolor[gray]{0.95}11 Sun & 11 Tue & 11 Fri & \cellcolor[gray]{0.95}11 Sun \\ 
    \hline
-12.07 Tue & 12.08 Fri & 12.09 Mon & 12.10 Wed & \cellcolor[gray]{0.95}12.11 Sat & 12.12 Mon \\ 
+12 Tue & 12 Fri & 12 Mon & 12 Wed & \cellcolor[gray]{0.95}12 Sat & 12 Mon \\ 
    \hline
-13.07 Wed & \cellcolor[gray]{0.95}13.08 Sat & 13.09 Tue & 13.10 Thu & \cellcolor[gray]{0.95}13.11 Sun & 13.12 Tue \\ 
+13 Wed & \cellcolor[gray]{0.95}13 Sat & 13 Tue & 13 Thu & \cellcolor[gray]{0.95}13 Sun & 13 Tue \\ 
    \hline
-14.07 Thu & \cellcolor[gray]{0.95}14.08 Sun & 14.09 Wed & 14.10 Fri & 14.11 Mon & 14.12 Wed \\ 
+14 Thu & \cellcolor[gray]{0.95}14 Sun & 14 Wed & 14 Fri & 14 Mon & 14 Wed \\ 
    \hline
-15.07 Fri & 15.08 Mon & 15.09 Thu & \cellcolor[gray]{0.95}15.10 Sat & 15.11 Tue & 15.12 Thu \\ 
+15 Fri & 15 Mon & 15 Thu & \cellcolor[gray]{0.95}15 Sat & 15 Tue & 15 Thu \\ 
    \hline
-\cellcolor[gray]{0.95}16.07 Sat & 16.08 Tue & 16.09 Fri & \cellcolor[gray]{0.95}16.10 Sun & 16.11 Wed & 16.12 Fri \\ 
+\cellcolor[gray]{0.95}16 Sat & 16 Tue & 16 Fri & \cellcolor[gray]{0.95}16 Sun & 16 Wed & 16 Fri \\ 
    \hline
-\cellcolor[gray]{0.95}17.07 Sun & 17.08 Wed & \cellcolor[gray]{0.95}17.09 Sat & 17.10 Mon & 17.11 Thu & \cellcolor[gray]{0.95}17.12 Sat \\ 
+\cellcolor[gray]{0.95}17 Sun & 17 Wed & \cellcolor[gray]{0.95}17 Sat & 17 Mon & 17 Thu & \cellcolor[gray]{0.95}17 Sat \\ 
    \hline
-18.07 Mon & 18.08 Thu & \cellcolor[gray]{0.95}18.09 Sun & 18.10 Tue & 18.11 Fri & \cellcolor[gray]{0.95}18.12 Sun \\ 
+18 Mon & 18 Thu & \cellcolor[gray]{0.95}18 Sun & 18 Tue & 18 Fri & \cellcolor[gray]{0.95}18 Sun \\ 
    \hline
-19.07 Tue & 19.08 Fri & 19.09 Mon & 19.10 Wed & \cellcolor[gray]{0.95}19.11 Sat & 19.12 Mon \\ 
+19 Tue & 19 Fri & 19 Mon & 19 Wed & \cellcolor[gray]{0.95}19 Sat & 19 Mon \\ 
    \hline
-20.07 Wed & \cellcolor[gray]{0.95}20.08 Sat & 20.09 Tue & 20.10 Thu & \cellcolor[gray]{0.95}20.11 Sun & 20.12 Tue \\ 
+20 Wed & \cellcolor[gray]{0.95}20 Sat & 20 Tue & 20 Thu & \cellcolor[gray]{0.95}20 Sun & 20 Tue \\ 
    \hline
-21.07 Thu & \cellcolor[gray]{0.95}21.08 Sun & 21.09 Wed & 21.10 Fri & 21.11 Mon & 21.12 Wed \\ 
+21 Thu & \cellcolor[gray]{0.95}21 Sun & 21 Wed & 21 Fri & 21 Mon & 21 Wed \\ 
    \hline
-22.07 Fri & 22.08 Mon & 22.09 Thu & \cellcolor[gray]{0.95}22.10 Sat & 22.11 Tue & 22.12 Thu \\ 
+22 Fri & 22 Mon & 22 Thu & \cellcolor[gray]{0.95}22 Sat & 22 Tue & 22 Thu \\ 
    \hline
-\cellcolor[gray]{0.95}23.07 Sat & 23.08 Tue & 23.09 Fri & \cellcolor[gray]{0.95}23.10 Sun & 23.11 Wed & 23.12 Fri \\ 
+\cellcolor[gray]{0.95}23 Sat & 23 Tue & 23 Fri & \cellcolor[gray]{0.95}23 Sun & 23 Wed & 23 Fri \\ 
    \hline
-\cellcolor[gray]{0.95}24.07 Sun & 24.08 Wed & \cellcolor[gray]{0.95}24.09 Sat & 24.10 Mon & 24.11 Thu & \cellcolor[gray]{0.95}24.12 Sat \\ 
+\cellcolor[gray]{0.95}24 Sun & 24 Wed & \cellcolor[gray]{0.95}24 Sat & 24 Mon & 24 Thu & \cellcolor[gray]{0.95}24 Sat \\ 
    \hline
-25.07 Mon & 25.08 Thu & \cellcolor[gray]{0.95}25.09 Sun & 25.10 Tue & 25.11 Fri & \cellcolor[gray]{0.95}25.12 Sun \\ 
+25 Mon & 25 Thu & \cellcolor[gray]{0.95}25 Sun & 25 Tue & 25 Fri & \cellcolor[gray]{0.95}25 Sun \\ 
    \hline
-26.07 Tue & 26.08 Fri & 26.09 Mon & 26.10 Wed & \cellcolor[gray]{0.95}26.11 Sat & 26.12 Mon \\ 
+26 Tue & 26 Fri & 26 Mon & 26 Wed & \cellcolor[gray]{0.95}26 Sat & 26 Mon \\ 
    \hline
-27.07 Wed & \cellcolor[gray]{0.95}27.08 Sat & 27.09 Tue & 27.10 Thu & \cellcolor[gray]{0.95}27.11 Sun & 27.12 Tue \\ 
+27 Wed & \cellcolor[gray]{0.95}27 Sat & 27 Tue & 27 Thu & \cellcolor[gray]{0.95}27 Sun & 27 Tue \\ 
    \hline
-28.07 Thu & \cellcolor[gray]{0.95}28.08 Sun & 28.09 Wed & 28.10 Fri & 28.11 Mon & 28.12 Wed \\ 
+28 Thu & \cellcolor[gray]{0.95}28 Sun & 28 Wed & 28 Fri & 28 Mon & 28 Wed \\ 
    \hline
-29.07 Fri & 29.08 Mon & 29.09 Thu & \cellcolor[gray]{0.95}29.10 Sat & 29.11 Tue & 29.12 Thu \\ 
+29 Fri & 29 Mon & 29 Thu & \cellcolor[gray]{0.95}29 Sat & 29 Tue & 29 Thu \\ 
    \hline
-\cellcolor[gray]{0.95}30.07 Sat & 30.08 Tue & 30.09 Fri & \cellcolor[gray]{0.95}30.10 Sun & 30.11 Wed & 30.12 Fri \\ 
+\cellcolor[gray]{0.95}30 Sat & 30 Tue & 30 Fri & \cellcolor[gray]{0.95}30 Sun & 30 Wed & 30 Fri \\ 
    \hline
-\cellcolor[gray]{0.95}31.07 Sun & 31.08 Wed &  & 31.10 Mon &  & \cellcolor[gray]{0.95}31.12 Sat \\ 
+\cellcolor[gray]{0.95}31 Sun & 31 Wed &  & 31 Mon &  & \cellcolor[gray]{0.95}31 Sat \\ 
   \end{tabular}
 
 };
@@ -403,6 +397,129 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 
 
 
+%no code above here
+\centering{{\color{textgray}Week~26}}
+\vspace{2 mm}\\
+%
+\tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
+        left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
+        colback=white, colframe=framegray, coltext=textgray}
+%
+\begin{tcolorbox}
+Monday~29.06\\
+{\tcbfontsize{0.5} 
+$07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$}\\
+\end{tcolorbox}
+%
+\begin{tcolorbox}
+Tuesday~30.06\\
+{\tcbfontsize{0.5} 
+$07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$}\\
+\end{tcolorbox}
+%
+\begin{tcolorbox}
+Wednesday~01.07\\
+{\tcbfontsize{0.5} 
+$07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$}\\
+\end{tcolorbox}
+\clearpage
+%
+\centering{{\color{textgray}June~2015}
+\vspace{2 mm}\\
+%
+\begin{tcolorbox}
+Thursday~02.07\\
+{\tcbfontsize{0.5} 
+$07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$}\\
+\end{tcolorbox} 
+%
+\begin{tcolorbox}
+Friday~03.07\\
+{\tcbfontsize{0.5} 
+$07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$}\\
+\end{tcolorbox} 
+%
+\begin{tcolorbox}[height=(\textheight-10mm)/6]
+Saturday~04.07
+\tcblower
+Sunday~05.07
+\end{tcolorbox} %single space required here
+%
+\begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
+Notes
+\end{tcolorbox}
+\clearpage
+%no code allowed below, 
 %no code above here
 \centering{{\color{textgray}Week~27}}
 \vspace{2 mm}\\

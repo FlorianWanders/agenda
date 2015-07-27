@@ -1,17 +1,17 @@
-%fontawesomeupdated.sty and fontawesome.otf must be 
-%in same folder
+%fontawesomeupdated.sty and fontawesome.otf must be in same folder 
+%(not currently used but will give error otherwise)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%% Packages and Settings %%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[11pt,a4paper]{book} %must be first line of code
 \pagenumbering{gobble} %remove page numbers (and reset to 1)
 \pagestyle{plain}      %remove page numbers
-\setlength{\parindent}{0pt}
+\setlength{\parindent}{0pt} %no indenting of first line
 
 \usepackage[showframe, inner=2.5cm, outer=2cm, top=2cm, bottom=2cm]{geometry}%,
 \usepackage{afterpage} %no blank page before landscape switch
 \usepackage{pdflscape} 
-%pdflscape only turns page, but does not ajdust not frame
+%pdflscape only turns page, but does not ajdust frame
 %fix from http://tex.stackexchange.com/a/116521
 %fix must come AFTER geometry and pdflscape package
 \makeatletter
@@ -26,7 +26,7 @@
 }%
 \makeatother
 
-\usepackage{graphicx}           %for jpg, pdf, ...
+%\usepackage{graphicx}           %for jpg, pdf, ...
 \usepackage{colortbl, xcolor}   %colorbtl used to highlight monthly overview
 \definecolor{textgray}{gray}{0.40}
 \definecolor{framegray}{gray}{0.60}
@@ -37,43 +37,186 @@
 
 \usepackage[most]{tcolorbox}    %for fitting text into box
 
-\usepackage{tikz}
-\usepackage{booktabs}           %for nicer tables
-\usepackage{array}
-\usepackage{longtable}          %for multipage tables
-\usepackage{bigstrut}
-\setlength\bigstrutjot{3pt}     %http://tex.stackexchange.com/a/18114/62746
-\usepackage{tabularx}           %for tables from R
-
-% \usepackage{tabu}
-% \usepackage{colortbl}
-% \usepackage{ctable}
-
-% \usepackage{caption}
-% \captionsetup{labelformat=empty} %Removes Table 1. from Table 1. January
+\usepackage{tikz}               %for monthly overview with rounded corners
+%\usepackage{booktabs}           %for nicer tables
+%\usepackage{array}
+%\usepackage{longtable}          %for multipage tables
+%\usepackage{bigstrut}
+%\setlength\bigstrutjot{3pt}     %http://tex.stackexchange.com/a/18114/62746
+%\usepackage{tabularx}           %for tables from R
 
 % Master-Child structure from: 
 % https://github.com/yihui/knitr-examples/blob/master/020-for-loop.Rnw
 %https://github.com/yihui/knitr-examples/blob/master/020-for-template.rnw
 <<weekly, include=FALSE>>=
+################################################################################
+## Cusomizable input ###########################################################
+################################################################################
+start <- "01.07.2015" # any date around which the agenda should begin (dd.mm.yyyy)
+monthly_pages <- 3 # number of pages for the monthly overview (1 page = 6 months)
+
+################################################################################
+## Set-Up, packages, and custom functions ######################################
+################################################################################
 invisible(Sys.setlocale("LC_ALL","English"))
-#POSIXlt(yyyy/mm/dd)
-date <- as.POSIXlt(seq(as.Date("2015/07/06"), as.Date("2017/01/01"), "days")) #start on a Monday and end on Sunday
-dates <- format(date, "%d.%m") #31.01
-ds <- format(date, "%d")       #31
-days <- format(date, "%A")     #Monday
-weeks <- strftime(date,format="%W") #1
-months <- format(date, "%B")   #January
-years <- format(date, "%Y")    #2015
-wknds  <- ifelse(date$wday %in% c(6,0), TRUE, FALSE)  #weekends
-df <- data.frame(date, dates, ds, days, weeks, months, years)
+
+library(dplyr)
+library(reshape2)
+library(lubridate)
+
+# from Hadley's comment on http://stackoverflow.com/a/6669237/4798582: 
+safe.ifelse <- function(cond, yes, no) {
+  structure(ifelse(cond, yes, no), class = class(yes))
+}
+
+# prevbestmonday returns next best Monday 
+# (in the past if day unequal to Monday,
+#  therefore the name: prev(ious) best monday)
+prevbestmonday <- function(day)   { #requires lubridate
+  # logic for safe.ifelse statement (custom function by Hadley):
+  #   2 --> -0 already Mon   
+  #   3 --> -1 #Tue
+  #   4 --> -2 #Wed
+  #   5 --> -3 #Thu
+  #   6 --> -4 #Fri
+  #   7 --> -5 #Sat
+  #   
+  #   1 --> -6 #Sun
+  Mo <- safe.ifelse(wday(day) == 1, day - days(6),  #Sunday
+                    day - days( wday(day)-2 )) #other days
+  Mo <- paste(day(Mo), month(Mo), year(Mo), sep=".")
+  Mo <- dmy(Mo)
+  Mo
+}
+
+
+# nextbestsunday returns next best Sunday 
+# (in the future if day unequal to Sunday)
+nextbestsunday <- function(day)   { #requires lubridate
+  # logic for safe.ifelse statement (custom function by Hadley):
+  #   2 --> +6# Mon  
+  #   3 --> +5 #Tue
+  #   4 --> +4 #Wed
+  #   5 --> +3 #Thu
+  #   6 --> +2 #Fri
+  #   7 --> +1 #Sat
+  #   
+  #   1 #already Sun
+  Sun <- safe.ifelse( wday(day) == 1, day, #Sunday
+                      day + (days(8) - days( wday(day))))  #other days
+  Sun <- paste(day(Sun), month(Sun), year(Sun), sep=".")
+  Sun <- dmy(Sun)
+  Sun 
+}
+
+
+################################################################################
+## Calculating start and end dates #############################################
+################################################################################
+# Convert start into date and extract year and month 
+start <- dmy(start)
+start_month <- month(start)
+start_year <- year(start)
+
+# Find the first and last date for the monthly overview 
+monthly_start <- paste("01", start_month, start_year, sep=".")
+monthly_start <- dmy(monthly_start)
+monthly_length <- paste(monthly_pages*6, "months")
+monthly_end <- seq.Date(as.Date(monthly_start), 
+                        length=2, 
+                        by=monthly_length
+                        )[2] - 1
+monthly_end <- ymd(monthly_end)
+
+# Find first and last date for the weekly overview
+weekly_start <- prevbestmonday(start)
+weekly_end <- nextbestsunday(monthly_end) 
+
+
+################################################################################
+## Calculating the dates for the weekly overview ###############################
+################################################################################
+weekly_range <- seq(weekly_start, weekly_end, "days")
+weekly_dates <- format(weekly_range, "%d.%m") #31.01
+weekly_days <- format(weekly_range, "%A")     #Monday
+weekly_weeks <- format(weekly_range,"%W") #1
+weekly_months <- format(weekly_range, "%B")   #January
+weekly_years <- format(weekly_range, "%Y")    #2015
+#weekly_wknds  <- ifelse(wday(weekly_range) %in% c(7,1), TRUE, FALSE)  #weekends
+weekly_df <- data.frame(weekly_dates, 
+                         weekly_days, 
+                         weekly_weeks, 
+                        #weekly_wknds
+                         weekly_months, 
+                         weekly_years)
+# remove weekly_ from column names
+colnames(weekly_df) <- gsub(".*\\_","",colnames(weekly_df))  
+
+
+################################################################################
+## Calculating the dates for the monthly overview ##############################
+################################################################################
+monthly_range <- seq(monthly_start, monthly_end, "days") 
+monthly_dates <- format(monthly_range, "%d")    #31 
+# monthly_days <- format(monthly_range, "%a")     #Mon  
+# monthly_wknds <- ifelse(wday(monthly_range) %in% c(7,1), TRUE, FALSE)  #weekends
+# monthly_weeks <- format(monthly_range,"%W") #1
+# monthly_months <- format(monthly_range, "%B")   #January
+# monthly_years <- format(monthly_range, "%Y")    #2015
+monthly_daywday <- format(monthly_range, "%d %a")
+monthly_monthyear <- format(monthly_range, "%B %Y")
+monthly_df <- data.frame(monthly_dates, 
+                         # monthly_days, 
+                         # monthly_weeks, 
+                         # monthly_months, 
+                         # monthly_years,
+                         # monthly_wknds
+                         monthly_daywday,
+                         monthly_monthyear)
+# remove monthly_ from column names
+colnames(monthly_df) <- gsub(".*\\_","",colnames(monthly_df)) 
+
+
+################################################################################
+## Creating the monthly overview ###############################################
+################################################################################
+overview <- dcast(monthly_df, dates ~ monthyear, value.var="daywday")
+overview <- overview[,-1] #remove dates variable after casting
+
+#Sort columns for display
+overview_names <- dmy(paste("01",names(overview)))
+overview_names <- sort(overview_names)
+overview_names <- format(overview_names, "%B %Y")
+overview <- overview[factor(overview_names)]
+#setcolorder(setDT(overview), overview_names) #requires (data.table)
+
+# Remove year from column names, except for Januaries
+colnames(overview)[!grepl("January", names(overview))] <- gsub('([A-z]+) .*', '\\1', colnames(overview))[!grepl("January", names(overview))]
+
+## Weekends in overview
+wknds <- apply(overview, 1:2, function(x) grepl("(Sat)|(Sun)", x))
+
+################################################################################
+## Overview Child ##############################################################
+################################################################################
+d <- 1:ncol(overview)
+max <- 6
+x <- seq_along(d)
+d1 <- split(d, ceiling(x/max))
+monthc <- NULL
+for (i in d1) monthc <- c(monthc, knit_child('calendarChildOverview.Rnw'))
+
+################################################################################
+## Weekly Child ################################################################
+################################################################################
 week = NULL
-a <- 1:nrow(df) 
+a <- 1:nrow(weekly_df) 
 b <- seq.int(1L, length(a), 7L)
 #b <- c(1,8) #for testing
 for (i in b) {week = c(week, knit_child('calendarChild.Rnw'))}
 #change for loop http://yihui.name/en/2010/10/on-the-gory-loops-in-r/
 @
+
 \usepackage{listings} 
 \def\lsin{\lstinline[basicstyle=\ttfamily,breaklines=true,]} %for inline verbatim (knitr on title)
 
@@ -88,55 +231,7 @@ for (i in b) {week = c(week, knit_child('calendarChild.Rnw'))}
 \author{Florian Wanders}
 \date{}
 \maketitle
-<<monthly, include=FALSE, message=FALSE>>=
-library(reshape2)
-invisible(Sys.setlocale("LC_ALL","English"))
-date <- as.POSIXlt(seq(as.Date("2015/07/01"), as.Date("2016/12/31"), "days")) #start on a Jul 01, end on Dec 31 (multiple of 6 months)
-dates <- format(date, "%d.%m") #31.01
-ds <- format(date, "%d")       #31
-days <- format(date, "%A")     #Monday
-weeks <- strftime(date,format="%W") #1
-months <- format(date, "%B")   #January
-years <- format(date, "%Y")    #2015
-df <- data.frame(date, dates, ds, days, weeks, months, years)
-#dcast looses date format --> create dfcar with character entries of df
-dfcar <- df
-dfcar$days <- format(dfcar$date, "%a") #Mon
-dfcar$days <- paste(dfcar$dates, dfcar$days, sep=" ") #31.01 Mon
-dfcar <- apply(dfcar,1:2, function(x) as.character(x))
-dfcar <- as.data.frame(dfcar)
-#dcast will sort by alphabet --> create sort variable for later sorting
-#http://seananderson.ca/2013/10/19/reshape.html
-dfcar$sort <- ifelse(dfcar$months=="January", 1, 
-                     ifelse(df$months=="February", 2, 
-                     ifelse(df$months=="March", 3, 
-                     ifelse(df$months=="April", 4, 
-                     ifelse(df$months=="May", 5,
-                     ifelse(df$months=="June", 6, 
-                     ifelse(df$months=="July", 7, 
-                     ifelse(df$months=="August", 8, 
-                     ifelse(df$months=="September", 9, 
-                     ifelse(df$months=="October", 10, 
-                     ifelse(df$months=="November", 11, 12)))))))))))
-dfcar$int <- interaction(df$months, df$years, sep=" ")
-dfcast <- dcast(dfcar, int + years + months + sort ~ ds, value.var="days")
-dfcast <- dfcast[order(dfcast$years, dfcast$sort),] #sort by month instead of by alphabet
-rownames(dfcast) <- dfcast$int
-drops <- colnames(dfcast) %in% c("int", "years", "months", "sort")
-dfcast <- dfcast[,!drops]
-overview <- t(dfcast)
-overview <- as.data.frame(overview)
-colnames(overview)[!grepl("January", names(overview))] <- gsub('([A-z]+) .*', '\\1', colnames(overview))[!grepl("January", names(overview))]
-## weekends in overview
-wknds <- apply(overview, 1:2, function(x) grepl("(Sat)|(Sun)", x))
-###
-d <- 1:ncol(overview)
-max <- 6
-x <- seq_along(d)
-d1 <- split(d, ceiling(x/max))
-monthc <- NULL
-for (i in d1) monthc <- c(monthc, knit_child('calendarChildOverview.Rnw'))
-@
+
 
 %\cleardoublepage%clears also headers/footers
 %\raggedbottom
