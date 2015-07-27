@@ -91,7 +91,7 @@ for (i in b) {week = c(week, knit_child('calendarChild.Rnw'))}
 <<monthly, include=FALSE, message=FALSE>>=
 library(reshape2)
 invisible(Sys.setlocale("LC_ALL","English"))
-date <- as.POSIXlt(seq(as.Date("2015/07/01"), as.Date("2016/12/31"), "days")) #start on a Jul 01, end on Dec 31
+date <- as.POSIXlt(seq(as.Date("2015/07/01"), as.Date("2016/12/31"), "days")) #start on a Jul 01, end on Dec 31 (multiple of 6 months)
 dates <- format(date, "%d.%m") #31.01
 ds <- format(date, "%d")       #31
 days <- format(date, "%A")     #Monday
