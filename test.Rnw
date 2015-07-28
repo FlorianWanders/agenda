@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+bla
+<<weekly, include=FALSE>>=
+################################################################################
+## Cusomizable input ###########################################################
+################################################################################
+day_start <- 7
+day_end <- 21
+hours <- day_start : day_end
+hours[hours < 10] <- paste0("0",hours[hours < 10])
+hours <- paste0(paste0("$", hours, "^{00}$"))
+@
+
+\Sexpr{paste0(hours, collapse="\\\\\n")}
+
+
+
+
+<<echo=FALSE>>=
+b = c(1,2,3,4,5,6)
+@
+
+$$B = \begin{pmatrix}
+\Sexpr{paste(b, collapse='\\\\\n')}
+\end{pmatrix}$$
+\end{document}
+
