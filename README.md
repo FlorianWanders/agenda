@@ -5,7 +5,7 @@ Can be printed and bound at any good (online) copy-shop.
 
 *NOTE*: work under progress, still experimenting with the layout and some code bits. 
 Once I'm happy I will include more comments in the code. 
-Feel free to use in the meantime and make changes on your own. 
+Feel free to use in the meantime and make changes on your own. Provided as is without guarantees. 
 
 ## Features: 
 
@@ -13,6 +13,7 @@ Feel free to use in the meantime and make changes on your own.
 - Monthly overview
 - One week on 2 pages 
 
+[Preview the agenda](https://github.com/FlorianWanders/agenda/blob/master/calendarMaster.pdf)
 ## Set-up
 
 1. Clone this repository or download all `.Rnw` files and the fontawesome files (`FontAwesome.otf` and `fontawesomeupdated.sty`; 
