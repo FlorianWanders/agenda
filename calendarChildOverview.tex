@@ -8,7 +8,11 @@
 \vspace*{\fill}
 \begingroup
 \begin{centering}
-{\color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
+{\color{textgray}\tiny\renewcommand{\arraystretch}{
+  \\dimexpr 
+  \\linewidth -
+  33\\arrayrulewidth - 
+  64\\tabcolsep\\relax}                                           
 \begin{tikzpicture}[line width=.1mm,rounded corners=.5em]
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {
 \begin{kframe}
@@ -27,7 +31,7 @@
 \draw ([fill=white,textgray, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
 rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
 \end{tikzpicture}
-}%end \color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
+}%this bracket closes \color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
 \end{centering}%}%no code after here
 \vspace*{\fill}
 \endgroup

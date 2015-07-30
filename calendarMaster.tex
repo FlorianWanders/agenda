@@ -87,8 +87,8 @@
 \usepackage[hidelinks]{hyperref} %for (web)links
 
 \usepackage[most]{tcolorbox}    %for fitting text into box
-
 \usepackage{tikz}               %for monthly overview with rounded corners
+\usepackage{adjustbox}          % for scaling overview table to page height and width
 %\usepackage{booktabs}           %for nicer tables
 %\usepackage{array}
 %\usepackage{longtable}          %for multipage tables
@@ -137,6 +137,7 @@
 %\raggedbottom
 
 \begin{landscape}
+ \clearpage
 
 % %no code above here
 % \tcbset{nobeforeafter,
@@ -145,19 +146,40 @@
 %         colback=white, colframe=lightgray, coltext=textgray}
 % %
 % \begin{tcolorbox}[fit to height=\textheight]
-\vspace*{\fill}
-\begingroup
-\begin{centering}
+% \vspace*{\fill}
+%\begingroup
+%\begin{centering}
 {\color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
 \begin{tikzpicture}[line width=.1mm,rounded corners=.5em]
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {
+  \begin{adjustbox}{totalheight=\textheight, width = \linewidth} %http://tex.stackexchange.com/a/13812/62746
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Thu Jul 30 14:55:20 2015
+% Thu Jul 30 21:02:12 2015
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
                                            7\arrayrulewidth - 
-                                           12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}}
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                       \dimexpr 
+                                       \linewidth - 
+                                       7\arrayrulewidth
+                                       -12\tabcolsep\relax}}
  July & August & September & October & November & December \\ 
   \hline
 01 Wed & \cellcolor[gray]{0.95}01 Sat & 01 Tue & 01 Thu & \cellcolor[gray]{0.95}01 Sun & 01 Tue \\ 
@@ -223,14 +245,15 @@
 31 Fri & 31 Mon &  & \cellcolor[gray]{0.95}31 Sat &  & 31 Thu \\ 
   \end{tabular}
 
+  \end{adjustbox}
 };
 \draw ([fill=white,textgray, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
 rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
 \end{tikzpicture}
 }%this bracket closes \color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
-\end{centering}%}%no code after here
-\vspace*{\fill}
-\endgroup
+%\end{centering}%}%no code after here
+%\vspace*{\fill}
+%\endgroup
 \newpage%, 
 % %no code above here
 % \tcbset{nobeforeafter,
@@ -239,19 +262,40 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 %         colback=white, colframe=lightgray, coltext=textgray}
 % %
 % \begin{tcolorbox}[fit to height=\textheight]
-\vspace*{\fill}
-\begingroup
-\begin{centering}
+% \vspace*{\fill}
+%\begingroup
+%\begin{centering}
 {\color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
 \begin{tikzpicture}[line width=.1mm,rounded corners=.5em]
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {
+  \begin{adjustbox}{totalheight=\textheight, width = \linewidth} %http://tex.stackexchange.com/a/13812/62746
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Thu Jul 30 14:55:20 2015
+% Thu Jul 30 21:02:12 2015
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
                                            7\arrayrulewidth - 
-                                           12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}}
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                       \dimexpr 
+                                       \linewidth - 
+                                       7\arrayrulewidth
+                                       -12\tabcolsep\relax}}
  January 2016 & February & March & April & May & June \\ 
   \hline
 01 Fri & 01 Mon & 01 Tue & 01 Fri & \cellcolor[gray]{0.95}01 Sun & 01 Wed \\ 
@@ -317,14 +361,15 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 \cellcolor[gray]{0.95}31 Sun &  & 31 Thu &  & 31 Tue &  \\ 
   \end{tabular}
 
+  \end{adjustbox}
 };
 \draw ([fill=white,textgray, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
 rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
 \end{tikzpicture}
 }%this bracket closes \color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
-\end{centering}%}%no code after here
-\vspace*{\fill}
-\endgroup
+%\end{centering}%}%no code after here
+%\vspace*{\fill}
+%\endgroup
 \newpage%, 
 % %no code above here
 % \tcbset{nobeforeafter,
@@ -333,19 +378,40 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 %         colback=white, colframe=lightgray, coltext=textgray}
 % %
 % \begin{tcolorbox}[fit to height=\textheight]
-\vspace*{\fill}
-\begingroup
-\begin{centering}
+% \vspace*{\fill}
+%\begingroup
+%\begin{centering}
 {\color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
 \begin{tikzpicture}[line width=.1mm,rounded corners=.5em]
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {
+  \begin{adjustbox}{totalheight=\textheight, width = \linewidth} %http://tex.stackexchange.com/a/13812/62746
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Thu Jul 30 14:55:20 2015
+% Thu Jul 30 21:02:12 2015
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
                                            7\arrayrulewidth - 
-                                           12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}}
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                       \dimexpr 
+                                       \linewidth - 
+                                       7\arrayrulewidth
+                                       -12\tabcolsep\relax}}
  July & August & September & October & November & December \\ 
   \hline
 01 Fri & 01 Mon & 01 Thu & \cellcolor[gray]{0.95}01 Sat & 01 Tue & 01 Thu \\ 
@@ -411,15 +477,17 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 \cellcolor[gray]{0.95}31 Sun & 31 Wed &  & 31 Mon &  & \cellcolor[gray]{0.95}31 Sat \\ 
   \end{tabular}
 
+  \end{adjustbox}
 };
 \draw ([fill=white,textgray, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
 rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
 \end{tikzpicture}
 }%this bracket closes \color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
-\end{centering}%}%no code after here
-\vspace*{\fill}
-\endgroup
+%\end{centering}%}%no code after here
+%\vspace*{\fill}
+%\endgroup
 \newpage%
+ \clearpage
 \end{landscape}
 
 

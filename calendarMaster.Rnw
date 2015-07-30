@@ -38,14 +38,14 @@
 \usepackage[hidelinks]{hyperref} %for (web)links
 
 \usepackage[most]{tcolorbox}    %for fitting text into box
-
 \usepackage{tikz}               %for monthly overview with rounded corners
-%\usepackage{booktabs}           %for nicer tables
+\usepackage{adjustbox}          % for scaling overview table to page height and width
+%\usepackage{booktabs}          %for nicer tables
 %\usepackage{array}
-%\usepackage{longtable}          %for multipage tables
+%\usepackage{longtable}         %for multipage tables
 %\usepackage{bigstrut}
-%\setlength\bigstrutjot{3pt}     %http://tex.stackexchange.com/a/18114/62746
-%\usepackage{tabularx}           %for tables from R
+%\setlength\bigstrutjot{3pt}    %http://tex.stackexchange.com/a/18114/62746
+%\usepackage{tabularx}          %for tables from R
 
 % Master-Child structure from: 
 % https://github.com/yihui/knitr-examples/blob/master/020-for-loop.Rnw
