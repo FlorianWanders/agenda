@@ -84,6 +84,7 @@
 \usepackage{lmodern}  % or any other vector / postscript font (required by tcolorbox)
 \usepackage{fontawesomeupdated} %for fontawesome glyph icons
 \usepackage{metalogo} %for \XeLaTeX symbol
+\usepackage[hidelinks]{hyperref} %for (web)links
 
 \usepackage[most]{tcolorbox}    %for fitting text into box
 
@@ -112,10 +113,24 @@
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 
+
+\begin{titlepage}
+
 \title{Agenda 2015/2016\\Created with \lsin{knitR} and \XeLaTeX} 
-\author{Florian Wanders}
+\author{\parbox{\linewidth}{%http://tex.stackexchange.com/a/63385/62746
+  \centering%
+  Florian Wanders\endgraf\bigskip
+  \href{https://github.com/FlorianWanders/agenda}{\faGithub~florianwanders/agenda}
+  }
+}
 \date{}
 \maketitle
+
+
+
+
+
+\end{titlepage}
 
 
 %\cleardoublepage%clears also headers/footers
@@ -137,8 +152,12 @@
 \begin{tikzpicture}[line width=.1mm,rounded corners=.5em]
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Tue Jul 28 18:30:37 2015
-\begin{tabular}{p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}}
+% Thu Jul 30 14:55:20 2015
+\begin{tabular}{p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth -
+                                           7\arrayrulewidth - 
+                                           12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}}
  July & August & September & October & November & December \\ 
   \hline
 01 Wed & \cellcolor[gray]{0.95}01 Sat & 01 Tue & 01 Thu & \cellcolor[gray]{0.95}01 Sun & 01 Tue \\ 
@@ -208,7 +227,7 @@
 \draw ([fill=white,textgray, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
 rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
 \end{tikzpicture}
-}
+}%this bracket closes \color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
 \end{centering}%}%no code after here
 \vspace*{\fill}
 \endgroup
@@ -227,8 +246,12 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 \begin{tikzpicture}[line width=.1mm,rounded corners=.5em]
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Tue Jul 28 18:30:38 2015
-\begin{tabular}{p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}}
+% Thu Jul 30 14:55:20 2015
+\begin{tabular}{p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth -
+                                           7\arrayrulewidth - 
+                                           12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}}
  January 2016 & February & March & April & May & June \\ 
   \hline
 01 Fri & 01 Mon & 01 Tue & 01 Fri & \cellcolor[gray]{0.95}01 Sun & 01 Wed \\ 
@@ -298,7 +321,7 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 \draw ([fill=white,textgray, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
 rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
 \end{tikzpicture}
-}
+}%this bracket closes \color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
 \end{centering}%}%no code after here
 \vspace*{\fill}
 \endgroup
@@ -317,8 +340,12 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 \begin{tikzpicture}[line width=.1mm,rounded corners=.5em]
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Tue Jul 28 18:30:38 2015
-\begin{tabular}{p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}|p{0.24\dimexpr \textwidth-3\arrayrulewidth-4\tabcolsep\relax}}
+% Thu Jul 30 14:55:20 2015
+\begin{tabular}{p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth -
+                                           7\arrayrulewidth - 
+                                           12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}|p{0.166666666666666666\dimexpr \linewidth-7\arrayrulewidth-12\tabcolsep\relax}}
  July & August & September & October & November & December \\ 
   \hline
 01 Fri & 01 Mon & 01 Thu & \cellcolor[gray]{0.95}01 Sat & 01 Tue & 01 Thu \\ 
@@ -388,7 +415,7 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 \draw ([fill=white,textgray, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
 rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
 \end{tikzpicture}
-}
+}%this bracket closes \color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
 \end{centering}%}%no code after here
 \vspace*{\fill}
 \endgroup
@@ -399,13 +426,14 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 
 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~26}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~29.06\\
 {\tcbfontsize{0.5} 
@@ -426,7 +454,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~30.06\\
 {\tcbfontsize{0.5} 
@@ -447,7 +475,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~01.07\\
 {\tcbfontsize{0.5} 
@@ -469,10 +497,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}June~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~02.07\\
 {\tcbfontsize{0.5} 
@@ -493,7 +521,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~03.07\\
 {\tcbfontsize{0.5} 
@@ -514,26 +542,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~04.07
 \tcblower
 Sunday~05.07
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~27}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~06.07\\
 {\tcbfontsize{0.5} 
@@ -554,7 +583,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~07.07\\
 {\tcbfontsize{0.5} 
@@ -575,7 +604,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~08.07\\
 {\tcbfontsize{0.5} 
@@ -597,10 +626,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}July~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~09.07\\
 {\tcbfontsize{0.5} 
@@ -621,7 +650,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~10.07\\
 {\tcbfontsize{0.5} 
@@ -642,26 +671,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~11.07
 \tcblower
 Sunday~12.07
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~28}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~13.07\\
 {\tcbfontsize{0.5} 
@@ -682,7 +712,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~14.07\\
 {\tcbfontsize{0.5} 
@@ -703,7 +733,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~15.07\\
 {\tcbfontsize{0.5} 
@@ -725,10 +755,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}July~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~16.07\\
 {\tcbfontsize{0.5} 
@@ -749,7 +779,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~17.07\\
 {\tcbfontsize{0.5} 
@@ -770,26 +800,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~18.07
 \tcblower
 Sunday~19.07
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~29}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~20.07\\
 {\tcbfontsize{0.5} 
@@ -810,7 +841,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~21.07\\
 {\tcbfontsize{0.5} 
@@ -831,7 +862,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~22.07\\
 {\tcbfontsize{0.5} 
@@ -853,10 +884,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}July~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~23.07\\
 {\tcbfontsize{0.5} 
@@ -877,7 +908,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~24.07\\
 {\tcbfontsize{0.5} 
@@ -898,26 +929,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~25.07
 \tcblower
 Sunday~26.07
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~30}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~27.07\\
 {\tcbfontsize{0.5} 
@@ -938,7 +970,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~28.07\\
 {\tcbfontsize{0.5} 
@@ -959,7 +991,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~29.07\\
 {\tcbfontsize{0.5} 
@@ -981,10 +1013,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}July~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~30.07\\
 {\tcbfontsize{0.5} 
@@ -1005,7 +1037,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~31.07\\
 {\tcbfontsize{0.5} 
@@ -1026,26 +1058,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~01.08
 \tcblower
 Sunday~02.08
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~31}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~03.08\\
 {\tcbfontsize{0.5} 
@@ -1066,7 +1099,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~04.08\\
 {\tcbfontsize{0.5} 
@@ -1087,7 +1120,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~05.08\\
 {\tcbfontsize{0.5} 
@@ -1109,10 +1142,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}August~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~06.08\\
 {\tcbfontsize{0.5} 
@@ -1133,7 +1166,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~07.08\\
 {\tcbfontsize{0.5} 
@@ -1154,26 +1187,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~08.08
 \tcblower
 Sunday~09.08
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~32}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~10.08\\
 {\tcbfontsize{0.5} 
@@ -1194,7 +1228,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~11.08\\
 {\tcbfontsize{0.5} 
@@ -1215,7 +1249,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~12.08\\
 {\tcbfontsize{0.5} 
@@ -1237,10 +1271,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}August~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~13.08\\
 {\tcbfontsize{0.5} 
@@ -1261,7 +1295,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~14.08\\
 {\tcbfontsize{0.5} 
@@ -1282,26 +1316,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~15.08
 \tcblower
 Sunday~16.08
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~33}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~17.08\\
 {\tcbfontsize{0.5} 
@@ -1322,7 +1357,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~18.08\\
 {\tcbfontsize{0.5} 
@@ -1343,7 +1378,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~19.08\\
 {\tcbfontsize{0.5} 
@@ -1365,10 +1400,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}August~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~20.08\\
 {\tcbfontsize{0.5} 
@@ -1389,7 +1424,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~21.08\\
 {\tcbfontsize{0.5} 
@@ -1410,26 +1445,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~22.08
 \tcblower
 Sunday~23.08
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~34}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~24.08\\
 {\tcbfontsize{0.5} 
@@ -1450,7 +1486,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~25.08\\
 {\tcbfontsize{0.5} 
@@ -1471,7 +1507,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~26.08\\
 {\tcbfontsize{0.5} 
@@ -1493,10 +1529,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}August~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~27.08\\
 {\tcbfontsize{0.5} 
@@ -1517,7 +1553,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~28.08\\
 {\tcbfontsize{0.5} 
@@ -1538,26 +1574,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~29.08
 \tcblower
 Sunday~30.08
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~35}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~31.08\\
 {\tcbfontsize{0.5} 
@@ -1578,7 +1615,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~01.09\\
 {\tcbfontsize{0.5} 
@@ -1599,7 +1636,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~02.09\\
 {\tcbfontsize{0.5} 
@@ -1621,10 +1658,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}August~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~03.09\\
 {\tcbfontsize{0.5} 
@@ -1645,7 +1682,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~04.09\\
 {\tcbfontsize{0.5} 
@@ -1666,26 +1703,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~05.09
 \tcblower
 Sunday~06.09
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~36}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~07.09\\
 {\tcbfontsize{0.5} 
@@ -1706,7 +1744,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~08.09\\
 {\tcbfontsize{0.5} 
@@ -1727,7 +1765,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~09.09\\
 {\tcbfontsize{0.5} 
@@ -1749,10 +1787,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}September~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~10.09\\
 {\tcbfontsize{0.5} 
@@ -1773,7 +1811,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~11.09\\
 {\tcbfontsize{0.5} 
@@ -1794,26 +1832,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~12.09
 \tcblower
 Sunday~13.09
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~37}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~14.09\\
 {\tcbfontsize{0.5} 
@@ -1834,7 +1873,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~15.09\\
 {\tcbfontsize{0.5} 
@@ -1855,7 +1894,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~16.09\\
 {\tcbfontsize{0.5} 
@@ -1877,10 +1916,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}September~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~17.09\\
 {\tcbfontsize{0.5} 
@@ -1901,7 +1940,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~18.09\\
 {\tcbfontsize{0.5} 
@@ -1922,26 +1961,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~19.09
 \tcblower
 Sunday~20.09
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~38}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~21.09\\
 {\tcbfontsize{0.5} 
@@ -1962,7 +2002,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~22.09\\
 {\tcbfontsize{0.5} 
@@ -1983,7 +2023,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~23.09\\
 {\tcbfontsize{0.5} 
@@ -2005,10 +2045,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}September~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~24.09\\
 {\tcbfontsize{0.5} 
@@ -2029,7 +2069,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~25.09\\
 {\tcbfontsize{0.5} 
@@ -2050,26 +2090,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~26.09
 \tcblower
 Sunday~27.09
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~39}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~28.09\\
 {\tcbfontsize{0.5} 
@@ -2090,7 +2131,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~29.09\\
 {\tcbfontsize{0.5} 
@@ -2111,7 +2152,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~30.09\\
 {\tcbfontsize{0.5} 
@@ -2133,10 +2174,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}September~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~01.10\\
 {\tcbfontsize{0.5} 
@@ -2157,7 +2198,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~02.10\\
 {\tcbfontsize{0.5} 
@@ -2178,26 +2219,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~03.10
 \tcblower
 Sunday~04.10
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~40}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~05.10\\
 {\tcbfontsize{0.5} 
@@ -2218,7 +2260,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~06.10\\
 {\tcbfontsize{0.5} 
@@ -2239,7 +2281,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~07.10\\
 {\tcbfontsize{0.5} 
@@ -2261,10 +2303,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}October~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~08.10\\
 {\tcbfontsize{0.5} 
@@ -2285,7 +2327,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~09.10\\
 {\tcbfontsize{0.5} 
@@ -2306,26 +2348,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~10.10
 \tcblower
 Sunday~11.10
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~41}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~12.10\\
 {\tcbfontsize{0.5} 
@@ -2346,7 +2389,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~13.10\\
 {\tcbfontsize{0.5} 
@@ -2367,7 +2410,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~14.10\\
 {\tcbfontsize{0.5} 
@@ -2389,10 +2432,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}October~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~15.10\\
 {\tcbfontsize{0.5} 
@@ -2413,7 +2456,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~16.10\\
 {\tcbfontsize{0.5} 
@@ -2434,26 +2477,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~17.10
 \tcblower
 Sunday~18.10
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~42}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~19.10\\
 {\tcbfontsize{0.5} 
@@ -2474,7 +2518,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~20.10\\
 {\tcbfontsize{0.5} 
@@ -2495,7 +2539,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~21.10\\
 {\tcbfontsize{0.5} 
@@ -2517,10 +2561,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}October~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~22.10\\
 {\tcbfontsize{0.5} 
@@ -2541,7 +2585,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~23.10\\
 {\tcbfontsize{0.5} 
@@ -2562,26 +2606,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~24.10
 \tcblower
 Sunday~25.10
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~43}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~26.10\\
 {\tcbfontsize{0.5} 
@@ -2602,7 +2647,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~27.10\\
 {\tcbfontsize{0.5} 
@@ -2623,7 +2668,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~28.10\\
 {\tcbfontsize{0.5} 
@@ -2645,10 +2690,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}October~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~29.10\\
 {\tcbfontsize{0.5} 
@@ -2669,7 +2714,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~30.10\\
 {\tcbfontsize{0.5} 
@@ -2690,26 +2735,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~31.10
 \tcblower
 Sunday~01.11
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~44}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~02.11\\
 {\tcbfontsize{0.5} 
@@ -2730,7 +2776,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~03.11\\
 {\tcbfontsize{0.5} 
@@ -2751,7 +2797,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~04.11\\
 {\tcbfontsize{0.5} 
@@ -2773,10 +2819,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}November~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~05.11\\
 {\tcbfontsize{0.5} 
@@ -2797,7 +2843,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~06.11\\
 {\tcbfontsize{0.5} 
@@ -2818,26 +2864,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~07.11
 \tcblower
 Sunday~08.11
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~45}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~09.11\\
 {\tcbfontsize{0.5} 
@@ -2858,7 +2905,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~10.11\\
 {\tcbfontsize{0.5} 
@@ -2879,7 +2926,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~11.11\\
 {\tcbfontsize{0.5} 
@@ -2901,10 +2948,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}November~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~12.11\\
 {\tcbfontsize{0.5} 
@@ -2925,7 +2972,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~13.11\\
 {\tcbfontsize{0.5} 
@@ -2946,26 +2993,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~14.11
 \tcblower
 Sunday~15.11
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~46}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~16.11\\
 {\tcbfontsize{0.5} 
@@ -2986,7 +3034,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~17.11\\
 {\tcbfontsize{0.5} 
@@ -3007,7 +3055,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~18.11\\
 {\tcbfontsize{0.5} 
@@ -3029,10 +3077,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}November~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~19.11\\
 {\tcbfontsize{0.5} 
@@ -3053,7 +3101,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~20.11\\
 {\tcbfontsize{0.5} 
@@ -3074,26 +3122,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~21.11
 \tcblower
 Sunday~22.11
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~47}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~23.11\\
 {\tcbfontsize{0.5} 
@@ -3114,7 +3163,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~24.11\\
 {\tcbfontsize{0.5} 
@@ -3135,7 +3184,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~25.11\\
 {\tcbfontsize{0.5} 
@@ -3157,10 +3206,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}November~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~26.11\\
 {\tcbfontsize{0.5} 
@@ -3181,7 +3230,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~27.11\\
 {\tcbfontsize{0.5} 
@@ -3202,26 +3251,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~28.11
 \tcblower
 Sunday~29.11
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~48}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~30.11\\
 {\tcbfontsize{0.5} 
@@ -3242,7 +3292,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~01.12\\
 {\tcbfontsize{0.5} 
@@ -3263,7 +3313,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~02.12\\
 {\tcbfontsize{0.5} 
@@ -3285,10 +3335,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}November~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~03.12\\
 {\tcbfontsize{0.5} 
@@ -3309,7 +3359,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~04.12\\
 {\tcbfontsize{0.5} 
@@ -3330,26 +3380,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~05.12
 \tcblower
 Sunday~06.12
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~49}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~07.12\\
 {\tcbfontsize{0.5} 
@@ -3370,7 +3421,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~08.12\\
 {\tcbfontsize{0.5} 
@@ -3391,7 +3442,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~09.12\\
 {\tcbfontsize{0.5} 
@@ -3413,10 +3464,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}December~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~10.12\\
 {\tcbfontsize{0.5} 
@@ -3437,7 +3488,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~11.12\\
 {\tcbfontsize{0.5} 
@@ -3458,26 +3509,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~12.12
 \tcblower
 Sunday~13.12
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~50}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~14.12\\
 {\tcbfontsize{0.5} 
@@ -3498,7 +3550,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~15.12\\
 {\tcbfontsize{0.5} 
@@ -3519,7 +3571,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~16.12\\
 {\tcbfontsize{0.5} 
@@ -3541,10 +3593,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}December~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~17.12\\
 {\tcbfontsize{0.5} 
@@ -3565,7 +3617,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~18.12\\
 {\tcbfontsize{0.5} 
@@ -3586,26 +3638,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~19.12
 \tcblower
 Sunday~20.12
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~51}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~21.12\\
 {\tcbfontsize{0.5} 
@@ -3626,7 +3679,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~22.12\\
 {\tcbfontsize{0.5} 
@@ -3647,7 +3700,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~23.12\\
 {\tcbfontsize{0.5} 
@@ -3669,10 +3722,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}December~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~24.12\\
 {\tcbfontsize{0.5} 
@@ -3693,7 +3746,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~25.12\\
 {\tcbfontsize{0.5} 
@@ -3714,26 +3767,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~26.12
 \tcblower
 Sunday~27.12
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~52}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~28.12\\
 {\tcbfontsize{0.5} 
@@ -3754,7 +3808,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~29.12\\
 {\tcbfontsize{0.5} 
@@ -3775,7 +3829,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~30.12\\
 {\tcbfontsize{0.5} 
@@ -3797,10 +3851,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}December~2015}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~31.12\\
 {\tcbfontsize{0.5} 
@@ -3821,7 +3875,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~01.01\\
 {\tcbfontsize{0.5} 
@@ -3842,26 +3896,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~02.01
 \tcblower
 Sunday~03.01
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~01}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~04.01\\
 {\tcbfontsize{0.5} 
@@ -3882,7 +3937,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~05.01\\
 {\tcbfontsize{0.5} 
@@ -3903,7 +3958,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~06.01\\
 {\tcbfontsize{0.5} 
@@ -3925,10 +3980,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}January~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~07.01\\
 {\tcbfontsize{0.5} 
@@ -3949,7 +4004,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~08.01\\
 {\tcbfontsize{0.5} 
@@ -3970,26 +4025,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~09.01
 \tcblower
 Sunday~10.01
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~02}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~11.01\\
 {\tcbfontsize{0.5} 
@@ -4010,7 +4066,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~12.01\\
 {\tcbfontsize{0.5} 
@@ -4031,7 +4087,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~13.01\\
 {\tcbfontsize{0.5} 
@@ -4053,10 +4109,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}January~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~14.01\\
 {\tcbfontsize{0.5} 
@@ -4077,7 +4133,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~15.01\\
 {\tcbfontsize{0.5} 
@@ -4098,26 +4154,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~16.01
 \tcblower
 Sunday~17.01
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~03}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~18.01\\
 {\tcbfontsize{0.5} 
@@ -4138,7 +4195,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~19.01\\
 {\tcbfontsize{0.5} 
@@ -4159,7 +4216,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~20.01\\
 {\tcbfontsize{0.5} 
@@ -4181,10 +4238,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}January~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~21.01\\
 {\tcbfontsize{0.5} 
@@ -4205,7 +4262,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~22.01\\
 {\tcbfontsize{0.5} 
@@ -4226,26 +4283,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~23.01
 \tcblower
 Sunday~24.01
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~04}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~25.01\\
 {\tcbfontsize{0.5} 
@@ -4266,7 +4324,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~26.01\\
 {\tcbfontsize{0.5} 
@@ -4287,7 +4345,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~27.01\\
 {\tcbfontsize{0.5} 
@@ -4309,10 +4367,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}January~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~28.01\\
 {\tcbfontsize{0.5} 
@@ -4333,7 +4391,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~29.01\\
 {\tcbfontsize{0.5} 
@@ -4354,26 +4412,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~30.01
 \tcblower
 Sunday~31.01
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~05}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~01.02\\
 {\tcbfontsize{0.5} 
@@ -4394,7 +4453,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~02.02\\
 {\tcbfontsize{0.5} 
@@ -4415,7 +4474,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~03.02\\
 {\tcbfontsize{0.5} 
@@ -4437,10 +4496,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}February~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~04.02\\
 {\tcbfontsize{0.5} 
@@ -4461,7 +4520,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~05.02\\
 {\tcbfontsize{0.5} 
@@ -4482,26 +4541,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~06.02
 \tcblower
 Sunday~07.02
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~06}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~08.02\\
 {\tcbfontsize{0.5} 
@@ -4522,7 +4582,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~09.02\\
 {\tcbfontsize{0.5} 
@@ -4543,7 +4603,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~10.02\\
 {\tcbfontsize{0.5} 
@@ -4565,10 +4625,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}February~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~11.02\\
 {\tcbfontsize{0.5} 
@@ -4589,7 +4649,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~12.02\\
 {\tcbfontsize{0.5} 
@@ -4610,26 +4670,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~13.02
 \tcblower
 Sunday~14.02
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~07}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~15.02\\
 {\tcbfontsize{0.5} 
@@ -4650,7 +4711,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~16.02\\
 {\tcbfontsize{0.5} 
@@ -4671,7 +4732,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~17.02\\
 {\tcbfontsize{0.5} 
@@ -4693,10 +4754,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}February~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~18.02\\
 {\tcbfontsize{0.5} 
@@ -4717,7 +4778,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~19.02\\
 {\tcbfontsize{0.5} 
@@ -4738,26 +4799,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~20.02
 \tcblower
 Sunday~21.02
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~08}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~22.02\\
 {\tcbfontsize{0.5} 
@@ -4778,7 +4840,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~23.02\\
 {\tcbfontsize{0.5} 
@@ -4799,7 +4861,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~24.02\\
 {\tcbfontsize{0.5} 
@@ -4821,10 +4883,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}February~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~25.02\\
 {\tcbfontsize{0.5} 
@@ -4845,7 +4907,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~26.02\\
 {\tcbfontsize{0.5} 
@@ -4866,26 +4928,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~27.02
 \tcblower
 Sunday~28.02
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~09}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~29.02\\
 {\tcbfontsize{0.5} 
@@ -4906,7 +4969,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~01.03\\
 {\tcbfontsize{0.5} 
@@ -4927,7 +4990,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~02.03\\
 {\tcbfontsize{0.5} 
@@ -4949,10 +5012,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}February~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~03.03\\
 {\tcbfontsize{0.5} 
@@ -4973,7 +5036,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~04.03\\
 {\tcbfontsize{0.5} 
@@ -4994,26 +5057,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~05.03
 \tcblower
 Sunday~06.03
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~10}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~07.03\\
 {\tcbfontsize{0.5} 
@@ -5034,7 +5098,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~08.03\\
 {\tcbfontsize{0.5} 
@@ -5055,7 +5119,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~09.03\\
 {\tcbfontsize{0.5} 
@@ -5077,10 +5141,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}March~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~10.03\\
 {\tcbfontsize{0.5} 
@@ -5101,7 +5165,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~11.03\\
 {\tcbfontsize{0.5} 
@@ -5122,26 +5186,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~12.03
 \tcblower
 Sunday~13.03
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~11}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~14.03\\
 {\tcbfontsize{0.5} 
@@ -5162,7 +5227,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~15.03\\
 {\tcbfontsize{0.5} 
@@ -5183,7 +5248,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~16.03\\
 {\tcbfontsize{0.5} 
@@ -5205,10 +5270,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}March~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~17.03\\
 {\tcbfontsize{0.5} 
@@ -5229,7 +5294,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~18.03\\
 {\tcbfontsize{0.5} 
@@ -5250,26 +5315,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~19.03
 \tcblower
 Sunday~20.03
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~12}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~21.03\\
 {\tcbfontsize{0.5} 
@@ -5290,7 +5356,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~22.03\\
 {\tcbfontsize{0.5} 
@@ -5311,7 +5377,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~23.03\\
 {\tcbfontsize{0.5} 
@@ -5333,10 +5399,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}March~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~24.03\\
 {\tcbfontsize{0.5} 
@@ -5357,7 +5423,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~25.03\\
 {\tcbfontsize{0.5} 
@@ -5378,26 +5444,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~26.03
 \tcblower
 Sunday~27.03
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~13}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~28.03\\
 {\tcbfontsize{0.5} 
@@ -5418,7 +5485,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~29.03\\
 {\tcbfontsize{0.5} 
@@ -5439,7 +5506,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~30.03\\
 {\tcbfontsize{0.5} 
@@ -5461,10 +5528,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}March~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~31.03\\
 {\tcbfontsize{0.5} 
@@ -5485,7 +5552,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~01.04\\
 {\tcbfontsize{0.5} 
@@ -5506,26 +5573,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~02.04
 \tcblower
 Sunday~03.04
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~14}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~04.04\\
 {\tcbfontsize{0.5} 
@@ -5546,7 +5614,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~05.04\\
 {\tcbfontsize{0.5} 
@@ -5567,7 +5635,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~06.04\\
 {\tcbfontsize{0.5} 
@@ -5589,10 +5657,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}April~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~07.04\\
 {\tcbfontsize{0.5} 
@@ -5613,7 +5681,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~08.04\\
 {\tcbfontsize{0.5} 
@@ -5634,26 +5702,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~09.04
 \tcblower
 Sunday~10.04
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~15}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~11.04\\
 {\tcbfontsize{0.5} 
@@ -5674,7 +5743,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~12.04\\
 {\tcbfontsize{0.5} 
@@ -5695,7 +5764,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~13.04\\
 {\tcbfontsize{0.5} 
@@ -5717,10 +5786,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}April~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~14.04\\
 {\tcbfontsize{0.5} 
@@ -5741,7 +5810,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~15.04\\
 {\tcbfontsize{0.5} 
@@ -5762,26 +5831,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~16.04
 \tcblower
 Sunday~17.04
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~16}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~18.04\\
 {\tcbfontsize{0.5} 
@@ -5802,7 +5872,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~19.04\\
 {\tcbfontsize{0.5} 
@@ -5823,7 +5893,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~20.04\\
 {\tcbfontsize{0.5} 
@@ -5845,10 +5915,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}April~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~21.04\\
 {\tcbfontsize{0.5} 
@@ -5869,7 +5939,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~22.04\\
 {\tcbfontsize{0.5} 
@@ -5890,26 +5960,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~23.04
 \tcblower
 Sunday~24.04
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~17}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~25.04\\
 {\tcbfontsize{0.5} 
@@ -5930,7 +6001,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~26.04\\
 {\tcbfontsize{0.5} 
@@ -5951,7 +6022,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~27.04\\
 {\tcbfontsize{0.5} 
@@ -5973,10 +6044,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}April~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~28.04\\
 {\tcbfontsize{0.5} 
@@ -5997,7 +6068,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~29.04\\
 {\tcbfontsize{0.5} 
@@ -6018,26 +6089,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~30.04
 \tcblower
 Sunday~01.05
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~18}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~02.05\\
 {\tcbfontsize{0.5} 
@@ -6058,7 +6130,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~03.05\\
 {\tcbfontsize{0.5} 
@@ -6079,7 +6151,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~04.05\\
 {\tcbfontsize{0.5} 
@@ -6101,10 +6173,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}May~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~05.05\\
 {\tcbfontsize{0.5} 
@@ -6125,7 +6197,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~06.05\\
 {\tcbfontsize{0.5} 
@@ -6146,26 +6218,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~07.05
 \tcblower
 Sunday~08.05
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~19}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~09.05\\
 {\tcbfontsize{0.5} 
@@ -6186,7 +6259,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~10.05\\
 {\tcbfontsize{0.5} 
@@ -6207,7 +6280,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~11.05\\
 {\tcbfontsize{0.5} 
@@ -6229,10 +6302,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}May~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~12.05\\
 {\tcbfontsize{0.5} 
@@ -6253,7 +6326,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~13.05\\
 {\tcbfontsize{0.5} 
@@ -6274,26 +6347,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~14.05
 \tcblower
 Sunday~15.05
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~20}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~16.05\\
 {\tcbfontsize{0.5} 
@@ -6314,7 +6388,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~17.05\\
 {\tcbfontsize{0.5} 
@@ -6335,7 +6409,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~18.05\\
 {\tcbfontsize{0.5} 
@@ -6357,10 +6431,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}May~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~19.05\\
 {\tcbfontsize{0.5} 
@@ -6381,7 +6455,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~20.05\\
 {\tcbfontsize{0.5} 
@@ -6402,26 +6476,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~21.05
 \tcblower
 Sunday~22.05
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~21}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~23.05\\
 {\tcbfontsize{0.5} 
@@ -6442,7 +6517,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~24.05\\
 {\tcbfontsize{0.5} 
@@ -6463,7 +6538,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~25.05\\
 {\tcbfontsize{0.5} 
@@ -6485,10 +6560,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}May~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~26.05\\
 {\tcbfontsize{0.5} 
@@ -6509,7 +6584,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~27.05\\
 {\tcbfontsize{0.5} 
@@ -6530,26 +6605,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~28.05
 \tcblower
 Sunday~29.05
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~22}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~30.05\\
 {\tcbfontsize{0.5} 
@@ -6570,7 +6646,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~31.05\\
 {\tcbfontsize{0.5} 
@@ -6591,7 +6667,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~01.06\\
 {\tcbfontsize{0.5} 
@@ -6613,10 +6689,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}May~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~02.06\\
 {\tcbfontsize{0.5} 
@@ -6637,7 +6713,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~03.06\\
 {\tcbfontsize{0.5} 
@@ -6658,26 +6734,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~04.06
 \tcblower
 Sunday~05.06
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~23}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~06.06\\
 {\tcbfontsize{0.5} 
@@ -6698,7 +6775,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~07.06\\
 {\tcbfontsize{0.5} 
@@ -6719,7 +6796,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~08.06\\
 {\tcbfontsize{0.5} 
@@ -6741,10 +6818,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}June~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~09.06\\
 {\tcbfontsize{0.5} 
@@ -6765,7 +6842,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~10.06\\
 {\tcbfontsize{0.5} 
@@ -6786,26 +6863,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~11.06
 \tcblower
 Sunday~12.06
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~24}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~13.06\\
 {\tcbfontsize{0.5} 
@@ -6826,7 +6904,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~14.06\\
 {\tcbfontsize{0.5} 
@@ -6847,7 +6925,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~15.06\\
 {\tcbfontsize{0.5} 
@@ -6869,10 +6947,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}June~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~16.06\\
 {\tcbfontsize{0.5} 
@@ -6893,7 +6971,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~17.06\\
 {\tcbfontsize{0.5} 
@@ -6914,26 +6992,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~18.06
 \tcblower
 Sunday~19.06
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~25}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~20.06\\
 {\tcbfontsize{0.5} 
@@ -6954,7 +7033,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~21.06\\
 {\tcbfontsize{0.5} 
@@ -6975,7 +7054,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~22.06\\
 {\tcbfontsize{0.5} 
@@ -6997,10 +7076,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}June~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~23.06\\
 {\tcbfontsize{0.5} 
@@ -7021,7 +7100,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~24.06\\
 {\tcbfontsize{0.5} 
@@ -7042,26 +7121,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~25.06
 \tcblower
 Sunday~26.06
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~26}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~27.06\\
 {\tcbfontsize{0.5} 
@@ -7082,7 +7162,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~28.06\\
 {\tcbfontsize{0.5} 
@@ -7103,7 +7183,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~29.06\\
 {\tcbfontsize{0.5} 
@@ -7125,10 +7205,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}June~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~30.06\\
 {\tcbfontsize{0.5} 
@@ -7149,7 +7229,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~01.07\\
 {\tcbfontsize{0.5} 
@@ -7170,26 +7250,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~02.07
 \tcblower
 Sunday~03.07
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~27}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~04.07\\
 {\tcbfontsize{0.5} 
@@ -7210,7 +7291,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~05.07\\
 {\tcbfontsize{0.5} 
@@ -7231,7 +7312,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~06.07\\
 {\tcbfontsize{0.5} 
@@ -7253,10 +7334,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}July~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~07.07\\
 {\tcbfontsize{0.5} 
@@ -7277,7 +7358,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~08.07\\
 {\tcbfontsize{0.5} 
@@ -7298,26 +7379,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~09.07
 \tcblower
 Sunday~10.07
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~28}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~11.07\\
 {\tcbfontsize{0.5} 
@@ -7338,7 +7420,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~12.07\\
 {\tcbfontsize{0.5} 
@@ -7359,7 +7441,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~13.07\\
 {\tcbfontsize{0.5} 
@@ -7381,10 +7463,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}July~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~14.07\\
 {\tcbfontsize{0.5} 
@@ -7405,7 +7487,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~15.07\\
 {\tcbfontsize{0.5} 
@@ -7426,26 +7508,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~16.07
 \tcblower
 Sunday~17.07
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~29}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~18.07\\
 {\tcbfontsize{0.5} 
@@ -7466,7 +7549,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~19.07\\
 {\tcbfontsize{0.5} 
@@ -7487,7 +7570,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~20.07\\
 {\tcbfontsize{0.5} 
@@ -7509,10 +7592,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}July~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~21.07\\
 {\tcbfontsize{0.5} 
@@ -7533,7 +7616,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~22.07\\
 {\tcbfontsize{0.5} 
@@ -7554,26 +7637,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~23.07
 \tcblower
 Sunday~24.07
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~30}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~25.07\\
 {\tcbfontsize{0.5} 
@@ -7594,7 +7678,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~26.07\\
 {\tcbfontsize{0.5} 
@@ -7615,7 +7699,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~27.07\\
 {\tcbfontsize{0.5} 
@@ -7637,10 +7721,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}July~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~28.07\\
 {\tcbfontsize{0.5} 
@@ -7661,7 +7745,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~29.07\\
 {\tcbfontsize{0.5} 
@@ -7682,26 +7766,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~30.07
 \tcblower
 Sunday~31.07
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~31}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~01.08\\
 {\tcbfontsize{0.5} 
@@ -7722,7 +7807,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~02.08\\
 {\tcbfontsize{0.5} 
@@ -7743,7 +7828,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~03.08\\
 {\tcbfontsize{0.5} 
@@ -7765,10 +7850,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}August~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~04.08\\
 {\tcbfontsize{0.5} 
@@ -7789,7 +7874,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~05.08\\
 {\tcbfontsize{0.5} 
@@ -7810,26 +7895,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~06.08
 \tcblower
 Sunday~07.08
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~32}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~08.08\\
 {\tcbfontsize{0.5} 
@@ -7850,7 +7936,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~09.08\\
 {\tcbfontsize{0.5} 
@@ -7871,7 +7957,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~10.08\\
 {\tcbfontsize{0.5} 
@@ -7893,10 +7979,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}August~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~11.08\\
 {\tcbfontsize{0.5} 
@@ -7917,7 +8003,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~12.08\\
 {\tcbfontsize{0.5} 
@@ -7938,26 +8024,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~13.08
 \tcblower
 Sunday~14.08
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~33}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~15.08\\
 {\tcbfontsize{0.5} 
@@ -7978,7 +8065,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~16.08\\
 {\tcbfontsize{0.5} 
@@ -7999,7 +8086,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~17.08\\
 {\tcbfontsize{0.5} 
@@ -8021,10 +8108,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}August~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~18.08\\
 {\tcbfontsize{0.5} 
@@ -8045,7 +8132,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~19.08\\
 {\tcbfontsize{0.5} 
@@ -8066,26 +8153,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~20.08
 \tcblower
 Sunday~21.08
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~34}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~22.08\\
 {\tcbfontsize{0.5} 
@@ -8106,7 +8194,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~23.08\\
 {\tcbfontsize{0.5} 
@@ -8127,7 +8215,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~24.08\\
 {\tcbfontsize{0.5} 
@@ -8149,10 +8237,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}August~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~25.08\\
 {\tcbfontsize{0.5} 
@@ -8173,7 +8261,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~26.08\\
 {\tcbfontsize{0.5} 
@@ -8194,26 +8282,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~27.08
 \tcblower
 Sunday~28.08
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~35}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~29.08\\
 {\tcbfontsize{0.5} 
@@ -8234,7 +8323,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~30.08\\
 {\tcbfontsize{0.5} 
@@ -8255,7 +8344,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~31.08\\
 {\tcbfontsize{0.5} 
@@ -8277,10 +8366,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}August~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~01.09\\
 {\tcbfontsize{0.5} 
@@ -8301,7 +8390,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~02.09\\
 {\tcbfontsize{0.5} 
@@ -8322,26 +8411,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~03.09
 \tcblower
 Sunday~04.09
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~36}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~05.09\\
 {\tcbfontsize{0.5} 
@@ -8362,7 +8452,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~06.09\\
 {\tcbfontsize{0.5} 
@@ -8383,7 +8473,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~07.09\\
 {\tcbfontsize{0.5} 
@@ -8405,10 +8495,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}September~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~08.09\\
 {\tcbfontsize{0.5} 
@@ -8429,7 +8519,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~09.09\\
 {\tcbfontsize{0.5} 
@@ -8450,26 +8540,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~10.09
 \tcblower
 Sunday~11.09
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~37}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~12.09\\
 {\tcbfontsize{0.5} 
@@ -8490,7 +8581,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~13.09\\
 {\tcbfontsize{0.5} 
@@ -8511,7 +8602,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~14.09\\
 {\tcbfontsize{0.5} 
@@ -8533,10 +8624,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}September~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~15.09\\
 {\tcbfontsize{0.5} 
@@ -8557,7 +8648,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~16.09\\
 {\tcbfontsize{0.5} 
@@ -8578,26 +8669,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~17.09
 \tcblower
 Sunday~18.09
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~38}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~19.09\\
 {\tcbfontsize{0.5} 
@@ -8618,7 +8710,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~20.09\\
 {\tcbfontsize{0.5} 
@@ -8639,7 +8731,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~21.09\\
 {\tcbfontsize{0.5} 
@@ -8661,10 +8753,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}September~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~22.09\\
 {\tcbfontsize{0.5} 
@@ -8685,7 +8777,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~23.09\\
 {\tcbfontsize{0.5} 
@@ -8706,26 +8798,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~24.09
 \tcblower
 Sunday~25.09
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~39}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~26.09\\
 {\tcbfontsize{0.5} 
@@ -8746,7 +8839,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~27.09\\
 {\tcbfontsize{0.5} 
@@ -8767,7 +8860,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~28.09\\
 {\tcbfontsize{0.5} 
@@ -8789,10 +8882,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}September~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~29.09\\
 {\tcbfontsize{0.5} 
@@ -8813,7 +8906,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~30.09\\
 {\tcbfontsize{0.5} 
@@ -8834,26 +8927,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~01.10
 \tcblower
 Sunday~02.10
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~40}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~03.10\\
 {\tcbfontsize{0.5} 
@@ -8874,7 +8968,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~04.10\\
 {\tcbfontsize{0.5} 
@@ -8895,7 +8989,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~05.10\\
 {\tcbfontsize{0.5} 
@@ -8917,10 +9011,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}October~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~06.10\\
 {\tcbfontsize{0.5} 
@@ -8941,7 +9035,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~07.10\\
 {\tcbfontsize{0.5} 
@@ -8962,26 +9056,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~08.10
 \tcblower
 Sunday~09.10
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~41}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~10.10\\
 {\tcbfontsize{0.5} 
@@ -9002,7 +9097,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~11.10\\
 {\tcbfontsize{0.5} 
@@ -9023,7 +9118,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~12.10\\
 {\tcbfontsize{0.5} 
@@ -9045,10 +9140,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}October~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~13.10\\
 {\tcbfontsize{0.5} 
@@ -9069,7 +9164,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~14.10\\
 {\tcbfontsize{0.5} 
@@ -9090,26 +9185,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~15.10
 \tcblower
 Sunday~16.10
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~42}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~17.10\\
 {\tcbfontsize{0.5} 
@@ -9130,7 +9226,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~18.10\\
 {\tcbfontsize{0.5} 
@@ -9151,7 +9247,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~19.10\\
 {\tcbfontsize{0.5} 
@@ -9173,10 +9269,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}October~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~20.10\\
 {\tcbfontsize{0.5} 
@@ -9197,7 +9293,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~21.10\\
 {\tcbfontsize{0.5} 
@@ -9218,26 +9314,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~22.10
 \tcblower
 Sunday~23.10
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~43}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~24.10\\
 {\tcbfontsize{0.5} 
@@ -9258,7 +9355,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~25.10\\
 {\tcbfontsize{0.5} 
@@ -9279,7 +9376,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~26.10\\
 {\tcbfontsize{0.5} 
@@ -9301,10 +9398,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}October~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~27.10\\
 {\tcbfontsize{0.5} 
@@ -9325,7 +9422,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~28.10\\
 {\tcbfontsize{0.5} 
@@ -9346,26 +9443,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~29.10
 \tcblower
 Sunday~30.10
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~44}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~31.10\\
 {\tcbfontsize{0.5} 
@@ -9386,7 +9484,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~01.11\\
 {\tcbfontsize{0.5} 
@@ -9407,7 +9505,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~02.11\\
 {\tcbfontsize{0.5} 
@@ -9429,10 +9527,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}October~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~03.11\\
 {\tcbfontsize{0.5} 
@@ -9453,7 +9551,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~04.11\\
 {\tcbfontsize{0.5} 
@@ -9474,26 +9572,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~05.11
 \tcblower
 Sunday~06.11
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~45}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~07.11\\
 {\tcbfontsize{0.5} 
@@ -9514,7 +9613,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~08.11\\
 {\tcbfontsize{0.5} 
@@ -9535,7 +9634,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~09.11\\
 {\tcbfontsize{0.5} 
@@ -9557,10 +9656,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}November~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~10.11\\
 {\tcbfontsize{0.5} 
@@ -9581,7 +9680,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~11.11\\
 {\tcbfontsize{0.5} 
@@ -9602,26 +9701,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~12.11
 \tcblower
 Sunday~13.11
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~46}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~14.11\\
 {\tcbfontsize{0.5} 
@@ -9642,7 +9742,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~15.11\\
 {\tcbfontsize{0.5} 
@@ -9663,7 +9763,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~16.11\\
 {\tcbfontsize{0.5} 
@@ -9685,10 +9785,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}November~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~17.11\\
 {\tcbfontsize{0.5} 
@@ -9709,7 +9809,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~18.11\\
 {\tcbfontsize{0.5} 
@@ -9730,26 +9830,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~19.11
 \tcblower
 Sunday~20.11
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~47}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~21.11\\
 {\tcbfontsize{0.5} 
@@ -9770,7 +9871,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~22.11\\
 {\tcbfontsize{0.5} 
@@ -9791,7 +9892,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~23.11\\
 {\tcbfontsize{0.5} 
@@ -9813,10 +9914,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}November~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~24.11\\
 {\tcbfontsize{0.5} 
@@ -9837,7 +9938,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~25.11\\
 {\tcbfontsize{0.5} 
@@ -9858,26 +9959,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~26.11
 \tcblower
 Sunday~27.11
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~48}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~28.11\\
 {\tcbfontsize{0.5} 
@@ -9898,7 +10000,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~29.11\\
 {\tcbfontsize{0.5} 
@@ -9919,7 +10021,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~30.11\\
 {\tcbfontsize{0.5} 
@@ -9941,10 +10043,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}November~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~01.12\\
 {\tcbfontsize{0.5} 
@@ -9965,7 +10067,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~02.12\\
 {\tcbfontsize{0.5} 
@@ -9986,26 +10088,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~03.12
 \tcblower
 Sunday~04.12
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~49}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~05.12\\
 {\tcbfontsize{0.5} 
@@ -10026,7 +10129,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~06.12\\
 {\tcbfontsize{0.5} 
@@ -10047,7 +10150,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~07.12\\
 {\tcbfontsize{0.5} 
@@ -10069,10 +10172,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}December~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~08.12\\
 {\tcbfontsize{0.5} 
@@ -10093,7 +10196,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~09.12\\
 {\tcbfontsize{0.5} 
@@ -10114,26 +10217,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~10.12
 \tcblower
 Sunday~11.12
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~50}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~12.12\\
 {\tcbfontsize{0.5} 
@@ -10154,7 +10258,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~13.12\\
 {\tcbfontsize{0.5} 
@@ -10175,7 +10279,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~14.12\\
 {\tcbfontsize{0.5} 
@@ -10197,10 +10301,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}December~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~15.12\\
 {\tcbfontsize{0.5} 
@@ -10221,7 +10325,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~16.12\\
 {\tcbfontsize{0.5} 
@@ -10242,26 +10346,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~17.12
 \tcblower
 Sunday~18.12
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~51}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~19.12\\
 {\tcbfontsize{0.5} 
@@ -10282,7 +10387,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~20.12\\
 {\tcbfontsize{0.5} 
@@ -10303,7 +10408,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~21.12\\
 {\tcbfontsize{0.5} 
@@ -10325,10 +10430,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}December~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~22.12\\
 {\tcbfontsize{0.5} 
@@ -10349,7 +10454,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~23.12\\
 {\tcbfontsize{0.5} 
@@ -10370,26 +10475,27 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~24.12
 \tcblower
 Sunday~25.12
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below, 
+%no code allowed below here, 
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~52}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 Monday~26.12\\
 {\tcbfontsize{0.5} 
@@ -10410,7 +10516,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 Tuesday~27.12\\
 {\tcbfontsize{0.5} 
@@ -10431,7 +10537,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 Wednesday~28.12\\
 {\tcbfontsize{0.5} 
@@ -10453,10 +10559,10 @@ $21^{00}$}\\
 
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}December~2016}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 Thursday~29.12\\
 {\tcbfontsize{0.5} 
@@ -10477,7 +10583,7 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 Friday~30.12\\
 {\tcbfontsize{0.5} 
@@ -10498,18 +10604,18 @@ $20^{00}$\\
 $21^{00}$}\\
 
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 Saturday~31.12
 \tcblower
 Sunday~01.01
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below
+%no code allowed below here
 
 
 \end{document}

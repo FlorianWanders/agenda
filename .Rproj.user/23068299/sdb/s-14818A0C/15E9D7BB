@@ -1,10 +1,10 @@
 {
-    "contents" : "\n\nday_start <- 7\nday_end <- 21\n\n\nhours <- day_start : day_end\nhours[hours < 10] <- paste0(\"0\",hours[hours < 10])\n\n$07^{00}$\\\\\n\npaste0(\"$\", hours, \"^{00}\\\\\")\n",
+    "contents" : "",
     "created" : 1438098585393.000,
     "dirty" : true,
     "encoding" : "",
     "folds" : "",
-    "hash" : "1563533530",
+    "hash" : "0",
     "id" : "15E9D7BB",
     "lastKnownWriteTime" : 1438028792,
     "path" : null,

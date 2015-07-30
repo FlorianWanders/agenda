@@ -1,53 +1,54 @@
 %no code above here
+% Week number
 \centering{{\color{textgray}Week~\Sexpr{weekly_df$weeks[i]}}}
 \vspace{2 mm}\\
-%
+% Settings for tcolorbox
 \tcbset{height=(\textheight-10mm)/3, fit, nobeforeafter, before=\noindent, arc=1mm,
         left=2mm,right=2mm,sidebyside,sidebyside gap=6mm,%width=\textwidth,
         colback=white, colframe=framegray, coltext=textgray}
-%
+% Monday
 \begin{tcolorbox}
 \Sexpr{weekly_df$days[i]}~\Sexpr{weekly_df$dates[i]}\\
 {\tcbfontsize{0.5} 
   \Sexpr{hours}
 \end{tcolorbox}
-%
+% Tuesday
 \begin{tcolorbox}
 \Sexpr{weekly_df$days[i+1]}~\Sexpr{weekly_df$dates[i+1]}\\
 {\tcbfontsize{0.5} 
   \Sexpr{hours}
 \end{tcolorbox}
-%
+% Wednesday
 \begin{tcolorbox}
 \Sexpr{weekly_df$days[i+2]}~\Sexpr{weekly_df$dates[i+2]}\\
 {\tcbfontsize{0.5} 
   \Sexpr{hours}
 \end{tcolorbox}
 \clearpage
-%
+% Month and Year
 \centering{{\color{textgray}\Sexpr{weekly_df$months[i]}~\Sexpr{weekly_df$years[i]}}
 \vspace{2 mm}\\
-%
+% Thursday 
 \begin{tcolorbox}
 \Sexpr{weekly_df$days[i+3]}~\Sexpr{weekly_df$dates[i+3]}\\
 {\tcbfontsize{0.5} 
   \Sexpr{hours}
 \end{tcolorbox} 
-%
+% Friday
 \begin{tcolorbox}
 \Sexpr{weekly_df$days[i+4]}~\Sexpr{weekly_df$dates[i+4]}\\
 {\tcbfontsize{0.5} 
   \Sexpr{hours}
 \end{tcolorbox} 
-%
+% Saturday and Sunday
 \begin{tcolorbox}[height=(\textheight-10mm)/6]
 \Sexpr{weekly_df$days[i+5]}~\Sexpr{weekly_df$dates[i+5]}
 \tcblower
 \Sexpr{weekly_df$days[i+6]}~\Sexpr{weekly_df$dates[i+6]}
 \end{tcolorbox} %single space required here
-%
+% Notes
 \begin{tcolorbox}[height=(\textheight-10mm)/6,sidebyside=false]
 Notes
 \end{tcolorbox}
 \clearpage
-%no code allowed below
+%no code allowed below here

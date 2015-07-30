@@ -35,6 +35,7 @@
 \usepackage{lmodern}  % or any other vector / postscript font (required by tcolorbox)
 \usepackage{fontawesomeupdated} %for fontawesome glyph icons
 \usepackage{metalogo} %for \XeLaTeX symbol
+\usepackage[hidelinks]{hyperref} %for (web)links
 
 \usepackage[most]{tcolorbox}    %for fitting text into box
 
@@ -50,7 +51,7 @@
 % https://github.com/yihui/knitr-examples/blob/master/020-for-loop.Rnw
 %https://github.com/yihui/knitr-examples/blob/master/020-for-template.rnw
 
-<<weekly, include=FALSE>>=
+<<master, include=FALSE>>=
 ################################################################################
 ## Cusomizable input ###########################################################
 ################################################################################
@@ -241,10 +242,24 @@ for (i in b) {week = c(week, knit_child('calendarChild.Rnw'))}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
+
+\begin{titlepage}
+
 \title{Agenda 2015/2016\\Created with \lsin{knitR} and \XeLaTeX} 
-\author{Florian Wanders}
+\author{\parbox{\linewidth}{%http://tex.stackexchange.com/a/63385/62746
+  \centering%
+  Florian Wanders\endgraf\bigskip
+  \href{https://github.com/FlorianWanders/agenda}{\faGithub~florianwanders/agenda}
+  }
+}
 \date{}
 \maketitle
+
+
+
+
+
+\end{titlepage}
 
 
 %\cleardoublepage%clears also headers/footers

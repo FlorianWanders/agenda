@@ -1,0 +1,819 @@
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2014.9.23)  30 JUL 2015 14:33
+entering extended mode
+**calendarChildOverview.tex
+(C:\Users\Florian\Documents\UvA\knitr\calendar1\calendarChildOverview.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 68 languages loaded.
+! Undefined control sequence.
+l.11 {\color
+            {textgray}\tiny\renewcommand{\arraystretch}{1.9}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 {\color{t
+              extgray}\tiny\renewcommand{\arraystretch}{1.9}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+! Undefined control sequence.
+l.11 {\color{textgray}\tiny
+                           \renewcommand{\arraystretch}{1.9}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \begin{tikzpicture}
+                        [line width=.1mm,rounded corners=.5em]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no ] in font nullfont!
+! Undefined control sequence.
+l.13   \node
+            (thetable) [clip,inner sep=.5\pgflinewidth] {
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ( in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+! Undefined control sequence.
+l.13 ...(thetable) [clip,inner sep=.5\pgflinewidth
+                                                  ] {
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ] in font nullfont!
+
+! LaTeX Error: Environment kframe undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \begin{kframe}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Requested font "cmtt10" at 10.0pt
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 {\ttfamily\noindent
+                        \bfseries\color{errorcolor}{\#\# Error in ifelse(wkn...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 17.
+! Undefined control sequence.
+l.17 {\ttfamily\noindent\bfseries\color
+                                       {errorcolor}{\#\# Error in ifelse(wkn...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 17.
+
+(C:/PROGRA~1/R/R-32~1.0/share/texmf/tex/latex\omscmtt.fd
+File: omscmtt.fd 
+)
+LaTeX Font Info:    Font shape `OMS/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 17.
+Requested font "cmbsy10" at 10.0pt
+
+Overfull \hbox (62.99945pt too wide) in paragraph at lines 17--18
+ \OT1/cmtt/m/n/10 errorcolor## 
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 17--18
+ \OT1/cmtt/m/n/10 Error 
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 17--18
+ \OT1/cmtt/m/n/10 in 
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 17--18
+ \OT1/cmtt/m/n/10 ifelse(wknds, 
+ []
+
+
+Overfull \hbox (138.49887pt too wide) in paragraph at lines 17--18
+ \OT1/cmtt/m/n/10 "\OMS/cmsy/b/n/10 nn\OT1/cmtt/m/n/10 cellcolor[gray]\OMS/cmsy
+/b/n/10 f\OT1/cmtt/m/n/10 0.95\OMS/cmsy/b/n/10 g\OT1/cmtt/m/n/10 ", 
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 17--18
+ \OT1/cmtt/m/n/10 ""): 
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 17--18
+ \OT1/cmtt/m/n/10 Objekt 
+ []
+
+
+Overfull \hbox (36.74968pt too wide) in paragraph at lines 17--18
+ \OT1/cmtt/m/n/10 'wknds' 
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 17--18
+ \OT1/cmtt/m/n/10 nicht 
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 17--18
+ \OT1/cmtt/m/n/10 gefunden 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 {\ttfamily\noindent
+                        \bfseries\color{errorcolor}{\#\# Error in abind(colw...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.19 {\ttfamily\noindent\bfseries\color
+                                       {errorcolor}{\#\# Error in abind(colw...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (62.99945pt too wide) in paragraph at lines 19--20
+ \OT1/cmtt/m/n/10 errorcolor## 
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 19--20
+ \OT1/cmtt/m/n/10 Error 
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 19--20
+ \OT1/cmtt/m/n/10 in 
+ []
+
+
+Overfull \hbox (83.99927pt too wide) in paragraph at lines 19--20
+ \OT1/cmtt/m/n/10 abind(colwknds[, 
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 19--20
+ \OT1/cmtt/m/n/10 i], 
+ []
+
+
+Overfull \hbox (52.49954pt too wide) in paragraph at lines 19--20
+ \OT1/cmtt/m/n/10 overview[, 
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 19--20
+ \OT1/cmtt/m/n/10 i], 
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 19--20
+ \OT1/cmtt/m/n/10 along 
+ []
+
+
+Overfull \hbox (5.24995pt too wide) in paragraph at lines 19--20
+ \OT1/cmtt/m/n/10 = 
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 19--20
+ \OT1/cmtt/m/n/10 3): 
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 19--20
+ \OT1/cmtt/m/n/10 Objekt 
+ []
+
+
+Overfull \hbox (52.49954pt too wide) in paragraph at lines 19--20
+ \OT1/cmtt/m/n/10 'colwknds' 
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 19--20
+ \OT1/cmtt/m/n/10 nicht 
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 19--20
+ \OT1/cmtt/m/n/10 gefunden 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 {\ttfamily\noindent
+                        \bfseries\color{errorcolor}{\#\# Error in apply(datA...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.21 {\ttfamily\noindent\bfseries\color
+                                       {errorcolor}{\#\# Error in apply(datA...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (62.99945pt too wide) in paragraph at lines 21--22
+ \OT1/cmtt/m/n/10 errorcolor## 
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 21--22
+ \OT1/cmtt/m/n/10 Error 
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 21--22
+ \OT1/cmtt/m/n/10 in 
+ []
+
+
+Overfull \hbox (78.74931pt too wide) in paragraph at lines 21--22
+ \OT1/cmtt/m/n/10 apply(datArray, 
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 21--22
+ \OT1/cmtt/m/n/10 1:2, 
+ []
+
+
+Overfull \hbox (57.7495pt too wide) in paragraph at lines 21--22
+ \OT1/cmtt/m/n/10 function(x) 
+ []
+
+
+Overfull \hbox (57.7495pt too wide) in paragraph at lines 21--22
+ \OT1/cmtt/m/n/10 paste(x[1], 
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 21--22
+ \OT1/cmtt/m/n/10 x[2], 
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 21--22
+ \OT1/cmtt/m/n/10 sep 
+ []
+
+
+Overfull \hbox (5.24995pt too wide) in paragraph at lines 21--22
+ \OT1/cmtt/m/n/10 = 
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 21--22
+ \OT1/cmtt/m/n/10 "")): 
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 21--22
+ \OT1/cmtt/m/n/10 Objekt 
+ []
+
+
+Overfull \hbox (52.49954pt too wide) in paragraph at lines 21--22
+ \OT1/cmtt/m/n/10 'datArray' 
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 21--22
+ \OT1/cmtt/m/n/10 nicht 
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 21--22
+ \OT1/cmtt/m/n/10 gefunden 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 {\ttfamily\noindent
+                        \bfseries\color{errorcolor}{\#\# Error in apply(over...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.23 {\ttfamily\noindent\bfseries\color
+                                       {errorcolor}{\#\# Error in apply(over...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (62.99945pt too wide) in paragraph at lines 23--24
+ \OT1/cmtt/m/n/10 errorcolor## 
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 23--24
+ \OT1/cmtt/m/n/10 Error 
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 23--24
+ \OT1/cmtt/m/n/10 in 
+ []
+
+
+Overfull \hbox (94.49918pt too wide) in paragraph at lines 23--24
+ \OT1/cmtt/m/n/10 apply(overviewcol, 
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 23--24
+ \OT1/cmtt/m/n/10 1:2, 
+ []
+
+
+Overfull \hbox (57.7495pt too wide) in paragraph at lines 23--24
+ \OT1/cmtt/m/n/10 function(x) 
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 23--24
+ \OT1/cmtt/m/n/10 ifelse(x 
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 23--24
+ \OT1/cmtt/m/n/10 == 
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 23--24
+ \OT1/cmtt/m/n/10 "NA", 
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 23--24
+ \OT1/cmtt/m/n/10 "", 
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 23--24
+ \OT1/cmtt/m/n/10 x)): 
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 23--24
+ \OT1/cmtt/m/n/10 Objekt 
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 23--24
+ \OT1/cmtt/m/n/10 'overviewcol' 
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 23--24
+ \OT1/cmtt/m/n/10 nicht 
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 23--24
+ \OT1/cmtt/m/n/10 gefunden 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 {\ttfamily\noindent
+                        \bfseries\color{errorcolor}{\#\# Error in subset(ove...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.25 {\ttfamily\noindent\bfseries\color
+                                       {errorcolor}{\#\# Error in subset(ove...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{centering} on input line 10 ended by \end{kframe}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...'overviewcol' nicht gefunden}}\end{kframe}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no ; in font nullfont!
+! Undefined control sequence.
+l.27 \draw
+           ([fill=white,textgray, xshift=.5*\pgflinewidth,yshift=-.5*\pgflin...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ( in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no * in font nullfont!
+! Undefined control sequence.
+l.27 ...ll=white,textgray, xshift=.5*\pgflinewidth
+                                                  ,yshift=-.5*\pgflinewidth]...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no * in font nullfont!
+! Undefined control sequence.
+l.27 ...=.5*\pgflinewidth,yshift=-.5*\pgflinewidth
+                                                  ]thetable.north west)
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no * in font nullfont!
+! Undefined control sequence.
+l.28 rectangle ([xshift=-.5*\pgflinewidth
+                                         ,yshift=.5*\pgflinewidth]thetable.s...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no * in font nullfont!
+! Undefined control sequence.
+l.28 ...=-.5*\pgflinewidth,yshift=.5*\pgflinewidth
+                                                  ]thetable.south east);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+! LaTeX Error: \begin{centering} on input line 10 ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \end{tikzpicture}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (62.99945pt too wide) in paragraph at lines 25--34
+\OT1/cmtt/m/n/10 errorcolor##
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 25--34
+\OT1/cmtt/m/n/10 Error
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 25--34
+\OT1/cmtt/m/n/10 in
+ []
+
+
+Overfull \hbox (99.74913pt too wide) in paragraph at lines 25--34
+\OT1/cmtt/m/n/10 subset(overviewcol,
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 25--34
+\OT1/cmtt/m/n/10 select
+ []
+
+
+Overfull \hbox (5.24995pt too wide) in paragraph at lines 25--34
+\OT1/cmtt/m/n/10 =
+ []
+
+
+Overfull \hbox (104.99908pt too wide) in paragraph at lines 25--34
+\OT1/cmtt/m/n/10 names(overview)[i]):
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 25--34
+\OT1/cmtt/m/n/10 Objekt
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 25--34
+\OT1/cmtt/m/n/10 'overviewcol'
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 25--34
+\OT1/cmtt/m/n/10 nicht
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 25--34
+\OT1/cmtt/m/n/10 gefunden
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 \newpage
+             %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1])
+! Emergency stop.
+<*> calendarChildOverview.tex
+                             
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 36 strings out of 428791
+ 604 string characters out of 3164829
+ 52673 words of memory out of 3000000
+ 3434 multiletter control sequences out of 15000+200000
+ 4063 words of font info for 16 fonts, out of 3000000 for 9000
+ 1096 hyphenation exceptions out of 8191
+ 19i,4n,14p,270b,170s stack positions out of 5000i,500n,10000p,200000b,50000s
+Output written on calendarChildOverview.pdf (1 page).
