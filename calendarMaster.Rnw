@@ -265,9 +265,14 @@ for (i in b) {week = c(week, knit_child('calendarChild.Rnw'))}
 %\cleardoublepage%clears also headers/footers
 %\raggedbottom
 
+% \begingroup
+% \let\newpage\relax
+
 \begin{landscape}
 \Sexpr{paste0(monthc)}
 \end{landscape}
+
+% \endgroup
 
 
 

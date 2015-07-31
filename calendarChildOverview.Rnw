@@ -11,7 +11,7 @@
 {\color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
 \begin{tikzpicture}[line width=.1mm,rounded corners=.5em]
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {
-  \begin{adjustbox}{totalheight=\textheight, width = \linewidth} %http://tex.stackexchange.com/a/13812/62746
+  \begin{adjustbox}{width = \linewidth, totalheight=\textheight} %http://tex.stackexchange.com/a/13812/62746
 <<echo=FALSE, results='asis', message=FALSE>>=
 library(xtable)
 library(abind)  #http://stackoverflow.com/a/6408356/4798582
@@ -37,7 +37,7 @@ overviewtable <- print(xtable(subset(overviewcol, select=names(overview)[i]),
                                        7\\arrayrulewidth
                                        -12\\tabcolsep\\relax}")),
                        #http://tex.stackexchange.com/a/150987/62746 and http://tex.stackexchange.com/a/155627/62746
-                       tabular.environment="tabular", #tabular works ####tabularx when usin gt
+                       tabular.environment="tabular", ####tabularx when usin gt
                        floating=FALSE,
                        include.rownames=FALSE,
                        sanitize.text.function = identity, #cboettig's comment on http://stackoverflow.com/a/8732785/4798582
@@ -46,12 +46,12 @@ overviewtable <- print(xtable(subset(overviewcol, select=names(overview)[i]),
                        #size="\\color{textgray}#\\tiny\\renewcommand{\\arraystretch}{1.9}") #http://tex.stackexchange.com/a/50337/62746
 @
   \end{adjustbox}
-};
+  };
 \draw ([fill=white,textgray, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
 rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
 \end{tikzpicture}
 }%this bracket closes \color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
-%\end{centering}%}%no code after here
-%\vspace*{\fill}
-%\endgroup
-\newpage%
+% %\end{centering}%}%no code after here
+% %\vspace*{\fill}
+% %\endgroup
+  \newpage%

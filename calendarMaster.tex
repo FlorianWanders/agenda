@@ -89,12 +89,12 @@
 \usepackage[most]{tcolorbox}    %for fitting text into box
 \usepackage{tikz}               %for monthly overview with rounded corners
 \usepackage{adjustbox}          % for scaling overview table to page height and width
-%\usepackage{booktabs}           %for nicer tables
+%\usepackage{booktabs}          %for nicer tables
 %\usepackage{array}
-%\usepackage{longtable}          %for multipage tables
+%\usepackage{longtable}         %for multipage tables
 %\usepackage{bigstrut}
-%\setlength\bigstrutjot{3pt}     %http://tex.stackexchange.com/a/18114/62746
-%\usepackage{tabularx}           %for tables from R
+%\setlength\bigstrutjot{3pt}    %http://tex.stackexchange.com/a/18114/62746
+%\usepackage{tabularx}          %for tables from R
 
 % Master-Child structure from: 
 % https://github.com/yihui/knitr-examples/blob/master/020-for-loop.Rnw
@@ -136,8 +136,10 @@
 %\cleardoublepage%clears also headers/footers
 %\raggedbottom
 
+% \begingroup
+% \let\newpage\relax
+
 \begin{landscape}
- \clearpage
 
 % %no code above here
 % \tcbset{nobeforeafter,
@@ -152,9 +154,9 @@
 {\color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
 \begin{tikzpicture}[line width=.1mm,rounded corners=.5em]
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {
-  \begin{adjustbox}{totalheight=\textheight, width = \linewidth} %http://tex.stackexchange.com/a/13812/62746
+  \begin{adjustbox}{width = \linewidth, totalheight=\textheight} %http://tex.stackexchange.com/a/13812/62746
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Thu Jul 30 21:02:12 2015
+% Fri Jul 31 17:22:32 2015
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
@@ -246,15 +248,15 @@
   \end{tabular}
 
   \end{adjustbox}
-};
+  };
 \draw ([fill=white,textgray, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
 rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
 \end{tikzpicture}
 }%this bracket closes \color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
-%\end{centering}%}%no code after here
-%\vspace*{\fill}
-%\endgroup
-\newpage%, 
+% %\end{centering}%}%no code after here
+% %\vspace*{\fill}
+% %\endgroup
+  \newpage%, 
 % %no code above here
 % \tcbset{nobeforeafter,
 %         before=\noindent, arc=1mm,
@@ -268,9 +270,9 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 {\color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
 \begin{tikzpicture}[line width=.1mm,rounded corners=.5em]
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {
-  \begin{adjustbox}{totalheight=\textheight, width = \linewidth} %http://tex.stackexchange.com/a/13812/62746
+  \begin{adjustbox}{width = \linewidth, totalheight=\textheight} %http://tex.stackexchange.com/a/13812/62746
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Thu Jul 30 21:02:12 2015
+% Fri Jul 31 17:22:32 2015
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
@@ -362,15 +364,15 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
   \end{tabular}
 
   \end{adjustbox}
-};
+  };
 \draw ([fill=white,textgray, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
 rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
 \end{tikzpicture}
 }%this bracket closes \color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
-%\end{centering}%}%no code after here
-%\vspace*{\fill}
-%\endgroup
-\newpage%, 
+% %\end{centering}%}%no code after here
+% %\vspace*{\fill}
+% %\endgroup
+  \newpage%, 
 % %no code above here
 % \tcbset{nobeforeafter,
 %         before=\noindent, arc=1mm,
@@ -384,9 +386,9 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 {\color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
 \begin{tikzpicture}[line width=.1mm,rounded corners=.5em]
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {
-  \begin{adjustbox}{totalheight=\textheight, width = \linewidth} %http://tex.stackexchange.com/a/13812/62746
+  \begin{adjustbox}{width = \linewidth, totalheight=\textheight} %http://tex.stackexchange.com/a/13812/62746
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Thu Jul 30 21:02:12 2015
+% Fri Jul 31 17:22:32 2015
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
@@ -478,17 +480,18 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
   \end{tabular}
 
   \end{adjustbox}
-};
+  };
 \draw ([fill=white,textgray, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
 rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
 \end{tikzpicture}
 }%this bracket closes \color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
-%\end{centering}%}%no code after here
-%\vspace*{\fill}
-%\endgroup
-\newpage%
- \clearpage
+% %\end{centering}%}%no code after here
+% %\vspace*{\fill}
+% %\endgroup
+  \newpage%
 \end{landscape}
+
+% \endgroup
 
 
 
