@@ -1,44 +1,28 @@
-% %no code above here
-% \tcbset{nobeforeafter,
-%         before=\noindent, arc=1mm,
-%         left=-1mm,right=-1mm,width=\textheight,
-%         colback=white, colframe=lightgray, coltext=textgray}
-% %
-% \begin{tcolorbox}[fit to height=\textheight]
-\vspace*{\fill}
-\begingroup
-\begin{centering}
-{\color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
-\begin{tikzpicture}[line width=.1mm,rounded corners=.5em]
-  \node(thetable) [clip,inner sep=.5\pgflinewidth] {
-<<echo=FALSE, results='asis', message=FALSE>>=
-library(xtable)
-library(abind)  #http://stackoverflow.com/a/6408356/4798582
-colwknds <- ifelse(wknds, "\\cellcolor[gray]{0.95}", "")
-#------------------------------
-datArray <- abind(colwknds[,i],overview[,i], along=3) #http://stackoverflow.com/a/6408356/4798582
-overviewcol <- apply(datArray,1:2,function(x)paste(x[1], x[2], sep=""))
-overviewcol <- apply(overviewcol, 1:2, function(x) ifelse(x=="NA","",x)) #combining data.frames has turned NA into string "NA"
-overviewtable <- print(xtable(subset(overviewcol, select=names(overview)[i]),
-                              align= c(rep("p{0.24\\dimexpr \\textwidth-3\\arrayrulewidth-4\\tabcolsep\\relax}", 2), #rownames and first line
-                                       rep("|p{0.24\\dimexpr \\textwidth-3\\arrayrulewidth-4\\tabcolsep\\relax}",length(i)-2),
-                                       "|p{0.24\\dimexpr \\textwidth-3\\arrayrulewidth-4\\tabcolsep\\relax}")),
-                       #http://tex.stackexchange.com/a/150987/62746
-                       #align= c(rep("|p{0.2\\textwidth}",length(i)),"|p{0.2\\textwidth}|")),
-                       tabular.environment="tabular", #tabularx when usin gt
-                       floating=FALSE,
-                       include.rownames=FALSE,
-                       sanitize.text.function = identity, #cboettig's comment on http://stackoverflow.com/a/8732785/4798582
-                       hline.after = c(0,1:(nrow(overview)-1)))
-                       #do not define size="..." below. define outside of table environment so that clipping with tikz works
-                       #size="\\color{textgray}#\\tiny\\renewcommand{\\arraystretch}{1.9}") #http://tex.stackexchange.com/a/50337/62746
-@
-};
-\draw ([fill=white,textgray, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
-rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
-\end{tikzpicture}
-}%end \color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
-\end{centering}%}%no code after here
-\vspace*{\fill}
-\endgroup
-\newpage%
+\documentclass[11pt,a4paper]{book} %must be first line of code
+\usepackage[most]{tcolorbox}    %for fitting text into box
+
+\begin{document}
+
+
+
+
+\tcbset{colframe=blue!50!black,colback=white,colupper=red!50!black,
+fonttitle=\bfseries,nobeforeafter,center title}
+Text \tcbox[tcbox raise base]{Hello World}\hfill
+%
+\tcbox[left=0mm,right=0mm,top=0mm,bottom=0mm,boxsep=0mm,
+toptitle=0.5mm,bottomtitle=0.5mm,title=My table]{%
+\arrayrulecolor{blue!50!black}\renewcommand{\arraystretch}{1.2}%
+\begin{tabular}{r|c|l}
+One & Two & Three \\\hline\hline
+Men & Mice & Lions \\\hline
+Upper & Middle & Lower
+\end{tabular}}\hfill
+%
+\tcbox[colback=blue!85!black,
+left=0mm,right=0mm,top=0mm,bottom=0mm,boxsep=1mm,arc=0mm,boxrule=0.5pt,
+title=My picture]{%
+\includegraphics[width=5cm]{Basilica_5.png}}
+
+
+\end{document}

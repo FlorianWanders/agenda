@@ -1,11 +1,11 @@
-\renewcommand{\arraystretch}{1.2} %increase cell height here. If added later, clipping with tikz won't work. Increasing cell height means less scaling through adjustbox, which means the font stays smaller
-\begin{adjustbox}{width = \linewidth, totalheight=\textheight}% scale table to fill height and width (width already defined with dimexpr below, but height required here)
-\begin{tikzpicture}[local bounding box=picture, baseline=(picture.south), line width=.1mm,rounded corners=.5em]  %thanks to Mark Wibrow (http://tex.stackexchange.com/a/258203/62746)
+%{\color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
+\begin{adjustbox}{width = \linewidth, totalheight=\textheight}%
+%{\tiny\renewcommand{\arraystretch}{1.9}
+\begin{tikzpicture}[local bounding box=picture, baseline=(picture.south), line width=.1mm,rounded corners=.5em]
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {%
-    \color{textgray}\tiny
 <<echo=FALSE, results='asis', message=FALSE>>=
 library(xtable)
-library(abind)
+library(abind)  #http://stackoverflow.com/a/6408356/4798582
 colwknds <- ifelse(wknds, "\\cellcolor[gray]{0.95}", "")
 #------------------------------
 datArray <- abind(colwknds[,i],overview[,i], along=3) #http://stackoverflow.com/a/6408356/4798582
@@ -32,12 +32,12 @@ overviewtable <- print(xtable(subset(overviewcol, select=names(overview)[i]),
                        floating=FALSE,
                        include.rownames=FALSE,
                        sanitize.text.function = identity, #cboettig's comment on http://stackoverflow.com/a/8732785/4798582
-                       hline.after = c(0,1:(nrow(overview)-1)))#,#)
+                       hline.after = c(0,1:(nrow(overview)-1)),#)
                        #do not define size="..." below. define outside of table environment so that clipping with tikz works
-                       #size="\\color{textgray}\\tiny\\renewcommand{\\arraystretch}{1.9}") #http://tex.stackexchange.com/a/50337/62746
+                       size="\\color{textgray}\\tiny\\renewcommand{\\arraystretch}{1.9}") #http://tex.stackexchange.com/a/50337/62746
 @
 };
-\draw [textgray]([draw=textgray, fill=white, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
+\draw ([fill=white, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
 rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
 \end{tikzpicture}
 %}

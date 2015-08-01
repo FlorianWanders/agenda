@@ -102,6 +102,8 @@
 
 
 
+
+
 \usepackage{listings} 
 \def\lsin{\lstinline[basicstyle=\ttfamily,breaklines=true,]} %for inline verbatim (knitr on title)
 
@@ -115,7 +117,6 @@
 
 
 \begin{titlepage}
-
 \title{Agenda 2015/2016\\Created with \lsin{knitR} and \XeLaTeX} 
 \author{\parbox{\linewidth}{%http://tex.stackexchange.com/a/63385/62746
   \centering%
@@ -125,38 +126,19 @@
 }
 \date{}
 \maketitle
-
-
-
-
-
 \end{titlepage}
 
 
-%\cleardoublepage%clears also headers/footers
-%\raggedbottom
-
-% \begingroup
-% \let\newpage\relax
 
 \begin{landscape}
 
-% %no code above here
-% \tcbset{nobeforeafter,
-%         before=\noindent, arc=1mm,
-%         left=-1mm,right=-1mm,width=\textheight,
-%         colback=white, colframe=lightgray, coltext=textgray}
-% %
-% \begin{tcolorbox}[fit to height=\textheight]
-% \vspace*{\fill}
-%\begingroup
-%\begin{centering}
-{\color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
-\begin{tikzpicture}[line width=.1mm,rounded corners=.5em]
-  \node(thetable) [clip,inner sep=.5\pgflinewidth] {
-  \begin{adjustbox}{width = \linewidth, totalheight=\textheight} %http://tex.stackexchange.com/a/13812/62746
+\renewcommand{\arraystretch}{1.2} %increase cell height here. If added later, clipping with tikz won't work. Increasing cell height means less scaling through adjustbox, which means the font stays smaller
+\begin{adjustbox}{width = \linewidth, totalheight=\textheight}% scale table to fill height and width (width already defined with dimexpr below, but height required here)
+\begin{tikzpicture}[local bounding box=picture, baseline=(picture.south), line width=.1mm,rounded corners=.5em]  %thanks to Mark Wibrow (http://tex.stackexchange.com/a/258203/62746)
+  \node(thetable) [clip,inner sep=.5\pgflinewidth] {%
+    \color{textgray}\tiny
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Fri Jul 31 17:22:32 2015
+% Sat Aug 01 18:58:46 2015
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
@@ -247,32 +229,20 @@
 31 Fri & 31 Mon &  & \cellcolor[gray]{0.95}31 Sat &  & 31 Thu \\ 
   \end{tabular}
 
-  \end{adjustbox}
-  };
-\draw ([fill=white,textgray, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
+};
+\draw [textgray]([draw=textgray, fill=white, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
 rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
 \end{tikzpicture}
-}%this bracket closes \color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
-% %\end{centering}%}%no code after here
-% %\vspace*{\fill}
-% %\endgroup
-  \newpage%, 
-% %no code above here
-% \tcbset{nobeforeafter,
-%         before=\noindent, arc=1mm,
-%         left=-1mm,right=-1mm,width=\textheight,
-%         colback=white, colframe=lightgray, coltext=textgray}
-% %
-% \begin{tcolorbox}[fit to height=\textheight]
-% \vspace*{\fill}
-%\begingroup
-%\begin{centering}
-{\color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
-\begin{tikzpicture}[line width=.1mm,rounded corners=.5em]
-  \node(thetable) [clip,inner sep=.5\pgflinewidth] {
-  \begin{adjustbox}{width = \linewidth, totalheight=\textheight} %http://tex.stackexchange.com/a/13812/62746
+%}
+\end{adjustbox} 
+%}%, 
+\renewcommand{\arraystretch}{1.2} %increase cell height here. If added later, clipping with tikz won't work. Increasing cell height means less scaling through adjustbox, which means the font stays smaller
+\begin{adjustbox}{width = \linewidth, totalheight=\textheight}% scale table to fill height and width (width already defined with dimexpr below, but height required here)
+\begin{tikzpicture}[local bounding box=picture, baseline=(picture.south), line width=.1mm,rounded corners=.5em]  %thanks to Mark Wibrow (http://tex.stackexchange.com/a/258203/62746)
+  \node(thetable) [clip,inner sep=.5\pgflinewidth] {%
+    \color{textgray}\tiny
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Fri Jul 31 17:22:32 2015
+% Sat Aug 01 18:58:47 2015
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
@@ -363,32 +333,20 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 \cellcolor[gray]{0.95}31 Sun &  & 31 Thu &  & 31 Tue &  \\ 
   \end{tabular}
 
-  \end{adjustbox}
-  };
-\draw ([fill=white,textgray, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
+};
+\draw [textgray]([draw=textgray, fill=white, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
 rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
 \end{tikzpicture}
-}%this bracket closes \color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
-% %\end{centering}%}%no code after here
-% %\vspace*{\fill}
-% %\endgroup
-  \newpage%, 
-% %no code above here
-% \tcbset{nobeforeafter,
-%         before=\noindent, arc=1mm,
-%         left=-1mm,right=-1mm,width=\textheight,
-%         colback=white, colframe=lightgray, coltext=textgray}
-% %
-% \begin{tcolorbox}[fit to height=\textheight]
-% \vspace*{\fill}
-%\begingroup
-%\begin{centering}
-{\color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
-\begin{tikzpicture}[line width=.1mm,rounded corners=.5em]
-  \node(thetable) [clip,inner sep=.5\pgflinewidth] {
-  \begin{adjustbox}{width = \linewidth, totalheight=\textheight} %http://tex.stackexchange.com/a/13812/62746
+%}
+\end{adjustbox} 
+%}%, 
+\renewcommand{\arraystretch}{1.2} %increase cell height here. If added later, clipping with tikz won't work. Increasing cell height means less scaling through adjustbox, which means the font stays smaller
+\begin{adjustbox}{width = \linewidth, totalheight=\textheight}% scale table to fill height and width (width already defined with dimexpr below, but height required here)
+\begin{tikzpicture}[local bounding box=picture, baseline=(picture.south), line width=.1mm,rounded corners=.5em]  %thanks to Mark Wibrow (http://tex.stackexchange.com/a/258203/62746)
+  \node(thetable) [clip,inner sep=.5\pgflinewidth] {%
+    \color{textgray}\tiny
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Fri Jul 31 17:22:32 2015
+% Sat Aug 01 18:58:47 2015
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
@@ -479,16 +437,13 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 \cellcolor[gray]{0.95}31 Sun & 31 Wed &  & 31 Mon &  & \cellcolor[gray]{0.95}31 Sat \\ 
   \end{tabular}
 
-  \end{adjustbox}
-  };
-\draw ([fill=white,textgray, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
+};
+\draw [textgray]([draw=textgray, fill=white, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
 rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
 \end{tikzpicture}
-}%this bracket closes \color{textgray}\tiny\renewcommand{\arraystretch}{1.9}
-% %\end{centering}%}%no code after here
-% %\vspace*{\fill}
-% %\endgroup
-  \newpage%
+%}
+\end{adjustbox} 
+%}%
 \end{landscape}
 
 % \endgroup
