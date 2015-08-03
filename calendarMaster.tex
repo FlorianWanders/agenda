@@ -1,5 +1,4 @@
 %fontawesomeupdated.sty and fontawesome.otf must be in same folder 
-%(not currently used but will give error otherwise)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%% Packages and Settings %%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -53,12 +52,11 @@
 \newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
 
 \usepackage{alltt} %must be first line of code
-\pagenumbering{gobble} %remove page numbers (and reset to 1)
-\pagestyle{plain}      %remove page numbers
+\pagenumbering{gobble}      %remove page numbers (and reset to 1)
+\pagestyle{plain}           %remove page numbers
 \setlength{\parindent}{0pt} %no indenting of first line
 
 \usepackage[inner=2.5cm, outer=2cm, top=2cm, bottom=2cm]{geometry}%showframe
-\usepackage{afterpage} %no blank page before landscape switch
 \usepackage{pdflscape} 
 %pdflscape only turns page, but does not ajdust frame
 %fix from http://tex.stackexchange.com/a/116521
@@ -75,8 +73,8 @@
 }%
 \makeatother
 
-%\usepackage{graphicx}           %for jpg, pdf, ...
-\usepackage{colortbl, xcolor}   %colorbtl used to highlight monthly overview
+%\usepackage{graphicx}           %for jpg, pdf, ... not used 
+\usepackage{colortbl, xcolor}    %colorbtl used to highlight monthly overview
 \definecolor{textgray}{gray}{0.40}
 \definecolor{framegray}{gray}{0.60}
 \definecolor{lightgray}{gray}{0.90}
@@ -86,18 +84,11 @@
 \usepackage{metalogo} %for \XeLaTeX symbol
 \usepackage[hidelinks]{hyperref} %for (web)links
 
-\usepackage[most]{tcolorbox}    %for fitting text into box
 \usepackage{tikz}               %for monthly overview with rounded corners
-\usepackage{adjustbox}          % for scaling overview table to page height and width
-%\usepackage{booktabs}          %for nicer tables
-%\usepackage{array}
-%\usepackage{longtable}         %for multipage tables
-%\usepackage{bigstrut}
-%\setlength\bigstrutjot{3pt}    %http://tex.stackexchange.com/a/18114/62746
-%\usepackage{tabularx}          %for tables from R
+\usepackage{adjustbox}          %for scaling overview table to page height and width
 
-
-% settings for all tcolorboxes in weekly Child
+\usepackage[most]{tcolorbox}    %for weekly overview (fitting text into box) 
+% Settings for all tcolorboxes 
 \tcbset{bicolor, colback=white, colframe=gray, coltext=gray,  arc=1mm, 
     boxsep=0pt, left=2mm,right=2mm, top=2mm, bottom=0mm, 
 		boxrule=0.1mm,
@@ -109,6 +100,7 @@
     frame hidden}
 \newtcolorbox{weekdaybox}{
 		height=(\textheight-2em)/3, 
+    %minpage set-up from http://tex.stackexchange.com/a/220141/62746
     before upper ={ \begin{minipage}[t][\dimexpr(\textheight-8em)/3\relax]{
                     \linewidth}},
     after upper = {\end{minipage}}}
@@ -125,8 +117,7 @@
 
 
 \usepackage{listings} 
-\def\lsin{\lstinline[basicstyle=\ttfamily,breaklines=true,]} %for inline verbatim (knitr on title)
-
+\def\lsin{\lstinline[basicstyle=\ttfamily,breaklines=true,]}%for inline verbatim
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -135,9 +126,15 @@
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 
-
+% Title page
 \begin{titlepage}
-\title{Agenda 2015/2016\\Created with \lsin{knitR} and \XeLaTeX} 
+\title{\parbox{\linewidth}{%http://tex.stackexchange.com/a/63385/62746
+  \centering%
+  Agenda\endgraf
+  July 2015 - December 2016\endgraf\bigskip
+  Created with \lsin{knitR} and \XeLaTeX
+  }
+}
 \author{\parbox{\linewidth}{%http://tex.stackexchange.com/a/63385/62746
   \centering%
   Florian Wanders\endgraf\bigskip
@@ -148,8 +145,7 @@
 \maketitle
 \end{titlepage}
 
-
-
+% Monthly overview
 \begin{landscape}
 
 \renewcommand{\arraystretch}{1.2} %increase cell height here. If added later, clipping with tikz won't work. Increasing cell height means less scaling through adjustbox, which means the font stays smaller
@@ -158,7 +154,7 @@
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {%
     \color{textgray}\tiny
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Mon Aug 03 15:13:25 2015
+% Mon Aug 03 16:50:16 2015
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
@@ -184,69 +180,69 @@
                                        \linewidth - 
                                        7\arrayrulewidth
                                        -12\tabcolsep\relax}}
- July & August & September & October & November & December \\ 
+ July 2015 & August & September & October & November & December \\ 
   \hline
 01 Wed & \cellcolor[gray]{0.95}01 Sat & 01 Tue & 01 Thu & \cellcolor[gray]{0.95}01 Sun & 01 Tue \\ 
    \hline
-02 Thu & \cellcolor[gray]{0.95}02 Sun & 02 Wed & 02 Fri & 02 Mon & 02 Wed \\ 
+02 Thu & \cellcolor[gray]{0.95}02 Sun & 02 Wed & 02 Fri & 02 Mon \hfill 44 & 02 Wed \\ 
    \hline
-03 Fri & 03 Mon & 03 Thu & \cellcolor[gray]{0.95}03 Sat & 03 Tue & 03 Thu \\ 
+03 Fri & 03 Mon \hfill 31 & 03 Thu & \cellcolor[gray]{0.95}03 Sat & 03 Tue & 03 Thu \\ 
    \hline
 \cellcolor[gray]{0.95}04 Sat & 04 Tue & 04 Fri & \cellcolor[gray]{0.95}04 Sun & 04 Wed & 04 Fri \\ 
    \hline
-\cellcolor[gray]{0.95}05 Sun & 05 Wed & \cellcolor[gray]{0.95}05 Sat & 05 Mon & 05 Thu & \cellcolor[gray]{0.95}05 Sat \\ 
+\cellcolor[gray]{0.95}05 Sun & 05 Wed & \cellcolor[gray]{0.95}05 Sat & 05 Mon \hfill 40 & 05 Thu & \cellcolor[gray]{0.95}05 Sat \\ 
    \hline
-06 Mon & 06 Thu & \cellcolor[gray]{0.95}06 Sun & 06 Tue & 06 Fri & \cellcolor[gray]{0.95}06 Sun \\ 
+06 Mon \hfill 27 & 06 Thu & \cellcolor[gray]{0.95}06 Sun & 06 Tue & 06 Fri & \cellcolor[gray]{0.95}06 Sun \\ 
    \hline
-07 Tue & 07 Fri & 07 Mon & 07 Wed & \cellcolor[gray]{0.95}07 Sat & 07 Mon \\ 
+07 Tue & 07 Fri & 07 Mon \hfill 36 & 07 Wed & \cellcolor[gray]{0.95}07 Sat & 07 Mon \hfill 49 \\ 
    \hline
 08 Wed & \cellcolor[gray]{0.95}08 Sat & 08 Tue & 08 Thu & \cellcolor[gray]{0.95}08 Sun & 08 Tue \\ 
    \hline
-09 Thu & \cellcolor[gray]{0.95}09 Sun & 09 Wed & 09 Fri & 09 Mon & 09 Wed \\ 
+09 Thu & \cellcolor[gray]{0.95}09 Sun & 09 Wed & 09 Fri & 09 Mon \hfill 45 & 09 Wed \\ 
    \hline
-10 Fri & 10 Mon & 10 Thu & \cellcolor[gray]{0.95}10 Sat & 10 Tue & 10 Thu \\ 
+10 Fri & 10 Mon \hfill 32 & 10 Thu & \cellcolor[gray]{0.95}10 Sat & 10 Tue & 10 Thu \\ 
    \hline
 \cellcolor[gray]{0.95}11 Sat & 11 Tue & 11 Fri & \cellcolor[gray]{0.95}11 Sun & 11 Wed & 11 Fri \\ 
    \hline
-\cellcolor[gray]{0.95}12 Sun & 12 Wed & \cellcolor[gray]{0.95}12 Sat & 12 Mon & 12 Thu & \cellcolor[gray]{0.95}12 Sat \\ 
+\cellcolor[gray]{0.95}12 Sun & 12 Wed & \cellcolor[gray]{0.95}12 Sat & 12 Mon \hfill 41 & 12 Thu & \cellcolor[gray]{0.95}12 Sat \\ 
    \hline
-13 Mon & 13 Thu & \cellcolor[gray]{0.95}13 Sun & 13 Tue & 13 Fri & \cellcolor[gray]{0.95}13 Sun \\ 
+13 Mon \hfill 28 & 13 Thu & \cellcolor[gray]{0.95}13 Sun & 13 Tue & 13 Fri & \cellcolor[gray]{0.95}13 Sun \\ 
    \hline
-14 Tue & 14 Fri & 14 Mon & 14 Wed & \cellcolor[gray]{0.95}14 Sat & 14 Mon \\ 
+14 Tue & 14 Fri & 14 Mon \hfill 37 & 14 Wed & \cellcolor[gray]{0.95}14 Sat & 14 Mon \hfill 50 \\ 
    \hline
 15 Wed & \cellcolor[gray]{0.95}15 Sat & 15 Tue & 15 Thu & \cellcolor[gray]{0.95}15 Sun & 15 Tue \\ 
    \hline
-16 Thu & \cellcolor[gray]{0.95}16 Sun & 16 Wed & 16 Fri & 16 Mon & 16 Wed \\ 
+16 Thu & \cellcolor[gray]{0.95}16 Sun & 16 Wed & 16 Fri & 16 Mon \hfill 46 & 16 Wed \\ 
    \hline
-17 Fri & 17 Mon & 17 Thu & \cellcolor[gray]{0.95}17 Sat & 17 Tue & 17 Thu \\ 
+17 Fri & 17 Mon \hfill 33 & 17 Thu & \cellcolor[gray]{0.95}17 Sat & 17 Tue & 17 Thu \\ 
    \hline
 \cellcolor[gray]{0.95}18 Sat & 18 Tue & 18 Fri & \cellcolor[gray]{0.95}18 Sun & 18 Wed & 18 Fri \\ 
    \hline
-\cellcolor[gray]{0.95}19 Sun & 19 Wed & \cellcolor[gray]{0.95}19 Sat & 19 Mon & 19 Thu & \cellcolor[gray]{0.95}19 Sat \\ 
+\cellcolor[gray]{0.95}19 Sun & 19 Wed & \cellcolor[gray]{0.95}19 Sat & 19 Mon \hfill 42 & 19 Thu & \cellcolor[gray]{0.95}19 Sat \\ 
    \hline
-20 Mon & 20 Thu & \cellcolor[gray]{0.95}20 Sun & 20 Tue & 20 Fri & \cellcolor[gray]{0.95}20 Sun \\ 
+20 Mon \hfill 29 & 20 Thu & \cellcolor[gray]{0.95}20 Sun & 20 Tue & 20 Fri & \cellcolor[gray]{0.95}20 Sun \\ 
    \hline
-21 Tue & 21 Fri & 21 Mon & 21 Wed & \cellcolor[gray]{0.95}21 Sat & 21 Mon \\ 
+21 Tue & 21 Fri & 21 Mon \hfill 38 & 21 Wed & \cellcolor[gray]{0.95}21 Sat & 21 Mon \hfill 51 \\ 
    \hline
 22 Wed & \cellcolor[gray]{0.95}22 Sat & 22 Tue & 22 Thu & \cellcolor[gray]{0.95}22 Sun & 22 Tue \\ 
    \hline
-23 Thu & \cellcolor[gray]{0.95}23 Sun & 23 Wed & 23 Fri & 23 Mon & 23 Wed \\ 
+23 Thu & \cellcolor[gray]{0.95}23 Sun & 23 Wed & 23 Fri & 23 Mon \hfill 47 & 23 Wed \\ 
    \hline
-24 Fri & 24 Mon & 24 Thu & \cellcolor[gray]{0.95}24 Sat & 24 Tue & 24 Thu \\ 
+24 Fri & 24 Mon \hfill 34 & 24 Thu & \cellcolor[gray]{0.95}24 Sat & 24 Tue & 24 Thu \\ 
    \hline
 \cellcolor[gray]{0.95}25 Sat & 25 Tue & 25 Fri & \cellcolor[gray]{0.95}25 Sun & 25 Wed & 25 Fri \\ 
    \hline
-\cellcolor[gray]{0.95}26 Sun & 26 Wed & \cellcolor[gray]{0.95}26 Sat & 26 Mon & 26 Thu & \cellcolor[gray]{0.95}26 Sat \\ 
+\cellcolor[gray]{0.95}26 Sun & 26 Wed & \cellcolor[gray]{0.95}26 Sat & 26 Mon \hfill 43 & 26 Thu & \cellcolor[gray]{0.95}26 Sat \\ 
    \hline
-27 Mon & 27 Thu & \cellcolor[gray]{0.95}27 Sun & 27 Tue & 27 Fri & \cellcolor[gray]{0.95}27 Sun \\ 
+27 Mon \hfill 30 & 27 Thu & \cellcolor[gray]{0.95}27 Sun & 27 Tue & 27 Fri & \cellcolor[gray]{0.95}27 Sun \\ 
    \hline
-28 Tue & 28 Fri & 28 Mon & 28 Wed & \cellcolor[gray]{0.95}28 Sat & 28 Mon \\ 
+28 Tue & 28 Fri & 28 Mon \hfill 39 & 28 Wed & \cellcolor[gray]{0.95}28 Sat & 28 Mon \hfill 52 \\ 
    \hline
 29 Wed & \cellcolor[gray]{0.95}29 Sat & 29 Tue & 29 Thu & \cellcolor[gray]{0.95}29 Sun & 29 Tue \\ 
    \hline
-30 Thu & \cellcolor[gray]{0.95}30 Sun & 30 Wed & 30 Fri & 30 Mon & 30 Wed \\ 
+30 Thu & \cellcolor[gray]{0.95}30 Sun & 30 Wed & 30 Fri & 30 Mon \hfill 48 & 30 Wed \\ 
    \hline
-31 Fri & 31 Mon &  & \cellcolor[gray]{0.95}31 Sat &  & 31 Thu \\ 
+31 Fri & 31 Mon \hfill 35 &  & \cellcolor[gray]{0.95}31 Sat &  & 31 Thu \\ 
   \end{tabular}
 
 };
@@ -262,7 +258,7 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {%
     \color{textgray}\tiny
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Mon Aug 03 15:13:25 2015
+% Mon Aug 03 16:50:16 2015
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
@@ -290,65 +286,65 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
                                        -12\tabcolsep\relax}}
  January 2016 & February & March & April & May & June \\ 
   \hline
-01 Fri & 01 Mon & 01 Tue & 01 Fri & \cellcolor[gray]{0.95}01 Sun & 01 Wed \\ 
+01 Fri & 01 Mon \hfill 05 & 01 Tue & 01 Fri & \cellcolor[gray]{0.95}01 Sun & 01 Wed \\ 
    \hline
-\cellcolor[gray]{0.95}02 Sat & 02 Tue & 02 Wed & \cellcolor[gray]{0.95}02 Sat & 02 Mon & 02 Thu \\ 
+\cellcolor[gray]{0.95}02 Sat & 02 Tue & 02 Wed & \cellcolor[gray]{0.95}02 Sat & 02 Mon \hfill 18 & 02 Thu \\ 
    \hline
 \cellcolor[gray]{0.95}03 Sun & 03 Wed & 03 Thu & \cellcolor[gray]{0.95}03 Sun & 03 Tue & 03 Fri \\ 
    \hline
-04 Mon & 04 Thu & 04 Fri & 04 Mon & 04 Wed & \cellcolor[gray]{0.95}04 Sat \\ 
+04 Mon \hfill 01 & 04 Thu & 04 Fri & 04 Mon \hfill 14 & 04 Wed & \cellcolor[gray]{0.95}04 Sat \\ 
    \hline
 05 Tue & 05 Fri & \cellcolor[gray]{0.95}05 Sat & 05 Tue & 05 Thu & \cellcolor[gray]{0.95}05 Sun \\ 
    \hline
-06 Wed & \cellcolor[gray]{0.95}06 Sat & \cellcolor[gray]{0.95}06 Sun & 06 Wed & 06 Fri & 06 Mon \\ 
+06 Wed & \cellcolor[gray]{0.95}06 Sat & \cellcolor[gray]{0.95}06 Sun & 06 Wed & 06 Fri & 06 Mon \hfill 23 \\ 
    \hline
-07 Thu & \cellcolor[gray]{0.95}07 Sun & 07 Mon & 07 Thu & \cellcolor[gray]{0.95}07 Sat & 07 Tue \\ 
+07 Thu & \cellcolor[gray]{0.95}07 Sun & 07 Mon \hfill 10 & 07 Thu & \cellcolor[gray]{0.95}07 Sat & 07 Tue \\ 
    \hline
-08 Fri & 08 Mon & 08 Tue & 08 Fri & \cellcolor[gray]{0.95}08 Sun & 08 Wed \\ 
+08 Fri & 08 Mon \hfill 06 & 08 Tue & 08 Fri & \cellcolor[gray]{0.95}08 Sun & 08 Wed \\ 
    \hline
-\cellcolor[gray]{0.95}09 Sat & 09 Tue & 09 Wed & \cellcolor[gray]{0.95}09 Sat & 09 Mon & 09 Thu \\ 
+\cellcolor[gray]{0.95}09 Sat & 09 Tue & 09 Wed & \cellcolor[gray]{0.95}09 Sat & 09 Mon \hfill 19 & 09 Thu \\ 
    \hline
 \cellcolor[gray]{0.95}10 Sun & 10 Wed & 10 Thu & \cellcolor[gray]{0.95}10 Sun & 10 Tue & 10 Fri \\ 
    \hline
-11 Mon & 11 Thu & 11 Fri & 11 Mon & 11 Wed & \cellcolor[gray]{0.95}11 Sat \\ 
+11 Mon \hfill 02 & 11 Thu & 11 Fri & 11 Mon \hfill 15 & 11 Wed & \cellcolor[gray]{0.95}11 Sat \\ 
    \hline
 12 Tue & 12 Fri & \cellcolor[gray]{0.95}12 Sat & 12 Tue & 12 Thu & \cellcolor[gray]{0.95}12 Sun \\ 
    \hline
-13 Wed & \cellcolor[gray]{0.95}13 Sat & \cellcolor[gray]{0.95}13 Sun & 13 Wed & 13 Fri & 13 Mon \\ 
+13 Wed & \cellcolor[gray]{0.95}13 Sat & \cellcolor[gray]{0.95}13 Sun & 13 Wed & 13 Fri & 13 Mon \hfill 24 \\ 
    \hline
-14 Thu & \cellcolor[gray]{0.95}14 Sun & 14 Mon & 14 Thu & \cellcolor[gray]{0.95}14 Sat & 14 Tue \\ 
+14 Thu & \cellcolor[gray]{0.95}14 Sun & 14 Mon \hfill 11 & 14 Thu & \cellcolor[gray]{0.95}14 Sat & 14 Tue \\ 
    \hline
-15 Fri & 15 Mon & 15 Tue & 15 Fri & \cellcolor[gray]{0.95}15 Sun & 15 Wed \\ 
+15 Fri & 15 Mon \hfill 07 & 15 Tue & 15 Fri & \cellcolor[gray]{0.95}15 Sun & 15 Wed \\ 
    \hline
-\cellcolor[gray]{0.95}16 Sat & 16 Tue & 16 Wed & \cellcolor[gray]{0.95}16 Sat & 16 Mon & 16 Thu \\ 
+\cellcolor[gray]{0.95}16 Sat & 16 Tue & 16 Wed & \cellcolor[gray]{0.95}16 Sat & 16 Mon \hfill 20 & 16 Thu \\ 
    \hline
 \cellcolor[gray]{0.95}17 Sun & 17 Wed & 17 Thu & \cellcolor[gray]{0.95}17 Sun & 17 Tue & 17 Fri \\ 
    \hline
-18 Mon & 18 Thu & 18 Fri & 18 Mon & 18 Wed & \cellcolor[gray]{0.95}18 Sat \\ 
+18 Mon \hfill 03 & 18 Thu & 18 Fri & 18 Mon \hfill 16 & 18 Wed & \cellcolor[gray]{0.95}18 Sat \\ 
    \hline
 19 Tue & 19 Fri & \cellcolor[gray]{0.95}19 Sat & 19 Tue & 19 Thu & \cellcolor[gray]{0.95}19 Sun \\ 
    \hline
-20 Wed & \cellcolor[gray]{0.95}20 Sat & \cellcolor[gray]{0.95}20 Sun & 20 Wed & 20 Fri & 20 Mon \\ 
+20 Wed & \cellcolor[gray]{0.95}20 Sat & \cellcolor[gray]{0.95}20 Sun & 20 Wed & 20 Fri & 20 Mon \hfill 25 \\ 
    \hline
-21 Thu & \cellcolor[gray]{0.95}21 Sun & 21 Mon & 21 Thu & \cellcolor[gray]{0.95}21 Sat & 21 Tue \\ 
+21 Thu & \cellcolor[gray]{0.95}21 Sun & 21 Mon \hfill 12 & 21 Thu & \cellcolor[gray]{0.95}21 Sat & 21 Tue \\ 
    \hline
-22 Fri & 22 Mon & 22 Tue & 22 Fri & \cellcolor[gray]{0.95}22 Sun & 22 Wed \\ 
+22 Fri & 22 Mon \hfill 08 & 22 Tue & 22 Fri & \cellcolor[gray]{0.95}22 Sun & 22 Wed \\ 
    \hline
-\cellcolor[gray]{0.95}23 Sat & 23 Tue & 23 Wed & \cellcolor[gray]{0.95}23 Sat & 23 Mon & 23 Thu \\ 
+\cellcolor[gray]{0.95}23 Sat & 23 Tue & 23 Wed & \cellcolor[gray]{0.95}23 Sat & 23 Mon \hfill 21 & 23 Thu \\ 
    \hline
 \cellcolor[gray]{0.95}24 Sun & 24 Wed & 24 Thu & \cellcolor[gray]{0.95}24 Sun & 24 Tue & 24 Fri \\ 
    \hline
-25 Mon & 25 Thu & 25 Fri & 25 Mon & 25 Wed & \cellcolor[gray]{0.95}25 Sat \\ 
+25 Mon \hfill 04 & 25 Thu & 25 Fri & 25 Mon \hfill 17 & 25 Wed & \cellcolor[gray]{0.95}25 Sat \\ 
    \hline
 26 Tue & 26 Fri & \cellcolor[gray]{0.95}26 Sat & 26 Tue & 26 Thu & \cellcolor[gray]{0.95}26 Sun \\ 
    \hline
-27 Wed & \cellcolor[gray]{0.95}27 Sat & \cellcolor[gray]{0.95}27 Sun & 27 Wed & 27 Fri & 27 Mon \\ 
+27 Wed & \cellcolor[gray]{0.95}27 Sat & \cellcolor[gray]{0.95}27 Sun & 27 Wed & 27 Fri & 27 Mon \hfill 26 \\ 
    \hline
-28 Thu & \cellcolor[gray]{0.95}28 Sun & 28 Mon & 28 Thu & \cellcolor[gray]{0.95}28 Sat & 28 Tue \\ 
+28 Thu & \cellcolor[gray]{0.95}28 Sun & 28 Mon \hfill 13 & 28 Thu & \cellcolor[gray]{0.95}28 Sat & 28 Tue \\ 
    \hline
-29 Fri & 29 Mon & 29 Tue & 29 Fri & \cellcolor[gray]{0.95}29 Sun & 29 Wed \\ 
+29 Fri & 29 Mon \hfill 09 & 29 Tue & 29 Fri & \cellcolor[gray]{0.95}29 Sun & 29 Wed \\ 
    \hline
-\cellcolor[gray]{0.95}30 Sat &  & 30 Wed & \cellcolor[gray]{0.95}30 Sat & 30 Mon & 30 Thu \\ 
+\cellcolor[gray]{0.95}30 Sat &  & 30 Wed & \cellcolor[gray]{0.95}30 Sat & 30 Mon \hfill 22 & 30 Thu \\ 
    \hline
 \cellcolor[gray]{0.95}31 Sun &  & 31 Thu &  & 31 Tue &  \\ 
   \end{tabular}
@@ -366,7 +362,7 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {%
     \color{textgray}\tiny
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Mon Aug 03 15:13:25 2015
+% Mon Aug 03 16:50:16 2015
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
@@ -394,67 +390,67 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
                                        -12\tabcolsep\relax}}
  July & August & September & October & November & December \\ 
   \hline
-01 Fri & 01 Mon & 01 Thu & \cellcolor[gray]{0.95}01 Sat & 01 Tue & 01 Thu \\ 
+01 Fri & 01 Mon \hfill 31 & 01 Thu & \cellcolor[gray]{0.95}01 Sat & 01 Tue & 01 Thu \\ 
    \hline
 \cellcolor[gray]{0.95}02 Sat & 02 Tue & 02 Fri & \cellcolor[gray]{0.95}02 Sun & 02 Wed & 02 Fri \\ 
    \hline
-\cellcolor[gray]{0.95}03 Sun & 03 Wed & \cellcolor[gray]{0.95}03 Sat & 03 Mon & 03 Thu & \cellcolor[gray]{0.95}03 Sat \\ 
+\cellcolor[gray]{0.95}03 Sun & 03 Wed & \cellcolor[gray]{0.95}03 Sat & 03 Mon \hfill 41 & 03 Thu & \cellcolor[gray]{0.95}03 Sat \\ 
    \hline
-04 Mon & 04 Thu & \cellcolor[gray]{0.95}04 Sun & 04 Tue & 04 Fri & \cellcolor[gray]{0.95}04 Sun \\ 
+04 Mon \hfill 27 & 04 Thu & \cellcolor[gray]{0.95}04 Sun & 04 Tue & 04 Fri & \cellcolor[gray]{0.95}04 Sun \\ 
    \hline
-05 Tue & 05 Fri & 05 Mon & 05 Wed & \cellcolor[gray]{0.95}05 Sat & 05 Mon \\ 
+05 Tue & 05 Fri & 05 Mon \hfill 36 & 05 Wed & \cellcolor[gray]{0.95}05 Sat & 05 Mon \hfill 50 \\ 
    \hline
 06 Wed & \cellcolor[gray]{0.95}06 Sat & 06 Tue & 06 Thu & \cellcolor[gray]{0.95}06 Sun & 06 Tue \\ 
    \hline
-07 Thu & \cellcolor[gray]{0.95}07 Sun & 07 Wed & 07 Fri & 07 Mon & 07 Wed \\ 
+07 Thu & \cellcolor[gray]{0.95}07 Sun & 07 Wed & 07 Fri & 07 Mon \hfill 46 & 07 Wed \\ 
    \hline
-08 Fri & 08 Mon & 08 Thu & \cellcolor[gray]{0.95}08 Sat & 08 Tue & 08 Thu \\ 
+08 Fri & 08 Mon \hfill 32 & 08 Thu & \cellcolor[gray]{0.95}08 Sat & 08 Tue & 08 Thu \\ 
    \hline
 \cellcolor[gray]{0.95}09 Sat & 09 Tue & 09 Fri & \cellcolor[gray]{0.95}09 Sun & 09 Wed & 09 Fri \\ 
    \hline
-\cellcolor[gray]{0.95}10 Sun & 10 Wed & \cellcolor[gray]{0.95}10 Sat & 10 Mon & 10 Thu & \cellcolor[gray]{0.95}10 Sat \\ 
+\cellcolor[gray]{0.95}10 Sun & 10 Wed & \cellcolor[gray]{0.95}10 Sat & 10 Mon \hfill 42 & 10 Thu & \cellcolor[gray]{0.95}10 Sat \\ 
    \hline
-11 Mon & 11 Thu & \cellcolor[gray]{0.95}11 Sun & 11 Tue & 11 Fri & \cellcolor[gray]{0.95}11 Sun \\ 
+11 Mon \hfill 28 & 11 Thu & \cellcolor[gray]{0.95}11 Sun & 11 Tue & 11 Fri & \cellcolor[gray]{0.95}11 Sun \\ 
    \hline
-12 Tue & 12 Fri & 12 Mon & 12 Wed & \cellcolor[gray]{0.95}12 Sat & 12 Mon \\ 
+12 Tue & 12 Fri & 12 Mon \hfill 37 & 12 Wed & \cellcolor[gray]{0.95}12 Sat & 12 Mon \hfill 51 \\ 
    \hline
 13 Wed & \cellcolor[gray]{0.95}13 Sat & 13 Tue & 13 Thu & \cellcolor[gray]{0.95}13 Sun & 13 Tue \\ 
    \hline
-14 Thu & \cellcolor[gray]{0.95}14 Sun & 14 Wed & 14 Fri & 14 Mon & 14 Wed \\ 
+14 Thu & \cellcolor[gray]{0.95}14 Sun & 14 Wed & 14 Fri & 14 Mon \hfill 47 & 14 Wed \\ 
    \hline
-15 Fri & 15 Mon & 15 Thu & \cellcolor[gray]{0.95}15 Sat & 15 Tue & 15 Thu \\ 
+15 Fri & 15 Mon \hfill 33 & 15 Thu & \cellcolor[gray]{0.95}15 Sat & 15 Tue & 15 Thu \\ 
    \hline
 \cellcolor[gray]{0.95}16 Sat & 16 Tue & 16 Fri & \cellcolor[gray]{0.95}16 Sun & 16 Wed & 16 Fri \\ 
    \hline
-\cellcolor[gray]{0.95}17 Sun & 17 Wed & \cellcolor[gray]{0.95}17 Sat & 17 Mon & 17 Thu & \cellcolor[gray]{0.95}17 Sat \\ 
+\cellcolor[gray]{0.95}17 Sun & 17 Wed & \cellcolor[gray]{0.95}17 Sat & 17 Mon \hfill 43 & 17 Thu & \cellcolor[gray]{0.95}17 Sat \\ 
    \hline
-18 Mon & 18 Thu & \cellcolor[gray]{0.95}18 Sun & 18 Tue & 18 Fri & \cellcolor[gray]{0.95}18 Sun \\ 
+18 Mon \hfill 29 & 18 Thu & \cellcolor[gray]{0.95}18 Sun & 18 Tue & 18 Fri & \cellcolor[gray]{0.95}18 Sun \\ 
    \hline
-19 Tue & 19 Fri & 19 Mon & 19 Wed & \cellcolor[gray]{0.95}19 Sat & 19 Mon \\ 
+19 Tue & 19 Fri & 19 Mon \hfill 38 & 19 Wed & \cellcolor[gray]{0.95}19 Sat & 19 Mon \hfill 52 \\ 
    \hline
 20 Wed & \cellcolor[gray]{0.95}20 Sat & 20 Tue & 20 Thu & \cellcolor[gray]{0.95}20 Sun & 20 Tue \\ 
    \hline
-21 Thu & \cellcolor[gray]{0.95}21 Sun & 21 Wed & 21 Fri & 21 Mon & 21 Wed \\ 
+21 Thu & \cellcolor[gray]{0.95}21 Sun & 21 Wed & 21 Fri & 21 Mon \hfill 48 & 21 Wed \\ 
    \hline
-22 Fri & 22 Mon & 22 Thu & \cellcolor[gray]{0.95}22 Sat & 22 Tue & 22 Thu \\ 
+22 Fri & 22 Mon \hfill 34 & 22 Thu & \cellcolor[gray]{0.95}22 Sat & 22 Tue & 22 Thu \\ 
    \hline
 \cellcolor[gray]{0.95}23 Sat & 23 Tue & 23 Fri & \cellcolor[gray]{0.95}23 Sun & 23 Wed & 23 Fri \\ 
    \hline
-\cellcolor[gray]{0.95}24 Sun & 24 Wed & \cellcolor[gray]{0.95}24 Sat & 24 Mon & 24 Thu & \cellcolor[gray]{0.95}24 Sat \\ 
+\cellcolor[gray]{0.95}24 Sun & 24 Wed & \cellcolor[gray]{0.95}24 Sat & 24 Mon \hfill 44 & 24 Thu & \cellcolor[gray]{0.95}24 Sat \\ 
    \hline
-25 Mon & 25 Thu & \cellcolor[gray]{0.95}25 Sun & 25 Tue & 25 Fri & \cellcolor[gray]{0.95}25 Sun \\ 
+25 Mon \hfill 30 & 25 Thu & \cellcolor[gray]{0.95}25 Sun & 25 Tue & 25 Fri & \cellcolor[gray]{0.95}25 Sun \\ 
    \hline
-26 Tue & 26 Fri & 26 Mon & 26 Wed & \cellcolor[gray]{0.95}26 Sat & 26 Mon \\ 
+26 Tue & 26 Fri & 26 Mon \hfill 39 & 26 Wed & \cellcolor[gray]{0.95}26 Sat & 26 Mon \hfill 26 \\ 
    \hline
 27 Wed & \cellcolor[gray]{0.95}27 Sat & 27 Tue & 27 Thu & \cellcolor[gray]{0.95}27 Sun & 27 Tue \\ 
    \hline
-28 Thu & \cellcolor[gray]{0.95}28 Sun & 28 Wed & 28 Fri & 28 Mon & 28 Wed \\ 
+28 Thu & \cellcolor[gray]{0.95}28 Sun & 28 Wed & 28 Fri & 28 Mon \hfill 49 & 28 Wed \\ 
    \hline
-29 Fri & 29 Mon & 29 Thu & \cellcolor[gray]{0.95}29 Sat & 29 Tue & 29 Thu \\ 
+29 Fri & 29 Mon \hfill 35 & 29 Thu & \cellcolor[gray]{0.95}29 Sat & 29 Tue & 29 Thu \\ 
    \hline
 \cellcolor[gray]{0.95}30 Sat & 30 Tue & 30 Fri & \cellcolor[gray]{0.95}30 Sun & 30 Wed & 30 Fri \\ 
    \hline
-\cellcolor[gray]{0.95}31 Sun & 31 Wed &  & 31 Mon &  & \cellcolor[gray]{0.95}31 Sat \\ 
+\cellcolor[gray]{0.95}31 Sun & 31 Wed &  & 31 Mon \hfill 45 &  & \cellcolor[gray]{0.95}31 Sat \\ 
   \end{tabular}
 
 };
@@ -466,10 +462,7 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 %}%
 \end{landscape}
 
-% \endgroup
-
-
-
+% Weekly overview
 
 %no code above here
 % Week number
@@ -11294,6 +11287,5 @@ $21^{00}$\\
 \end{notebox}
 \clearpage
 %no code allowed below here
-
 
 \end{document}

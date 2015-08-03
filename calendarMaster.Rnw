@@ -1,15 +1,13 @@
 %fontawesomeupdated.sty and fontawesome.otf must be in same folder 
-%(not currently used but will give error otherwise)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%% Packages and Settings %%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[11pt,a4paper]{book} %must be first line of code
-\pagenumbering{gobble} %remove page numbers (and reset to 1)
-\pagestyle{plain}      %remove page numbers
+\pagenumbering{gobble}      %remove page numbers (and reset to 1)
+\pagestyle{plain}           %remove page numbers
 \setlength{\parindent}{0pt} %no indenting of first line
 
 \usepackage[inner=2.5cm, outer=2cm, top=2cm, bottom=2cm]{geometry}%showframe
-\usepackage{afterpage} %no blank page before landscape switch
 \usepackage{pdflscape} 
 %pdflscape only turns page, but does not ajdust frame
 %fix from http://tex.stackexchange.com/a/116521
@@ -26,8 +24,8 @@
 }%
 \makeatother
 
-%\usepackage{graphicx}           %for jpg, pdf, ...
-\usepackage{colortbl, xcolor}   %colorbtl used to highlight monthly overview
+%\usepackage{graphicx}           %for jpg, pdf, ... not used 
+\usepackage{colortbl, xcolor}    %colorbtl used to highlight monthly overview
 \definecolor{textgray}{gray}{0.40}
 \definecolor{framegray}{gray}{0.60}
 \definecolor{lightgray}{gray}{0.90}
@@ -37,18 +35,11 @@
 \usepackage{metalogo} %for \XeLaTeX symbol
 \usepackage[hidelinks]{hyperref} %for (web)links
 
-\usepackage[most]{tcolorbox}    %for fitting text into box
 \usepackage{tikz}               %for monthly overview with rounded corners
-\usepackage{adjustbox}          % for scaling overview table to page height and width
-%\usepackage{booktabs}          %for nicer tables
-%\usepackage{array}
-%\usepackage{longtable}         %for multipage tables
-%\usepackage{bigstrut}
-%\setlength\bigstrutjot{3pt}    %http://tex.stackexchange.com/a/18114/62746
-%\usepackage{tabularx}          %for tables from R
+\usepackage{adjustbox}          %for scaling overview table to page height and width
 
-
-% settings for all tcolorboxes in weekly Child
+\usepackage[most]{tcolorbox}    %for weekly overview (fitting text into box) 
+% Settings for all tcolorboxes 
 \tcbset{bicolor, colback=white, colframe=gray, coltext=gray,  arc=1mm, 
     boxsep=0pt, left=2mm,right=2mm, top=2mm, bottom=0mm, 
 		boxrule=0.1mm,
@@ -60,6 +51,7 @@
     frame hidden}
 \newtcolorbox{weekdaybox}{
 		height=(\textheight-2em)/3, 
+    %minpage set-up from http://tex.stackexchange.com/a/220141/62746
     before upper ={ \begin{minipage}[t][\dimexpr(\textheight-8em)/3\relax]{
                     \linewidth}},
     after upper = {\end{minipage}}}
@@ -173,6 +165,7 @@ weekly_end <- nextbestsunday(monthly_end)
 ################################################################################
 ## Calculating the dates for the weekly overview ###############################
 ################################################################################
+#abbreviations: https://stat.ethz.ch/R-manual/R-devel/library/base/html/strptime.html
 weekly_range <- seq(weekly_start, weekly_end, "days")
 weekly_dates <- format(weekly_range, "%d.%m") #31.01
 weekly_days <- format(weekly_range, "%A")     #Monday
@@ -196,7 +189,7 @@ colnames(weekly_df) <- gsub(".*\\_","",colnames(weekly_df))
 monthly_range <- seq(monthly_start, monthly_end, "days") 
 monthly_dates <- format(monthly_range, "%d")    #31 
 # monthly_days <- format(monthly_range, "%a")     #Mon  
-# monthly_wknds <- ifelse(wday(monthly_range) %in% c(7,1), TRUE, FALSE)  #weekends
+# monthly_wknds <- ifelse(wday(monthly_range) %in% c(7,1), TRUE, FALSE) #weekends
 # monthly_weeks <- format(monthly_range,"%W") #1
 # monthly_months <- format(monthly_range, "%B")   #January
 # monthly_years <- format(monthly_range, "%Y")    #2015
@@ -220,18 +213,29 @@ colnames(monthly_df) <- gsub(".*\\_","",colnames(monthly_df))
 overview <- dcast(monthly_df, dates ~ monthyear, value.var="daywday")
 overview <- overview[,-1] #remove dates variable after casting
 
-#Sort columns for display
+# Sort columns for display
 overview_names <- dmy(paste("01",names(overview)))
 overview_names <- sort(overview_names)
 overview_names <- format(overview_names, "%B %Y")
 overview <- overview[factor(overview_names)]
 #setcolorder(setDT(overview), overview_names) #requires (data.table)
 
-# Remove year from column names, except for Januaries
-colnames(overview)[!grepl("January", names(overview))] <- gsub('([A-z]+) .*', '\\1', colnames(overview))[!grepl("January", names(overview))]
+# Interlude: save date range for title page
+title_range <- paste(colnames(overview)[c(1, length(colnames(overview)))], 
+                     collapse=" - ")
+
+# Remove year from column names, except for first month [-1] and for Januaries
+colnames(overview)[-1][!grepl("January", names(overview)[-1])] <- gsub(
+  '([A-z]+) .*', 
+  '\\1', 
+  colnames(overview)[-1])[!grepl("January", names(overview)[-1])]
 
 ## Weekends in overview
 wknds <- apply(overview, 1:2, function(x) grepl("(Sat)|(Sun)", x))
+
+## Mondays in overview (for adding weekly numbers)
+Mondays <- apply(overview, 1:2, function(x) grepl("(Mon)", x))
+               
 
 ################################################################################
 ## Overview Child ##############################################################
@@ -255,8 +259,7 @@ for (i in b) {week = c(week, knit_child('calendarChild.Rnw'))}
 @
 
 \usepackage{listings} 
-\def\lsin{\lstinline[basicstyle=\ttfamily,breaklines=true,]} %for inline verbatim (knitr on title)
-
+\def\lsin{\lstinline[basicstyle=\ttfamily,breaklines=true,]}%for inline verbatim
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -264,9 +267,15 @@ for (i in b) {week = c(week, knit_child('calendarChild.Rnw'))}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-
+% Title page
 \begin{titlepage}
-\title{Agenda 2015/2016\\Created with \lsin{knitR} and \XeLaTeX} 
+\title{\parbox{\linewidth}{%http://tex.stackexchange.com/a/63385/62746
+  \centering%
+  Agenda\endgraf
+  \Sexpr{title_range}\endgraf\bigskip
+  Created with \lsin{knitR} and \XeLaTeX
+  }
+}
 \author{\parbox{\linewidth}{%http://tex.stackexchange.com/a/63385/62746
   \centering%
   Florian Wanders\endgraf\bigskip
@@ -277,17 +286,12 @@ for (i in b) {week = c(week, knit_child('calendarChild.Rnw'))}
 \maketitle
 \end{titlepage}
 
-
-
+% Monthly overview
 \begin{landscape}
 \Sexpr{paste0(monthc)}
 \end{landscape}
 
-% \endgroup
-
-
-
+% Weekly overview
 \Sexpr{paste0(week)}
-
 
 \end{document}

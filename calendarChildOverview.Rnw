@@ -6,12 +6,20 @@
 <<echo=FALSE, results='asis', message=FALSE>>=
 library(xtable)
 library(abind)
+
+#Paste color for weekends in overview with abind
 colwknds <- ifelse(wknds, "\\cellcolor[gray]{0.95}", "")
-#------------------------------
 datArray <- abind(colwknds[,i],overview[,i], along=3) #http://stackoverflow.com/a/6408356/4798582
-overviewcol <- apply(datArray,1:2,function(x)paste(x[1], x[2], sep=""))
+overviewcol <- apply(datArray,1:2,function(x)paste0(x[1], x[2]))
 overviewcol <- apply(overviewcol, 1:2, function(x) ifelse(x=="NA","",x)) #combining data.frames has turned NA into string "NA"
-overviewtable <- print(xtable(subset(overviewcol, select=names(overview)[i]),
+
+#Paste weeknumbers in overview with another abind 
+wknrs <- ifelse(Mondays, paste0(" \\hfill ", format(monthly_range, "%W")), "")
+datArray2 <- abind(overviewcol, wknrs[,i], along=3)
+overviewcol2 <- apply(datArray2,1:2,function(x)paste0(x[1], x[2]))
+overviewcol2 <-  apply(overviewcol2, 1:2, function(x) ifelse(x=="NA","",x)) #combining data.frames has turned NA into string "NA"
+
+overviewtable <- print(xtable(subset(overviewcol2, select=names(overview)[i]),
                               align= c(rep("p{0.166666666666666666
                                            \\dimexpr 
                                            \\linewidth -
