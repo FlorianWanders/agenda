@@ -1,3 +1,6 @@
+%Created by Florian Wanders 
+%TODO: add proper license header
+%NOTE: 
 %fontawesomeupdated.sty and fontawesome.otf must be in same folder 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%% Packages and Settings %%%%%%%%%%%%%%%%%%%%%
@@ -73,10 +76,12 @@
 ## Cusomizable input ###########################################################
 ################################################################################
 start <- "01.07.2015" # any date around which the agenda should begin (dd.mm.yyyy)
+#Choose an uneven number for monthly_pages or manually add a blank line between
+#The monthly overview and the weekly agenda in the "Main Document" section below
 monthly_pages <- 3 # number of pages for the monthly overview (1 page = 6 months)
 
-day_start <- 7
-day_end <- 21
+day_start <- 7 #first hour in the weekly agenda
+day_end <- 21 #last hour in the weekly agenda
 
 ################################################################################
 ## Set-Up, packages, and custom functions ######################################
