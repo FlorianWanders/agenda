@@ -7,14 +7,14 @@ Can be printed and bound at any good (online) copy-shop.
 
 ## Features: 
 
-- A4 agenda (default, can be nearly any format)[^flexibility]
+- A4 agenda (default, can be nearly any format)<sup>[1](#flexibility)</sup>
 - Monthly overview with weeknumbers and highlighted weekends
 - One week on 2 pages 
 
 Search for "Cusomizable input" in the [Master file](https://github.com/FlorianWanders/agenda/blob/master/calendarMaster.Rnw) to
 
 - enter a date at which the agenda should start (can be literally any date)
-- specify how many overview sheets you would like (must be uneven at the moment)
+- specify how many overview sheets you would like (must be uneven at the moment)<sup>[2](#unvevenoverview)</sup>
 - enter the first and last hour you would like to see in the weekly agenda
 
 [Preview the agenda](https://github.com/FlorianWanders/agenda/blob/master/calendarMaster.pdf)
@@ -30,8 +30,8 @@ Then run the [Master file](https://github.com/FlorianWanders/agenda/blob/master/
 Check that all required packages are installed. 
 Will automate this in a future version. 
 
-- Formatting will be off by one page when an even number of overview sheets is used (I like 1.5 year overviews, which works fine with 3 overview sheets). might fix that sometime in the far future.[^unvevenoverview] 
+- Formatting will be off by one page when an even number of overview sheets is used (I like 1.5 year overviews, which works fine with 3 overview sheets). Might fix that sometime in the (far) future.<sup>[2](#unvevenoverview)</sup>
 
-[^flexibility]: All relevant heights/widths are relative, so if you want to change the format, the agenda should still be displayed correctly. Have not tried it and, as stated above, no guarantees, but I created the agenda with the goal to make it as flexible as possible.
+<a name="flexibility">1</a>: All relevant heights/widths are relative, so if you want to change the format, the agenda should still be displayed correctly. Have not tried it and, as stated above, no guarantees, but I created the agenda with the goal to make it as flexible as possible.
 
-[^unvevenoverview]: At the moment you need to add an extra page between the monthly overview and the weekly agenda if you want to use an even number of overview sheets. 
+<a name="unvevenoverview">2</a>: At the moment you need to add an extra page between the monthly overview and the weekly agenda if you want to use an even number of overview sheets. 
