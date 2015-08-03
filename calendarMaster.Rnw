@@ -13,15 +13,15 @@
 %fix from http://tex.stackexchange.com/a/116521
 %fix must come AFTER geometry and pdflscape package
 \makeatletter
-\newcommand*{\gmshow@textheight}{\textheight}
-\newdimen\gmshow@@textheight
-\g@addto@macro\landscape{%
-  \gmshow@@textheight=\hsize
-  \renewcommand*{\gmshow@textheight}{\gmshow@@textheight}%
-}
-\def\Gm@vrule{%
-  \vrule width 0.2pt height\gmshow@textheight depth\z@
-}%
+  \newcommand*{\gmshow@textheight}{\textheight}
+  \newdimen\gmshow@@textheight
+  \g@addto@macro\landscape{%
+    \gmshow@@textheight=\hsize
+    \renewcommand*{\gmshow@textheight}{\gmshow@@textheight}%
+  }
+  \def\Gm@vrule{%
+    \vrule width 0.2pt height\gmshow@textheight depth\z@
+  }%
 \makeatother
 
 %\usepackage{graphicx}           %for jpg, pdf, ... not used 
@@ -31,7 +31,10 @@
 \definecolor{lightgray}{gray}{0.90}
 
 \usepackage{lmodern}  % or any other vector / postscript font (required by tcolorbox)
-\usepackage{fontawesomeupdated} %for fontawesome glyph icons
+%fix for font size smaller than tiny (http://tex.stackexchange.com/a/57676/62746)
+%requires lmodern or comparable font 
+\newcommand{\supertiny}[1]{{\fontsize{4}{5.5}\selectfont #1}} 
+\usepackage{fontawesomeupdated} %for fontawesome glyph icons (github on cover)
 \usepackage{metalogo} %for \XeLaTeX symbol
 \usepackage[hidelinks]{hyperref} %for (web)links
 
@@ -193,7 +196,11 @@ monthly_dates <- format(monthly_range, "%d")    #31
 # monthly_weeks <- format(monthly_range,"%W") #1
 # monthly_months <- format(monthly_range, "%B")   #January
 # monthly_years <- format(monthly_range, "%Y")    #2015
-monthly_daywday <- format(monthly_range, "%d %a")
+monthly_dayweek <- format(monthly_range, "%d %a.%W") 
+#dayweek will be split later into |Day Weekday| and |Weeknumbers|
+#probably not the cleanest way of doing that, but this way I only have to
+#format one data.frame and can extract the values into 2 data.frames once 
+#that is done
 monthly_monthyear <- format(monthly_range, "%B %Y")
 monthly_df <- data.frame(monthly_dates, 
                          # monthly_days, 
@@ -201,7 +208,7 @@ monthly_df <- data.frame(monthly_dates,
                          # monthly_months, 
                          # monthly_years,
                          # monthly_wknds
-                         monthly_daywday,
+                         monthly_dayweek,
                          monthly_monthyear)
 # remove monthly_ from column names
 colnames(monthly_df) <- gsub(".*\\_","",colnames(monthly_df)) 
@@ -210,7 +217,7 @@ colnames(monthly_df) <- gsub(".*\\_","",colnames(monthly_df))
 ################################################################################
 ## Creating the monthly overview ###############################################
 ################################################################################
-overview <- dcast(monthly_df, dates ~ monthyear, value.var="daywday")
+overview <- dcast(monthly_df, dates ~ monthyear, value.var="dayweek")
 overview <- overview[,-1] #remove dates variable after casting
 
 # Sort columns for display
@@ -224,18 +231,27 @@ overview <- overview[factor(overview_names)]
 title_range <- paste(colnames(overview)[c(1, length(colnames(overview)))], 
                      collapse=" - ")
 
-# Remove year from column names, except for first month [-1] and for Januaries
-colnames(overview)[-1][!grepl("January", names(overview)[-1])] <- gsub(
+# Remove year from column names, except for 
+# first months in overview (keepyear) and for Januaries (indexed with grepl)
+keepyear <- seq(1,length(colnames(overview)), by=7)
+keepyear <- keepyear - 0: (length(keepyear)-1)
+colnames(overview)[-keepyear][!grepl("January", names(overview)[-keepyear])] <- gsub(
   '([A-z]+) .*', 
   '\\1', 
-  colnames(overview)[-1])[!grepl("January", names(overview)[-1])]
+  colnames(overview)[-keepyear])[!grepl("January", names(overview)[-keepyear])]
+
+# Split overview into weeknumbers (overview_wknrs) and days + weekdays (overview) 
+# Important: since I overwrite "overview" in the second line below, overview_wknrs
+# must be created first. Might make that neater sometime (i.e., use different names)
+overview_wknrs <- apply(overview, 1:2, function(x) gsub(".*\\.","",x))
+overview <- apply(overview, 1:2, function(x) gsub("\\..*","",x))
 
 ## Weekends in overview
 wknds <- apply(overview, 1:2, function(x) grepl("(Sat)|(Sun)", x))
 
-## Mondays in overview (for adding weekly numbers)
-Mondays <- apply(overview, 1:2, function(x) grepl("(Mon)", x))
-               
+## Mondays in overview (weeknumbers will be inserted at Mondays)
+Mondays <- apply(overview, 1:2, function(x) grepl("(Mon)",x))
+
 
 ################################################################################
 ## Overview Child ##############################################################
