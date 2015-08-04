@@ -11,21 +11,21 @@
 \setlength{\parindent}{0pt} %no indenting of first line
 
 \usepackage[inner=2.5cm, outer=2cm, top=2cm, bottom=2cm]{geometry}%showframe
-\usepackage{pdflscape} 
-%pdflscape only turns page, but does not ajdust frame
-%fix from http://tex.stackexchange.com/a/116521
-%fix must come AFTER geometry and pdflscape package
-\makeatletter
-  \newcommand*{\gmshow@textheight}{\textheight}
-  \newdimen\gmshow@@textheight
-  \g@addto@macro\landscape{%
-    \gmshow@@textheight=\hsize
-    \renewcommand*{\gmshow@textheight}{\gmshow@@textheight}%
-  }
-  \def\Gm@vrule{%
-    \vrule width 0.2pt height\gmshow@textheight depth\z@
-  }%
-\makeatother
+\usepackage{lscape} %pdflscape to turn pages
+% %pdflscape only turns page, but does not ajdust frame
+% %fix from http://tex.stackexchange.com/a/116521
+% %fix must come AFTER geometry and pdflscape package
+% \makeatletter
+%   \newcommand*{\gmshow@textheight}{\textheight}
+%   \newdimen\gmshow@@textheight
+%   \g@addto@macro\landscape{%
+%     \gmshow@@textheight=\hsize
+%     \renewcommand*{\gmshow@textheight}{\gmshow@@textheight}%
+%   }
+%   \def\Gm@vrule{%
+%     \vrule width 0.2pt height\gmshow@textheight depth\z@
+%   }%
+% \makeatother
 
 %\usepackage{graphicx}           %for jpg, pdf, ... not used 
 \usepackage{colortbl, xcolor}    %colorbtl used to highlight monthly overview
@@ -306,6 +306,8 @@ for (i in b) {week = c(week, knit_child('calendarChild.Rnw'))}
 \date{}
 \maketitle
 \end{titlepage}
+
+\newpage\null\thispagestyle{empty}\newpage 
 
 % Monthly overview
 \begin{landscape}

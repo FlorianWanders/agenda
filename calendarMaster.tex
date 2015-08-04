@@ -1,4 +1,4 @@
-%Created by Florian Wanders, 
+%Created by Florian Wanders 
 %TODO: add proper license header
 %NOTE: 
 %fontawesomeupdated.sty and fontawesome.otf must be in same folder 
@@ -60,21 +60,21 @@
 \setlength{\parindent}{0pt} %no indenting of first line
 
 \usepackage[inner=2.5cm, outer=2cm, top=2cm, bottom=2cm]{geometry}%showframe
-\usepackage{pdflscape} 
-%pdflscape only turns page, but does not ajdust frame
-%fix from http://tex.stackexchange.com/a/116521
-%fix must come AFTER geometry and pdflscape package
-\makeatletter
-  \newcommand*{\gmshow@textheight}{\textheight}
-  \newdimen\gmshow@@textheight
-  \g@addto@macro\landscape{%
-    \gmshow@@textheight=\hsize
-    \renewcommand*{\gmshow@textheight}{\gmshow@@textheight}%
-  }
-  \def\Gm@vrule{%
-    \vrule width 0.2pt height\gmshow@textheight depth\z@
-  }%
-\makeatother
+\usepackage{lscape} %pdflscape to turn pages
+% %pdflscape only turns page, but does not ajdust frame
+% %fix from http://tex.stackexchange.com/a/116521
+% %fix must come AFTER geometry and pdflscape package
+% \makeatletter
+%   \newcommand*{\gmshow@textheight}{\textheight}
+%   \newdimen\gmshow@@textheight
+%   \g@addto@macro\landscape{%
+%     \gmshow@@textheight=\hsize
+%     \renewcommand*{\gmshow@textheight}{\gmshow@@textheight}%
+%   }
+%   \def\Gm@vrule{%
+%     \vrule width 0.2pt height\gmshow@textheight depth\z@
+%   }%
+% \makeatother
 
 %\usepackage{graphicx}           %for jpg, pdf, ... not used 
 \usepackage{colortbl, xcolor}    %colorbtl used to highlight monthly overview
@@ -151,6 +151,8 @@
 \maketitle
 \end{titlepage}
 
+\newpage\null\thispagestyle{empty}\newpage
+
 % Monthly overview
 \begin{landscape}
 
@@ -160,7 +162,7 @@
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {%
     \color{textgray}\tiny
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Mon Aug 03 21:19:39 2015
+% Tue Aug 04 10:57:10 2015
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
@@ -264,7 +266,7 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {%
     \color{textgray}\tiny
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Mon Aug 03 21:19:39 2015
+% Tue Aug 04 10:57:10 2015
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
@@ -368,7 +370,7 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {%
     \color{textgray}\tiny
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Mon Aug 03 21:19:39 2015
+% Tue Aug 04 10:57:10 2015
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
