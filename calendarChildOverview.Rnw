@@ -1,3 +1,10 @@
+%rotate odd pages in the overview so that the spiral binding is never on the palm site
+\checkoddpage
+\ifoddpage
+{\begin{minipage}{\linewidth} 
+\else
+\rotatebox{180}{\begin{minipage}{\linewidth} 
+\fi
 \renewcommand{\arraystretch}{1.2} %increase cell height here. If added later, clipping with tikz won't work. Increasing cell height means less scaling through adjustbox, which means the font stays smaller
 \begin{adjustbox}{width = \linewidth, totalheight=\textheight}% scale table to fill height and width (width already defined with dimexpr below, but height required here)
 \begin{tikzpicture}[local bounding box=picture, baseline=(picture.south), line width=.1mm,rounded corners=.5em]  %thanks to Mark Wibrow (http://tex.stackexchange.com/a/258203/62746)
@@ -48,6 +55,6 @@ overviewtable <- print(xtable(overviewcol2,
 \draw [textgray]([draw=textgray, fill=white, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
 rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
 \end{tikzpicture}
-%}
-\end{adjustbox} 
-%}%
+\end{adjustbox}
+\end{minipage}}
+%

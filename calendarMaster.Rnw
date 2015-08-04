@@ -1,7 +1,6 @@
 %Created by Florian Wanders 
 %TODO: add proper license header
-%NOTE: 
-%fontawesomeupdated.sty and fontawesome.otf must be in same folder 
+%NOTE: fontawesomeupdated.sty and fontawesome.otf must be in same folder 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%% Packages and Settings %%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -26,6 +25,8 @@
 %     \vrule width 0.2pt height\gmshow@textheight depth\z@
 %   }%
 % \makeatother
+\usepackage{changepage} %for turning odd pages in the overview child (from 
+\strictpagecheck        %http://tex.stackexchange.com/a/6193/62746)
 
 %\usepackage{graphicx}           %for jpg, pdf, ... not used 
 \usepackage{colortbl, xcolor}    %colorbtl used to highlight monthly overview
@@ -75,7 +76,7 @@
 ################################################################################
 ## Cusomizable input ###########################################################
 ################################################################################
-start <- "01.07.2015" # any date around which the agenda should begin (dd.mm.yyyy)
+start <- "01.08.2015" # any date around which the agenda should begin (dd.mm.yyyy)
 #Choose an uneven number for monthly_pages or manually add a blank line between
 #The monthly overview and the weekly agenda in the "Main Document" section below
 monthly_pages <- 3 # number of pages for the monthly overview (1 page = 6 months)
