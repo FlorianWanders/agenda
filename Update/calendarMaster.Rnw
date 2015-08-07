@@ -11,6 +11,7 @@
 
 \usepackage[inner=2.5cm, outer=2cm, top=2cm, bottom=2cm]{geometry}%showframe
 \usepackage{lscape} %pdflscape to turn pages
+%used for testing only: 
 % %pdflscape only turns page, but does not ajdust frame
 % %fix from http://tex.stackexchange.com/a/116521
 % %fix must come AFTER geometry and pdflscape package
@@ -25,22 +26,26 @@
 %     \vrule width 0.2pt height\gmshow@textheight depth\z@
 %   }%
 % \makeatother
-\usepackage{changepage} %for turning even pages in the overview child (from 
-\strictpagecheck        %http://tex.stackexchange.com/a/6193/62746)
+
+%used in previous version of the agenda where the overview came first:
+%\usepackage{changepage} %for turning even pages in the overview child (from 
+%\strictpagecheck        %http://tex.stackexchange.com/a/6193/62746)
 
 %\usepackage{graphicx}           %for jpg, pdf, ... not used 
 \usepackage{colortbl, xcolor}    %colorbtl used to highlight monthly overview
 \definecolor{textgray}{gray}{0.40}
-\definecolor{framegray}{gray}{0.60}
-\definecolor{lightgray}{gray}{0.90}
+%\definecolor{framegray}{gray}{0.60}
+%\definecolor{lightgray}{gray}{0.90}
 
 \usepackage{lmodern}  % or any other vector / postscript font (required by tcolorbox)
 %fix for font size smaller than tiny (http://tex.stackexchange.com/a/57676/62746)
 %requires lmodern or comparable font 
 \newcommand{\supertiny}[1]{{\fontsize{4}{5.5}\selectfont #1}} 
-\usepackage{fontawesomeupdated} %for fontawesome glyph icons (github on cover)
-\usepackage{metalogo} %for \XeLaTeX symbol
+
+\usepackage{fontawesomeupdated}  %for fontawesome glyph icons (github on cover)
+\usepackage{metalogo}            %for \XeLaTeX symbol
 \usepackage[hidelinks]{hyperref} %for (web)links
+\usepackage{zref-lastpage}       %hyperref and lastpage incompatible 
 
 \usepackage{tikz}               %for monthly overview with rounded corners
 \usepackage{adjustbox}          %for scaling overview table to page height and width
@@ -77,12 +82,11 @@
 ## Cusomizable input ###########################################################
 ################################################################################
 start <- "01.08.2015" # any date around which the agenda should begin (dd.mm.yyyy)
-#Choose an uneven number for monthly_pages or manually add a blank line between
-#The monthly overview and the weekly agenda in the "Main Document" section below
-monthly_pages <- 3 # number of pages for the monthly overview (1 page = 6 months)
+monthly_pages <- 4 # number of PAGES for the monthly overview (1 PAGE = 6 MONTHS)
+weekly_pages <- "12 months" #number of MONTHS for the week-on-2-pages agenda
 
-day_start <- 7 #first hour in the weekly agenda
-day_end <- 21 #last hour in the weekly agenda
+day_start <- 7 #first hour in the week-on-2-pages agenda
+day_end <- 21 #last hour in the week-on-2-pages agenda
 
 ################################################################################
 ## Set-Up, packages, and custom functions ######################################
@@ -168,7 +172,20 @@ monthly_end <- ymd(monthly_end)
 
 # Find first and last date for the weekly overview
 weekly_start <- prevbestmonday(start)
-weekly_end <- nextbestsunday(monthly_end) 
+weekly_end <- seq.Date(as.Date(monthly_start), 
+                        length=2, 
+                        by=weekly_pages, #defined in the customizable section
+                        )[2] - 1
+weekly_end <- ymd(weekly_end)
+#--------------------------------------------------
+# Interlude: save date range for title page
+# must occur before applying nextbestsunday(), because the next Sunday might lie
+# in the next month. Better: use different names in the future. 
+title_range <- paste(format(monthly_start, "%B %Y"), 
+                     format(weekly_end, "%B %Y"),
+                     sep = " - ")
+#--------------------------------------------------
+weekly_end <- nextbestsunday(weekly_end) 
 
 
 ################################################################################
@@ -233,10 +250,6 @@ overview_names <- format(overview_names, "%B %Y")
 overview <- overview[factor(overview_names)]
 #setcolorder(setDT(overview), overview_names) #requires (data.table)
 
-# Interlude: save date range for title page
-title_range <- paste(colnames(overview)[c(1, length(colnames(overview)))], 
-                     collapse=" - ")
-
 # Remove year from column names, except for 
 # first months in overview (keepyear) and for Januaries (indexed with grepl)
 keepyear <- seq(1,length(colnames(overview)), by=7)
@@ -253,21 +266,11 @@ overview_wknrs <- apply(overview, 1:2, function(x) gsub(".*\\.","",x))
 overview <- apply(overview, 1:2, function(x) gsub("\\..*","",x))
 
 ## Weekends in overview
-wknds <- apply(overview, 1:2, function(x) grepl("(Sat)|(Sun)", x))
+Saturdays <- apply(overview, 1:2, function(x) grepl("(Sat)", x))
+Sundays <- apply(overview, 1:2, function(x) grepl("(Sun)", x))
 
 ## Mondays in overview (weeknumbers will be inserted at Mondays)
 Mondays <- apply(overview, 1:2, function(x) grepl("(Mon)",x))
-
-
-################################################################################
-## Overview Child ##############################################################
-################################################################################
-d <- 1:ncol(overview)
-max <- 6
-x <- seq_along(d)
-d1 <- split(d, ceiling(x/max))
-monthc <- NULL
-for (i in d1) monthc <- c(monthc, knit_child('calendarChildOverview.Rnw'))
 
 ################################################################################
 ## Weekly Child ################################################################
@@ -277,6 +280,21 @@ a <- 1:nrow(weekly_df)
 b <- seq.int(1L, length(a), 7L)
 #b <- c(1,8) #for testing
 for (i in b) {week = c(week, knit_child('calendarChild.Rnw'))}
+################################################################################
+## Overview Child ##############################################################
+################################################################################
+d <- 1:ncol(overview)
+max <- 6
+x <- seq_along(d)
+d1 <- split(d, ceiling(x/max))
+monthc <- NULL
+for (i in rev(d1)) {
+  label <- ifelse(sum(i %in% d1[[1]]) > 0, "lastpage", "notlastpage")
+  monthc <- c(monthc, knit_child('calendarChildOverview.Rnw'))
+}
+#the label allows me to insert a page if the label is "notlastpage" in the overview
+#rev() because the overview pages will be appended to the end of the agenda in 
+#reversed order
 #change for loop http://yihui.name/en/2010/10/on-the-gory-loops-in-r/
 @
 
@@ -308,14 +326,12 @@ for (i in b) {week = c(week, knit_child('calendarChild.Rnw'))}
 \maketitle
 \end{titlepage}
 
-\newpage\null\thispagestyle{empty}\newpage 
+% Weekly overview
+\Sexpr{paste0(week)}
 
 % Monthly overview
 \begin{landscape}
 \Sexpr{paste0(monthc)}
 \end{landscape}
-
-% Weekly overview
-\Sexpr{paste0(week)}
 
 \end{document}

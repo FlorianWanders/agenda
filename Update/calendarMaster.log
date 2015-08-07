@@ -1,0 +1,4402 @@
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2014.9.23)  7 AUG 2015 15:43
+entering extended mode
+**calendarMaster.tex
+(C:\Users\Florian\Documents\UvA\knitr\calendar1\Update\calendarMaster.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 68 languages loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls"
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\bk11.clo"
+File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+Requested font "cmr10" at 10.95pt
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: xetex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\xelatex\xetex-def\xetex.def"
+File: xetex.def 2014/07/25 v4.03 LaTeX color/graphics driver for XeTeX (RRM/JK)
+
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: xetex.def on input line 137.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\framed\framed.sty"
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip43
+\fb@frw=\dimen105
+\fb@frh=\dimen106
+\FrameRule=\dimen107
+\FrameSep=\dimen108
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\alltt.sty"
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count89
+\Gm@cntv=\count90
+\c@Gm@tempcnt=\count91
+\Gm@bindingoffset=\dimen109
+\Gm@wd@mp=\dimen110
+\Gm@odd@mp=\dimen111
+\Gm@even@mp=\dimen112
+\Gm@layoutwidth=\dimen113
+\Gm@layoutheight=\dimen114
+\Gm@layouthoffset=\dimen115
+\Gm@layoutvoffset=\dimen116
+\Gm@dimlist=\toks15
+
+("C:\Program Files\MiKTeX 2.9\tex\xelatex\xetexconfig\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty"
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen117
+\extrarowheight=\dimen118
+\NC@list=\toks16
+\extratabsurround=\skip44
+\backup@length=\skip45
+)
+\everycr=\toks17
+\minrowclearance=\skip46
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+LaTeX Info: Redefining \color on input line 702.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\lmodern.sty"
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(C:\Users\Florian\Documents\UvA\knitr\calendar1\Update\fontawesomeupdated.sty
+Package: fontawesomeupdated 2013/05/10 v3.1.1 font awesome icons
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec.sty"
+Package: fontspec 2014/06/21 v2.4a Font selection for XeLaTeX and LuaLaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty"
+Package: expl3 2014/08/25 v5378 L3 programming layer (loader) 
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3-code.tex"
+Package: expl3 2014/08/25 v5378 L3 programming layer (code) 
+L3 Module: l3bootstrap 2014/08/23 v5354 L3 Bootstrap code
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\misc\etex.sty"
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count92
+)
+L3 Module: l3names 2014/08/22 v5343 L3 Namespace for primitives
+L3 Module: l3basics 2014/08/24 v5364 L3 Basic definitions
+L3 Module: l3expan 2014/08/22 v5349 L3 Argument expansion
+L3 Module: l3tl 2014/08/24 v5359 L3 Token lists
+L3 Module: l3str 2014/08/24 v5368 L3 Strings
+L3 Module: l3seq 2014/08/23 v5354 L3 Sequences and stacks
+L3 Module: l3int 2014/08/25 v5372 L3 Integers
+\c_max_int=\count93
+\l_tmpa_int=\count94
+\l_tmpb_int=\count95
+\g_tmpa_int=\count96
+\g_tmpb_int=\count97
+L3 Module: l3quark 2014/08/23 v5354 L3 Quarks
+L3 Module: l3prg 2014/08/23 v5354 L3 Control structures
+\g__prg_map_int=\count98
+L3 Module: l3clist 2014/08/23 v5354 L3 Comma separated lists
+L3 Module: l3token 2014/08/23 v5354 L3 Experimental token manipulation
+L3 Module: l3prop 2014/08/23 v5354 L3 Property lists
+L3 Module: l3msg 2014/08/24 v5358 L3 Messages
+L3 Module: l3file 2014/08/24 v5369 L3 File and I/O operations
+\l_iow_line_count_int=\count99
+\l__iow_target_count_int=\count100
+\l__iow_current_line_int=\count101
+\l__iow_current_word_int=\count102
+\l__iow_current_indentation_int=\count103
+L3 Module: l3skip 2014/08/23 v5354 L3 Dimensions and skips
+\c_zero_dim=\dimen119
+\c_max_dim=\dimen120
+\l_tmpa_dim=\dimen121
+\l_tmpb_dim=\dimen122
+\g_tmpa_dim=\dimen123
+\g_tmpb_dim=\dimen124
+\c_zero_skip=\skip47
+\c_max_skip=\skip48
+\l_tmpa_skip=\skip49
+\l_tmpb_skip=\skip50
+\g_tmpa_skip=\skip51
+\g_tmpb_skip=\skip52
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+L3 Module: l3keys 2014/08/23 v5354 L3 Key-value interfaces
+\g__keyval_level_int=\count104
+\l_keys_choice_int=\count105
+L3 Module: l3fp 2014/08/22 v5336 L3 Floating points
+\c__fp_leading_shift_int=\count106
+\c__fp_middle_shift_int=\count107
+\c__fp_trailing_shift_int=\count108
+\c__fp_big_leading_shift_int=\count109
+\c__fp_big_middle_shift_int=\count110
+\c__fp_big_trailing_shift_int=\count111
+\c__fp_Bigg_leading_shift_int=\count112
+\c__fp_Bigg_middle_shift_int=\count113
+\c__fp_Bigg_trailing_shift_int=\count114
+L3 Module: l3box 2014/08/23 v5354 L3 Experimental boxes
+\c_empty_box=\box26
+\l_tmpa_box=\box27
+\l_tmpb_box=\box28
+\g_tmpa_box=\box29
+\g_tmpb_box=\box30
+L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
+\l__coffin_internal_box=\box31
+\l__coffin_internal_dim=\dimen125
+\l__coffin_offset_x_dim=\dimen126
+\l__coffin_offset_y_dim=\dimen127
+\l__coffin_x_dim=\dimen128
+\l__coffin_y_dim=\dimen129
+\l__coffin_x_prime_dim=\dimen130
+\l__coffin_y_prime_dim=\dimen131
+\c_empty_coffin=\box32
+\l__coffin_aligned_coffin=\box33
+\l__coffin_aligned_internal_coffin=\box34
+\l_tmpa_coffin=\box35
+\l_tmpb_coffin=\box36
+\l__coffin_display_coffin=\box37
+\l__coffin_display_coord_coffin=\box38
+\l__coffin_display_pole_coffin=\box39
+\l__coffin_display_offset_dim=\dimen132
+\l__coffin_display_x_dim=\dimen133
+\l__coffin_display_y_dim=\dimen134
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3candidates 2014/08/24 v5366 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen135
+\l__box_bottom_dim=\dimen136
+\l__box_left_dim=\dimen137
+\l__box_right_dim=\dimen138
+\l__box_top_new_dim=\dimen139
+\l__box_bottom_new_dim=\dimen140
+\l__box_left_new_dim=\dimen141
+\l__box_right_new_dim=\dimen142
+\l__box_internal_box=\box40
+\l__coffin_bounding_shift_dim=\dimen143
+\l__coffin_left_corner_dim=\dimen144
+\l__coffin_right_corner_dim=\dimen145
+\l__coffin_bottom_corner_dim=\dimen146
+\l__coffin_top_corner_dim=\dimen147
+\l__coffin_scaled_total_height_dim=\dimen148
+\l__coffin_scaled_width_dim=\dimen149
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3unicode-data.def"
+File: l3unicode-data.def 2014/08/12 v5276 L3 Unicode data
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3xdvipdfmx.def"
+File: l3xdvidpfmx.def 2014/08/24 v5366 L3 Experimental driver: xdvipdfmx
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty"
+Package: xparse 2014/08/25 v5378 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count115
+\l__xparse_m_args_int=\count116
+\l__xparse_mandatory_args_int=\count117
+\l__xparse_processor_int=\count118
+\l__xparse_v_nesting_int=\count119
+)
+\l_fontspec_script_int=\count120
+\l_fontspec_language_int=\count121
+\l_fontspec_strnum_int=\count122
+\l__fontspec_tmpa_dim=\dimen150
+\l__fontspec_tmpb_dim=\dimen151
+\l__fontspec_tmpc_dim=\dimen152
+Variant \tl_gset:cV already defined; not changing it on line 71
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec-patches.sty"
+Package: fontspec-patches 2014/06/21 v2.4a Font selection for XeLaTeX and LuaLa
+TeX
+LaTeX Info: Redefining \em on input line 38.
+LaTeX Info: Redefining \emph on input line 46.
+LaTeX Info: Redefining \- on input line 49.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 144.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 148.
+.................................................
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec-xetex.sty"
+Package: fontspec-xetex 2014/06/21 v2.4a Font selection for XeLaTeX and LuaLaTe
+X
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\euenc\eu1enc.def"
+File: eu1enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
+)
+LaTeX Font Info:    Try loading font information for EU1+lmr on input line 100.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\euenc\eu1lmr.fd"
+File: eu1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Requested font "[lmroman10-regular]:mapping=tex-text" at 10.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman10-regular.otf
+)
+("C:\Program Files\MiKTeX 2.9\tex\xelatex\xunicode\xunicode.sty"
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
+other characters in Unicode lower plane
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tipa\t3enc.def"
+File: t3enc.def 2001/12/31 T3 encoding
+Requested font "[lmromanslant10-regular]:mapping=tex-text" at 10.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmromanslant10-regular
+.otf
+Requested font "[lmroman10-italic]:mapping=tex-text" at 10.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman10-italic.otf
+Requested font "[lmroman10-bold]:mapping=tex-text" at 10.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman10-bold.otf
+LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\euenc\eu1lmss.fd"
+File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Requested font "[lmsans10-regular]:mapping=tex-text" at 10.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmsans10-regular.otf
+)
+\tipaTiiicode=\count123
+\tipasavetokens=\toks18
+\tipachecktokens=\toks19
+)
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'O{}mO{}' on line 41.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'O{}mO{}' on line 47.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'O{}mO{}' on line 53.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'O{}mO{}' on line 59.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'O{}mO{}' on line 68.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'O{}mO{}' on line 72.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'O{}mO{}' on line 76.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'O{}mO{}' on line 80.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mO{}mO{}' on line 99.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mO{}mO{}' on line 103.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 112.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 170.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 181.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 189.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 197.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 226.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 228.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 233.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 259.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 279.
+.................................................
+Variant \prop_gput:cnV already defined; not changing it on line 662
+Variant \prop_gput:cnx already defined; not changing it on line 663
+\l__fontspec_tmp_int=\count124
+LaTeX Info: Redefining \itshape on input line 2193.
+LaTeX Info: Redefining \slshape on input line 2198.
+LaTeX Info: Redefining \scshape on input line 2203.
+LaTeX Info: Redefining \upshape on input line 2208.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec.cfg")))
+\g__file_internal_ior=\read1
+Requested font "FontAwesome" at 10.0pt
+ -> C:/Program Files (x86)/MiKTeX 2.9/fonts/truetype/public/fontawesome/fontawe
+some-webfont.ttf
+Requested font "FontAwesome/OT" at 10.0pt
+ -> C:/Program Files (x86)/MiKTeX 2.9/fonts/truetype/public/fontawesome/fontawe
+some-webfont.ttf
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font FontAwesome does not contain any OpenType `Script' information.
+.................................................
+\g__fontspec_family_FontAwesome_int=\count125
+Requested font "FontAwesome/OT" at 10.0pt
+ -> C:/Program Files (x86)/MiKTeX 2.9/fonts/truetype/public/fontawesome/fontawe
+some-webfont.ttf
+Requested font "FontAwesome/BI/OT" at 10.0pt
+ -> C:/Program Files (x86)/MiKTeX 2.9/fonts/truetype/public/fontawesome/fontawe
+some-webfont.ttf
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font FontAwesome/BI (it probably doesn't exist).
+.................................................
+Requested font "FontAwesome/OT" at 10.0pt
+ -> C:/Program Files (x86)/MiKTeX 2.9/fonts/truetype/public/fontawesome/fontawe
+some-webfont.ttf
+Requested font "FontAwesome/B/OT" at 10.0pt
+ -> C:/Program Files (x86)/MiKTeX 2.9/fonts/truetype/public/fontawesome/fontawe
+some-webfont.ttf
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font FontAwesome/B (it probably doesn't exist).
+.................................................
+Requested font "FontAwesome/OT" at 10.0pt
+ -> C:/Program Files (x86)/MiKTeX 2.9/fonts/truetype/public/fontawesome/fontawe
+some-webfont.ttf
+Requested font "FontAwesome/I/OT" at 10.0pt
+ -> C:/Program Files (x86)/MiKTeX 2.9/fonts/truetype/public/fontawesome/fontawe
+some-webfont.ttf
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font FontAwesome/I (it probably doesn't exist).
+.................................................
+Requested font "FontAwesome/OT" at 10.0pt
+ -> C:/Program Files (x86)/MiKTeX 2.9/fonts/truetype/public/fontawesome/fontawe
+some-webfont.ttf
+Requested font "FontAwesome/OT" at 10.0pt
+ -> C:/Program Files (x86)/MiKTeX 2.9/fonts/truetype/public/fontawesome/fontawe
+some-webfont.ttf
+Requested font "[lmroman10-regular]:mapping=tex-text" at 10.95pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman10-regular.otf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FontAwesome(0)' created for font 'FontAwesome' with options [].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. <->"FontAwesome/OT:"
+. 
+. * 'small caps' with NFSS spec.:
+. 
+. and font adjustment code:
+. 
+.................................................
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\metalogo\metalogo.sty"
+Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
+\xl@everylogo=\toks20
+\xl@@everylogo=\toks21
+LaTeX Info: Redefining \TeX on input line 193.
+LaTeX Info: Redefining \LaTeX on input line 202.
+LaTeX Info: Redefining \LaTeXe on input line 219.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen153
+\Hy@linkcounter=\count126
+\Hy@pagecounter=\count127
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count128
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count129
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen154
+Requested font "pzdr" at 0.00002pt
+\Fld@menulength=\count130
+\Field@Width=\dimen155
+\Fld@charsize=\dimen156
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count131
+\c@Item=\count132
+\c@Hfootnote=\count133
+)
+
+Package hyperref Message: Driver (autodetected): hxetex.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hxetex.def"
+File: hxetex.def 2012/11/06 v6.83m Hyperref driver for XeTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\puenc.def"
+File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\stringenc.sty"
+Package: stringenc 2011/12/02 v1.10 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box41
+\c@Hy@AnnotLevel=\count134
+\HyField@AnnotCount=\count135
+\Fld@listcount=\count136
+\c@bookmark@seq@number=\count137
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
+(rerunfilecheck)             (e.g. pdfTeX or LuaTeX with package `pdftexcmds').
+
+(rerunfilecheck)             Therefore file contents cannot be checked efficien
+tly
+(rerunfilecheck)             and the loading of the package is aborted.
+)
+\Hy@SectionHShift=\skip53
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\zref-lastpage.sty"
+Package: zref-lastpage 2012/04/04 v2.24 Module lastpage for zref (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\zref-base.sty"
+Package: zref-base 2012/04/04 v2.24 Module base for zref (HO)
+Package zref Info: New property list: main on input line 759.
+Package zref Info: New property: default on input line 760.
+Package zref Info: New property: page on input line 761.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\zref-abspage.sty"
+Package: zref-abspage 2012/04/04 v2.24 Module abspage for zref (HO)
+\c@abspage=\count138
+Package zref Info: New property: abspage on input line 62.
+)
+Package zref Info: New property list: LastPage on input line 55.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
+\pgfutil@everybye=\toks22
+\pgfutil@tempdima=\dimen157
+\pgfutil@tempdimb=\dimen158
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.te
+x")) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
+\pgfutil@abb=\box42
+("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
+Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
+))
+Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex"
+Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks23
+\pgfkeys@temptoks=\toks24
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.te
+x"
+\pgfkeys@tmptoks=\toks25
+))
+\pgf@x=\dimen159
+\pgf@y=\dimen160
+\pgf@xa=\dimen161
+\pgf@ya=\dimen162
+\pgf@xb=\dimen163
+\pgf@yb=\dimen164
+\pgf@xc=\dimen165
+\pgf@yc=\dimen166
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count139
+\c@pgf@countb=\count140
+\c@pgf@countc=\count141
+\c@pgf@countd=\count142
+\t@pgf@toka=\toks26
+\t@pgf@tokb=\toks27
+\t@pgf@tokc=\toks28
+ ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-xetex.def"
+File: pgfsys-xetex.def 2013/07/16  (rcs-revision 1.9)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-dvipdfmx.def"
+File: pgfsys-dvipdfmx.def 2013/08/28  (rcs-revision 1.12)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
+"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)
+\pgfsys@objnum=\count143
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
+ex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count144
+\pgfsyssoftpath@bigbuffer@items=\count145
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.t
+ex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
+ ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
+\pgfmath@dimen=\dimen167
+\pgfmath@count=\count146
+\pgfmath@box=\box43
+\pgfmath@toks=\toks29
+\pgfmath@stack@operand=\toks30
+\pgfmath@stack@operation=\toks31
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometr
+ic.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.random.code
+.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.
+code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarit
+hmetics.code.tex")))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count147
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen168
+\pgf@picmaxx=\dimen169
+\pgf@picminy=\dimen170
+\pgf@picmaxy=\dimen171
+\pgf@pathminx=\dimen172
+\pgf@pathmaxx=\dimen173
+\pgf@pathminy=\dimen174
+\pgf@pathmaxy=\dimen175
+\pgf@xx=\dimen176
+\pgf@xy=\dimen177
+\pgf@yx=\dimen178
+\pgf@yy=\dimen179
+\pgf@zx=\dimen180
+\pgf@zy=\dimen181
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.c
+ode.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen182
+\pgf@path@lasty=\dimen183
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.
+tex"
+File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
+\pgf@shorten@end@additional=\dimen184
+\pgf@shorten@start@additional=\dimen185
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+"
+File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
+\pgfpic=\box44
+\pgf@hbox=\box45
+\pgf@layerbox@main=\box46
+\pgf@picture@serial@count=\count148
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.co
+de.tex"
+File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
+\pgflinewidth=\dimen186
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations
+.code.tex"
+File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
+\pgf@pt@x=\dimen187
+\pgf@pt@y=\dimen188
+\pgf@pt@temp=\dimen189
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.te
+x"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.
+code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
+"
+File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
+\pgfarrowsep=\dimen190
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen191
+\pgf@sys@shading@range@num=\count149
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
+x"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.t
+ex"
+File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
+\pgfexternal@startupbox=\box47
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
+"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.co
+de.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.t
+ex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
+\pgfnodeparttextbox=\box48
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.
+sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen192
+\pgf@nodesepend=\dimen193
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.
+sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
+\pgffor@iter=\dimen194
+\pgffor@skip=\dimen195
+\pgffor@stack=\toks32
+\pgffor@toks=\toks33
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex"
+Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.
+code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
+\pgf@plot@mark@count=\count150
+\pgfplotmarksize=\dimen196
+)
+\tikz@lastx=\dimen197
+\tikz@lasty=\dimen198
+\tikz@lastxsaved=\dimen199
+\tikz@lastysaved=\dimen200
+\tikzleveldistance=\dimen201
+Normal \dimen register pool exhausted, switching to extended pool.
+\tikzsiblingdistance=\dimen256
+\tikz@figbox=\box49
+\tikz@figbox@bg=\box50
+\tikz@tempbox=\box51
+\tikz@tempbox@bg=\box52
+\tikztreelevel=\count151
+\tikznumberofchildren=\count152
+\tikznumberofcurrentchild=\count153
+\tikz@fig@count=\count154
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count155
+\pgfmatrixcurrentcolumn=\count156
+\pgf@matrix@numberofcolumns=\count157
+)
+\tikz@expandcount=\count158
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
+)))
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\adjustbox.sty"
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/05/25 v2.7 package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks34
+\XKV@tempa@toks=\toks35
+)
+\XKV@depth=\count159
+File: xkeyval.tex 2014/05/25 v2.7 key=value parser (HA)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\adjcalc.sty"
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\trimclip.sty"
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\collectbox\collectbox.sty"
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box53
+)
+\tc@llx=\dimen257
+\tc@lly=\dimen258
+\tc@urx=\dimen259
+\tc@ury=\dimen260
+Package trimclip Info: Using driver 'tc-xetex.def'.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\tc-xetex.def"
+File: tc-xetex.def 2012/05/13 v1.0 Clipping driver for xetex
+))
+\adjbox@Width=\dimen261
+\adjbox@Height=\dimen262
+\adjbox@Depth=\dimen263
+\adjbox@Totalheight=\dimen264
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty"
+Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
+\c@checkoddpage=\count160
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box54
+\sift@deathcycles=\count161
+\@vwid@loff=\dimen265
+\@vwid@roff=\dimen266
+))
+(C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\tcolorbox\tcolorbox.sty
+Package: tcolorbox 2015/07/23 version 3.71 text color boxes
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks36
+\verbatim@line=\toks37
+\verbatim@in@stream=\read3
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\environ\environ.sty"
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\trimspaces\trimspaces.sty"
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks38
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+\etb@tempcnta=\count162
+)
+\tcb@titlebox=\box55
+\tcb@upperbox=\box56
+\tcb@lowerbox=\box57
+\tcb@phantombox=\box58
+\c@tcbbreakpart=\count163
+\c@tcblayer=\count164
+\tcb@temp=\box59
+\tcb@temp=\box60
+\tcb@temp=\box61
+\tcb@temp=\box62
+\tcb@out=\write4
+\tcb@record@out=\write5
+
+(C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\tcolorbox\tcbraster.code
+.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '3.71'
+\c@tcbrastercolumn=\count165
+\c@tcbrasterrow=\count166
+\c@tcbraster=\count167
+)
+(C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\tcolorbox\tcbskins.code.
+tex
+Library (tcolorbox): 'tcbskins.code.tex' version '3.71'
+\tcb@waterbox=\box63
+
+(C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\tcolorbox\tcbskinsjigsaw
+.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '3.71'
+))
+(C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\tcolorbox\tcbbreakable.c
+ode.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '3.71'
+\tcb@testbox=\box64
+\tcb@totalupperbox=\box65
+\tcb@totallowerbox=\box66
+)
+(C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\tcolorbox\tcbhooks.code.
+tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '3.71'
+)
+(C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\tcolorbox\tcbtheorems.co
+de.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '3.71'
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip54
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks39
+\ex@=\dimen267
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen268
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count168
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count169
+\leftroot@=\count170
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count171
+\DOTSCASE@=\count172
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box67
+\strutbox@=\box68
+\big@size=\dimen269
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count173
+\c@MaxMatrixCols=\count174
+\dotsspace@=\muskip17
+\c@parentequation=\count175
+\dspbrk@lvl=\count176
+\tag@help=\toks40
+\row@=\count177
+\column@=\count178
+\maxfields@=\count179
+\andhelp@=\toks41
+\eqnshift@=\dimen270
+\alignsep@=\dimen271
+\tagshift@=\dimen272
+\tagwidth@=\dimen273
+\totwidth@=\dimen274
+\lineht@=\dimen275
+\@envbody=\toks42
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks43
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+))
+(C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\tcolorbox\tcbfitting.cod
+e.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '3.71'
+\tcbfitdim=\dimen276
+\tcb@lowerfitdim=\dimen277
+\tcb@upperfitdim=\dimen278
+\tcb@cur@hbadness=\count180
+)
+(C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\tcolorbox\tcbxparse.code
+.tex
+Library (tcolorbox): 'tcbxparse.code.tex' version '3.71'
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tcboxverb with sig. ' O{} v ' on line 128.
+.................................................
+)
+(C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\tcolorbox\tcblistingsutf
+8.code.tex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '3.71'
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\listingsutf8.sty"
+Package: listingsutf8 2011/11/10 v1.2 Allow UTF-8 in listings input (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count181
+\lst@gtempboxa=\box69
+\lst@token=\toks44
+\lst@length=\count182
+\lst@currlwidth=\dimen279
+\lst@column=\count183
+\lst@pos=\count184
+\lst@lostspace=\dimen280
+\lst@width=\dimen281
+\lst@newlines=\count185
+\lst@lineno=\count186
+\lst@maxwidth=\dimen282
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count187
+\lst@skipnumbers=\count188
+\lst@framebox=\box70
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
+
+Package listingsutf8 Warning: Package loading is aborted because of missing \pd
+f@unescapehex.
+(listingsutf8)                It is provided by pdfTeX >= 1.30.
+
+)
+(C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\tcolorbox\tcblistings.co
+de.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '3.71'
+
+(C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\tcolorbox\tcblistingscor
+e.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '3.71'
+\c@tcblisting=\count189
+)))
+(C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\tcolorbox\tcbexternal.co
+de.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '3.71'
+)
+(C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\tcolorbox\tcbmagazine.co
+de.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '3.71'
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\upquote\upquote.sty"
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+))
+(C:\Users\Florian\Documents\UvA\knitr\calendar1\Update\calendarMaster.aux
+
+LaTeX Warning: Label `notlastpage' multiply defined.
+
+
+LaTeX Warning: Label `notlastpage' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 139.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 139.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\tipa\t3cmr.fd"
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 139.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 139.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 139.
+
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 469.47049pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=469.47049pt
+* \textheight=731.23584pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-47.23828pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=106.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box71
+Package hyperref Info: Link coloring OFF on input line 139.
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count190
+)
+LaTeX Info: Redefining \ref on input line 139.
+LaTeX Info: Redefining \pageref on input line 139.
+LaTeX Info: Redefining \nameref on input line 139.
+
+(C:\Users\Florian\Documents\UvA\knitr\calendar1\Update\calendarMaster.out)
+(C:\Users\Florian\Documents\UvA\knitr\calendar1\Update\calendarMaster.out)
+\@outlinefile=\write6
+
+ABD: EveryShipout initializing macros
+\c@lstlisting=\count191
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2014/04/30 v1.2b Input encoding file
+\inpenc@prehook=\toks45
+\inpenc@posthook=\toks46
+)
+Requested font "[lmroman17-regular]:mapping=tex-text" at 17.28pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman17-regular.otf
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 158
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\euenc\eu1lmtt.fd"
+File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Requested font "[lmmono12-regular]" at 17.28pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmmono12-regular.otf
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 158.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Requested font "rm-lmr17" at 17.28pt
+Requested font "rm-lmr12" at 12.0pt
+Requested font "rm-lmr10" at 10.0pt
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 158.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Requested font "lmmi12" at 17.28pt
+Requested font "lmmi12" at 12.0pt
+Requested font "lmmi10" at 10.0pt
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 158
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Requested font "lmsy10" at 17.28pt
+Requested font "lmsy10" at 12.0pt
+Requested font "lmsy10" at 10.0pt
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 158
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <17.28> on input line 158.
+Requested font "lmex10" scaled 1000
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 158.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 158.
+Requested font "[lmroman12-regular]:mapping=tex-text" at 12.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman12-regular.otf
+Requested font "rm-lmr8" at 8.0pt
+Requested font "rm-lmr6" at 6.0pt
+Requested font "lmmi8" at 8.0pt
+Requested font "lmmi6" at 6.0pt
+Requested font "lmsy8" at 8.0pt
+Requested font "lmsy6" at 6.0pt
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 158.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 158.
+Requested font "FontAwesome/OT:" at 12.0pt
+ -> C:/Program Files (x86)/MiKTeX 2.9/fonts/truetype/public/fontawesome/fontawe
+some-webfont.ttf
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 158--158
+ [][] 
+ []
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def"
+File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
+
+)
+[1
+
+
+
+]
+Requested font "rm-lmr10" at 10.95pt
+Requested font "lmmi10" at 10.95pt
+Requested font "lmsy10" at 10.95pt
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 166.
+Requested font "[lmroman5-regular]:mapping=tex-text" at 5.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman5-regular.otf
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--171
+
+ []
+
+Requested font "rm-lmr5" at 5.0pt
+Requested font "lmmi5" at 5.0pt
+Requested font "lmsy5" at 5.0pt
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 172.
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--194
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--235
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 243--245
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--263
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--268
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--286
+
+ []
+
+[3
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 306--308
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--326
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--331
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--354
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--372
+
+ []
+
+[4
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 380--382
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--400
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--405
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--423
+
+ []
+
+[5
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 443--445
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 446--463
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--468
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 469--486
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--491
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 492--509
+
+ []
+
+[6
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 517--519
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--537
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 540--542
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--560
+
+ []
+
+[7
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 580--582
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 583--600
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 603--605
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 606--623
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 626--628
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 629--646
+
+ []
+
+[8
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 654--656
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 657--674
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 677--679
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 680--697
+
+ []
+
+[9
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 717--719
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 720--737
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 740--742
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 743--760
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 763--765
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 766--783
+
+ []
+
+[10
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 791--793
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 794--811
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 814--816
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--834
+
+ []
+
+[11
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 854--856
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 857--874
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 877--879
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--897
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 900--902
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 903--920
+
+ []
+
+[12
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 928--930
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 931--948
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 951--953
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 954--971
+
+ []
+
+[13
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 991--993
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 994--1011
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1014--1016
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1034
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1037--1039
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1040--1057
+
+ []
+
+[14
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1065--1067
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1085
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1088--1090
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1091--1108
+
+ []
+
+[15
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1128--1130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1131--1148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1151--1153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1154--1171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1177--1194
+
+ []
+
+[16
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1202--1204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1205--1222
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1225--1227
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1228--1245
+
+ []
+
+[17
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1265--1267
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1268--1285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1288--1290
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1291--1308
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1311--1313
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1314--1331
+
+ []
+
+[18
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1339--1341
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1342--1359
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1362--1364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1365--1382
+
+ []
+
+[19
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1402--1404
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1405--1422
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1425--1427
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1428--1445
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1448--1450
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1451--1468
+
+ []
+
+[20
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1476--1478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1479--1496
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1499--1501
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1502--1519
+
+ []
+
+[21
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1539--1541
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1542--1559
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1562--1564
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1565--1582
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1585--1587
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1588--1605
+
+ []
+
+[22
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1613--1615
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1616--1633
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1636--1638
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1656
+
+ []
+
+[23
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1676--1678
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1679--1696
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1699--1701
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1702--1719
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1722--1724
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1725--1742
+
+ []
+
+[24
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1750--1752
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1753--1770
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1773--1775
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1776--1793
+
+ []
+
+[25
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1813--1815
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1816--1833
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1836--1838
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1839--1856
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1859--1861
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1862--1879
+
+ []
+
+[26
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1887--1889
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1890--1907
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1910--1912
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1913--1930
+
+ []
+
+[27
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1950--1952
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1953--1970
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1973--1975
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1976--1993
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1996--1998
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1999--2016
+
+ []
+
+[28
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2024--2026
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2027--2044
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2047--2049
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2050--2067
+
+ []
+
+[29
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2087--2089
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2090--2107
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2110--2112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2113--2130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2133--2135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2136--2153
+
+ []
+
+[30
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2161--2163
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2164--2181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2184--2186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2187--2204
+
+ []
+
+[31
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2224--2226
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2227--2244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2247--2249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2250--2267
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2270--2272
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2273--2290
+
+ []
+
+[32
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2298--2300
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2301--2318
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2321--2323
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2324--2341
+
+ []
+
+[33
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2361--2363
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2364--2381
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2384--2386
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2387--2404
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2407--2409
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2410--2427
+
+ []
+
+[34
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2435--2437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2438--2455
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2458--2460
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2461--2478
+
+ []
+
+[35
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2498--2500
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2501--2518
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2521--2523
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2524--2541
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2544--2546
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2547--2564
+
+ []
+
+[36
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2572--2574
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2575--2592
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2595--2597
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2598--2615
+
+ []
+
+[37
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2635--2637
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2638--2655
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2658--2660
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2661--2678
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2681--2683
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2684--2701
+
+ []
+
+[38
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2709--2711
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2712--2729
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2732--2734
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2735--2752
+
+ []
+
+[39
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2774
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2775--2792
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2795--2797
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2798--2815
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2818--2820
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2821--2838
+
+ []
+
+[40
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2846--2848
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2849--2866
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2869--2871
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2872--2889
+
+ []
+
+[41
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2909--2911
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2912--2929
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2932--2934
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2935--2952
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2955--2957
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2958--2975
+
+ []
+
+[42
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2983--2985
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2986--3003
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3006--3008
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3009--3026
+
+ []
+
+[43
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 3046--3048
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3049--3066
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3069--3071
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3072--3089
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3092--3094
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3095--3112
+
+ []
+
+[44
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 3120--3122
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3123--3140
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3143--3145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3146--3163
+
+ []
+
+[45
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 3183--3185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3186--3203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3206--3208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3209--3226
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3229--3231
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3232--3249
+
+ []
+
+[46
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 3257--3259
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3260--3277
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3280--3282
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3283--3300
+
+ []
+
+[47
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 3320--3322
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3323--3340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3343--3345
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3346--3363
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3366--3368
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3369--3386
+
+ []
+
+[48
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 3394--3396
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3397--3414
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3417--3419
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3420--3437
+
+ []
+
+[49
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 3457--3459
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3460--3477
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3480--3482
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3483--3500
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3503--3505
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3506--3523
+
+ []
+
+[50
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 3531--3533
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3534--3551
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3554--3556
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3557--3574
+
+ []
+
+[51
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 3594--3596
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3597--3614
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3617--3619
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3620--3637
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3640--3642
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3643--3660
+
+ []
+
+[52
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 3668--3670
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3671--3688
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3691--3693
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3694--3711
+
+ []
+
+[53
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 3731--3733
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3734--3751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3754--3756
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3757--3774
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3777--3779
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3780--3797
+
+ []
+
+[54
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 3805--3807
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3808--3825
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3828--3830
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3831--3848
+
+ []
+
+[55
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 3868--3870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3871--3888
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3891--3893
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3894--3911
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3914--3916
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3917--3934
+
+ []
+
+[56
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 3942--3944
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3945--3962
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3965--3967
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3968--3985
+
+ []
+
+[57
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4005--4007
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4008--4025
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4028--4030
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4031--4048
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4051--4053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4054--4071
+
+ []
+
+[58
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4079--4081
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4082--4099
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4102--4104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4105--4122
+
+ []
+
+[59
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4142--4144
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4145--4162
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4165--4167
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4168--4185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4188--4190
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4191--4208
+
+ []
+
+[60
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4216--4218
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4219--4236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4239--4241
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4242--4259
+
+ []
+
+[61
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4279--4281
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4282--4299
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4302--4304
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4305--4322
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4325--4327
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4328--4345
+
+ []
+
+[62
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4353--4355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4356--4373
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4376--4378
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4379--4396
+
+ []
+
+[63
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4416--4418
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4419--4436
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4439--4441
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4442--4459
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4462--4464
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4465--4482
+
+ []
+
+[64
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4490--4492
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4493--4510
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4513--4515
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4516--4533
+
+ []
+
+[65
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4553--4555
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4556--4573
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4576--4578
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4579--4596
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4599--4601
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4602--4619
+
+ []
+
+[66
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4627--4629
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4630--4647
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4650--4652
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4653--4670
+
+ []
+
+[67
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4690--4692
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4693--4710
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4713--4715
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4716--4733
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4736--4738
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4739--4756
+
+ []
+
+[68
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4764--4766
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4767--4784
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4787--4789
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4790--4807
+
+ []
+
+[69
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4827--4829
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4830--4847
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4850--4852
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4853--4870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4873--4875
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4876--4893
+
+ []
+
+[70
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4901--4903
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4904--4921
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4924--4926
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4927--4944
+
+ []
+
+[71
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4964--4966
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4967--4984
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4987--4989
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4990--5007
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5010--5012
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5013--5030
+
+ []
+
+[72
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 5038--5040
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5041--5058
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5061--5063
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5064--5081
+
+ []
+
+[73
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 5101--5103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5104--5121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5124--5126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5127--5144
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5147--5149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5150--5167
+
+ []
+
+[74
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 5175--5177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5178--5195
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5198--5200
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5201--5218
+
+ []
+
+[75
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 5238--5240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5241--5258
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5261--5263
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5264--5281
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5284--5286
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5287--5304
+
+ []
+
+[76
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 5312--5314
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5315--5332
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5335--5337
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5338--5355
+
+ []
+
+[77
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 5375--5377
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5378--5395
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5398--5400
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5401--5418
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5421--5423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5424--5441
+
+ []
+
+[78
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 5449--5451
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5452--5469
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5472--5474
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5475--5492
+
+ []
+
+[79
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 5512--5514
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5515--5532
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5535--5537
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5538--5555
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5558--5560
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5561--5578
+
+ []
+
+[80
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 5586--5588
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5589--5606
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5609--5611
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5612--5629
+
+ []
+
+[81
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 5649--5651
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5652--5669
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5672--5674
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5675--5692
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5695--5697
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5698--5715
+
+ []
+
+[82
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 5723--5725
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5726--5743
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5746--5748
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5749--5766
+
+ []
+
+[83
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 5786--5788
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5789--5806
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5809--5811
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5812--5829
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5832--5834
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5835--5852
+
+ []
+
+[84
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 5860--5862
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5863--5880
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5883--5885
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5886--5903
+
+ []
+
+[85
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 5923--5925
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5926--5943
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5946--5948
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5949--5966
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5969--5971
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5972--5989
+
+ []
+
+[86
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 5997--5999
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6000--6017
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6020--6022
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6023--6040
+
+ []
+
+[87
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 6060--6062
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6063--6080
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6083--6085
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6086--6103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6106--6108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6109--6126
+
+ []
+
+[88
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 6134--6136
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6137--6154
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6157--6159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6160--6177
+
+ []
+
+[89
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 6197--6199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6200--6217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6220--6222
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6223--6240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6243--6245
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6246--6263
+
+ []
+
+[90
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 6271--6273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6274--6291
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6294--6296
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6297--6314
+
+ []
+
+[91
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 6334--6336
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6337--6354
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6357--6359
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6360--6377
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6380--6382
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6383--6400
+
+ []
+
+[92
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 6408--6410
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6411--6428
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6431--6433
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6434--6451
+
+ []
+
+[93
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 6471--6473
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6474--6491
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6494--6496
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6497--6514
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6517--6519
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6520--6537
+
+ []
+
+[94
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 6545--6547
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6548--6565
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6568--6570
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6571--6588
+
+ []
+
+[95
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 6608--6610
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6611--6628
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6631--6633
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6634--6651
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6654--6656
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6657--6674
+
+ []
+
+[96
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 6682--6684
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6685--6702
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6705--6707
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6708--6725
+
+ []
+
+[97
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 6745--6747
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6748--6765
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6768--6770
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6771--6788
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6791--6793
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6794--6811
+
+ []
+
+[98
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 6819--6821
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6822--6839
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6842--6844
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6845--6862
+
+ []
+
+[99
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 6882--6884
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6885--6902
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6905--6907
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6908--6925
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6928--6930
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6931--6948
+
+ []
+
+[100
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 6956--6958
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6959--6976
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6979--6981
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6982--6999
+
+ []
+
+[101
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 7019--7021
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7022--7039
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7042--7044
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7045--7062
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7065--7067
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7068--7085
+
+ []
+
+[102
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 7093--7095
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7096--7113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7116--7118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7119--7136
+
+ []
+
+[103
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 7156--7158
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7159--7176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7179--7181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7182--7199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7202--7204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7205--7222
+
+ []
+
+[104
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 7230--7232
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7233--7250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7253--7255
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7256--7273
+
+ []
+
+[105
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 7293--7295
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7296--7313
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7316--7318
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7319--7336
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7339--7341
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7342--7359
+
+ []
+
+[106
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 7367--7369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7370--7387
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7390--7392
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7393--7410
+
+ []
+
+[107
+
+]
+Requested font "[lmroman5-regular]:mapping=tex-text" at 4.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman5-regular.otf
+LaTeX Font Info:    Calculating math sizes for size <4> on input line 7539.
+Requested font "rm-lmr5" at 4.0pt
+Requested font "rm-lmr5" at 2.79999pt
+Requested font "rm-lmr5" at 2.0pt
+Requested font "lmmi5" at 4.0pt
+Requested font "lmmi5" at 2.79999pt
+Requested font "lmmi5" at 2.0pt
+Requested font "lmsy5" at 4.0pt
+Requested font "lmsy5" at 2.79999pt
+Requested font "lmsy5" at 2.0pt
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <4> on input line 7539.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <2.79999> on input line 7539.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <2> on input line 7539.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [108
+
+
+]
+[109]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [110]
+[111]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [112]
+[113]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [114]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7905.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 7905.
+
+(C:\Users\Florian\Documents\UvA\knitr\calendar1\Update\calendarMaster.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7905.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 7905.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7905.
+ ) 
+Here is how much of TeX's memory you used:
+ 38342 strings out of 428791
+ 748315 string characters out of 3164829
+ 872697 words of memory out of 3000000
+ 41182 multiletter control sequences out of 15000+200000
+ 40595 words of font info for 61 fonts, out of 3000000 for 9000
+ 1096 hyphenation exceptions out of 8191
+ 63i,16n,101p,10419b,1087s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on calendarMaster.pdf (114 pages).

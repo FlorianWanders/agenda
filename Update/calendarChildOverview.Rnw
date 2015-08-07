@@ -1,26 +1,32 @@
-%rotate even pages in the overview so that the spiral binding is never on the palm site
-\checkoddpage
-\ifoddpage
-{\begin{minipage}{\linewidth} 
-\else
+%rotate even pages in the overview so that the spiral binding is never on the 
+%palm site in the updated agenda, all overview pages are even, so I commented 
+%out the \checkoddpage bit
+%\checkoddpage
+%\ifoddpage
+%{\begin{minipage}{\linewidth} 
+%\else
 \rotatebox{180}{\begin{minipage}{\linewidth} 
-\fi
+%\fi
+\label{\Sexpr{label}}
 \renewcommand{\arraystretch}{1.2} %increase cell height here. If added later, clipping with tikz won't work. Increasing cell height means less scaling through adjustbox, which means the font stays smaller
 \begin{adjustbox}{width = \linewidth, totalheight=\textheight}% scale table to fill height and width (width already defined with dimexpr below, but height required here)
 \begin{tikzpicture}[local bounding box=picture, baseline=(picture.south), line width=.1mm,rounded corners=.5em]  %thanks to Mark Wibrow (http://tex.stackexchange.com/a/258203/62746)
-  \node(thetable) [clip,inner sep=.5\pgflinewidth] {%
-    \color{textgray}\tiny
+  \node[font=\fontsize{4}{5.5}\selectfont](thetable) [clip,inner sep=.5\pgflinewidth]{%
+    \color{textgray}
 <<echo=FALSE, results='asis', message=FALSE>>=
 library(xtable)
 library(abind)
 
 #Color for weekends in overview with abind (result: overviewcol(ored))
-colwknds <- ifelse(wknds, "\\cellcolor[gray]{0.95}", "")
+colwknds <- ifelse(Saturdays, "\\cellcolor[gray]{0.80}", 
+                   ifelse(Sundays, "\\cellcolor[gray]{0.65}", ""))
 datArray <- abind(colwknds[,i],overview[,i], along=3) #http://stackoverflow.com/a/6408356/4798582
 overviewcol <- apply(datArray,1:2,function(x)paste0(x[1], x[2]))
 overviewcol <- apply(overviewcol, 1:2, function(x) ifelse(x=="NA","",x)) #combining data.frames has turned NA into string "NA"
 
 #Paste weeknumbers in overview with another abind 
+#Note: the \\{supertiny{} bit is not required since the size of the tikz node is the same; 
+#left the command in in case someone wanted to change the fontsize of only the week numbers
 wknrs <- ifelse(Mondays[,i], paste0(" \\hfill \\supertiny{", overview_wknrs[,i], "}"), "")
 datArray2 <- abind(wknrs, overviewcol, along=3)
 overviewcol2 <- apply(datArray2,1:2,function(x)paste0(x[2], x[1]))
@@ -57,4 +63,9 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 \end{tikzpicture}
 \end{adjustbox}
 \end{minipage}}
+\ifstrequal{\Sexpr{label}}{lastpage}
+{}
+{\newpage 
+\null 
+\newpage}%
 %
