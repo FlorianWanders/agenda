@@ -1,6 +1,6 @@
 %Created by Florian Wanders 
-%TODO: add proper license header
 %NOTE: fontawesomeupdated.sty and fontawesome.otf must be in same folder 
+%Change the 'Title page' section to your liking (e.g, name, add/remove stuff...)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%% Packages and Settings %%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -45,7 +45,6 @@
 \usepackage{fontawesomeupdated}  %for fontawesome glyph icons (github on cover)
 \usepackage{metalogo}            %for \XeLaTeX symbol
 \usepackage[hidelinks]{hyperref} %for (web)links
-\usepackage{zref-lastpage}       %hyperref and lastpage incompatible 
 
 \usepackage{tikz}               %for monthly overview with rounded corners
 \usepackage{adjustbox}          %for scaling overview table to page height and width
@@ -81,7 +80,7 @@
 ################################################################################
 ## Cusomizable input ###########################################################
 ################################################################################
-start <- "01.08.2015" # any date around which the agenda should begin (dd.mm.yyyy)
+start <- "10.08.2015" # any date around which the agenda should begin (dd.mm.yyyy)
 monthly_pages <- 4 # number of PAGES for the monthly overview (1 PAGE = 6 MONTHS)
 weekly_pages <- "12 months" #number of MONTHS for the week-on-2-pages agenda
 

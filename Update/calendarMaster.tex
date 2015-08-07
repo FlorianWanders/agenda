@@ -94,7 +94,6 @@
 \usepackage{fontawesomeupdated}  %for fontawesome glyph icons (github on cover)
 \usepackage{metalogo}            %for \XeLaTeX symbol
 \usepackage[hidelinks]{hyperref} %for (web)links
-\usepackage{zref-lastpage}       %hyperref and lastpage incompatible 
 
 \usepackage{tikz}               %for monthly overview with rounded corners
 \usepackage{adjustbox}          %for scaling overview table to page height and width
@@ -143,14 +142,14 @@
 \title{\parbox{\linewidth}{%http://tex.stackexchange.com/a/63385/62746
   \centering%
   Agenda\endgraf
-  August 2015 - July 2016\endgraf\bigskip
-  Created with \lsin{knitR} and \XeLaTeX
+  August 2015 - July 2016%\endgraf\bigskip
+  %Created with \lsin{knitR} and \XeLaTeX
   }
 }
 \author{\parbox{\linewidth}{%http://tex.stackexchange.com/a/63385/62746
   \centering%
-  Florian Wanders\endgraf\bigskip
-  \href{https://github.com/FlorianWanders/agenda}{\faGithub~florianwanders/agenda}
+  Ulrike Wanders%\endgraf\bigskip
+  %\href{https://github.com/FlorianWanders/agenda}{\faGithub~florianwanders/agenda}
   }
 }
 \date{}
@@ -159,280 +158,6 @@
 
 % Weekly overview
 
-%no code above here
-% Week number
-\begin{headerbox}
-  \centering{{\color{gray}Week~30}}
-\end{headerbox}
-% Monday
-\begin{weekdaybox}
-  Monday~27.07\\
-  {\tcbfontsize{0.5} 
-  \vfill
-  $07^{00}$\\
-$08^{00}$\\
-$09^{00}$\\
-$10^{00}$\\
-$11^{00}$\\
-$12^{00}$\\
-$13^{00}$\\
-$14^{00}$\\
-$15^{00}$\\
-$16^{00}$\\
-$17^{00}$\\
-$18^{00}$\\
-$19^{00}$\\
-$20^{00}$\\
-$21^{00}$\\
-%required to prevent new line
-  }
-\end{weekdaybox}
-% Tuesday
-\begin{weekdaybox}
-  Tuesday~28.07\\
-  {\tcbfontsize{0.5} 
-  \vfill
-  $07^{00}$\\
-$08^{00}$\\
-$09^{00}$\\
-$10^{00}$\\
-$11^{00}$\\
-$12^{00}$\\
-$13^{00}$\\
-$14^{00}$\\
-$15^{00}$\\
-$16^{00}$\\
-$17^{00}$\\
-$18^{00}$\\
-$19^{00}$\\
-$20^{00}$\\
-$21^{00}$\\
-%required to prevent new line
-  }
-\end{weekdaybox}
-% Wednesday
-\begin{weekdaybox}
-  Wednesday~29.07\\
-  {\tcbfontsize{0.5} 
-  \vfill
-  $07^{00}$\\
-$08^{00}$\\
-$09^{00}$\\
-$10^{00}$\\
-$11^{00}$\\
-$12^{00}$\\
-$13^{00}$\\
-$14^{00}$\\
-$15^{00}$\\
-$16^{00}$\\
-$17^{00}$\\
-$18^{00}$\\
-$19^{00}$\\
-$20^{00}$\\
-$21^{00}$\\
-%required to prevent new line
-  }
-\end{weekdaybox}
-\clearpage
-% Month and Year
-\begin{headerbox}
-\centering{\color{gray}July~2015}
-\end{headerbox}
-% Thursday 
-\begin{weekdaybox}
-  Thursday~30.07\\
-  {\tcbfontsize{0.5} 
-  \vfill
-  $07^{00}$\\
-$08^{00}$\\
-$09^{00}$\\
-$10^{00}$\\
-$11^{00}$\\
-$12^{00}$\\
-$13^{00}$\\
-$14^{00}$\\
-$15^{00}$\\
-$16^{00}$\\
-$17^{00}$\\
-$18^{00}$\\
-$19^{00}$\\
-$20^{00}$\\
-$21^{00}$\\
-%required to prevent new line
-  }
-\end{weekdaybox} 
-% Friday
-\begin{weekdaybox}
-  Friday~31.07\\
-  {\tcbfontsize{0.5} 
-  \vfill
-  $07^{00}$\\
-$08^{00}$\\
-$09^{00}$\\
-$10^{00}$\\
-$11^{00}$\\
-$12^{00}$\\
-$13^{00}$\\
-$14^{00}$\\
-$15^{00}$\\
-$16^{00}$\\
-$17^{00}$\\
-$18^{00}$\\
-$19^{00}$\\
-$20^{00}$\\
-$21^{00}$\\
-%required to prevent new line
-  }
-\end{weekdaybox}
-% Saturday and Sunday
-\begin{weekendbox}
-  Saturday~01.08
-  \tcblower
-  Sunday~02.08
-\end{weekendbox} %single space required here
-% Notes
-\begin{notebox}
-  Notes
-\end{notebox}
-\clearpage
-%no code allowed below here, 
-%no code above here
-% Week number
-\begin{headerbox}
-  \centering{{\color{gray}Week~31}}
-\end{headerbox}
-% Monday
-\begin{weekdaybox}
-  Monday~03.08\\
-  {\tcbfontsize{0.5} 
-  \vfill
-  $07^{00}$\\
-$08^{00}$\\
-$09^{00}$\\
-$10^{00}$\\
-$11^{00}$\\
-$12^{00}$\\
-$13^{00}$\\
-$14^{00}$\\
-$15^{00}$\\
-$16^{00}$\\
-$17^{00}$\\
-$18^{00}$\\
-$19^{00}$\\
-$20^{00}$\\
-$21^{00}$\\
-%required to prevent new line
-  }
-\end{weekdaybox}
-% Tuesday
-\begin{weekdaybox}
-  Tuesday~04.08\\
-  {\tcbfontsize{0.5} 
-  \vfill
-  $07^{00}$\\
-$08^{00}$\\
-$09^{00}$\\
-$10^{00}$\\
-$11^{00}$\\
-$12^{00}$\\
-$13^{00}$\\
-$14^{00}$\\
-$15^{00}$\\
-$16^{00}$\\
-$17^{00}$\\
-$18^{00}$\\
-$19^{00}$\\
-$20^{00}$\\
-$21^{00}$\\
-%required to prevent new line
-  }
-\end{weekdaybox}
-% Wednesday
-\begin{weekdaybox}
-  Wednesday~05.08\\
-  {\tcbfontsize{0.5} 
-  \vfill
-  $07^{00}$\\
-$08^{00}$\\
-$09^{00}$\\
-$10^{00}$\\
-$11^{00}$\\
-$12^{00}$\\
-$13^{00}$\\
-$14^{00}$\\
-$15^{00}$\\
-$16^{00}$\\
-$17^{00}$\\
-$18^{00}$\\
-$19^{00}$\\
-$20^{00}$\\
-$21^{00}$\\
-%required to prevent new line
-  }
-\end{weekdaybox}
-\clearpage
-% Month and Year
-\begin{headerbox}
-\centering{\color{gray}August~2015}
-\end{headerbox}
-% Thursday 
-\begin{weekdaybox}
-  Thursday~06.08\\
-  {\tcbfontsize{0.5} 
-  \vfill
-  $07^{00}$\\
-$08^{00}$\\
-$09^{00}$\\
-$10^{00}$\\
-$11^{00}$\\
-$12^{00}$\\
-$13^{00}$\\
-$14^{00}$\\
-$15^{00}$\\
-$16^{00}$\\
-$17^{00}$\\
-$18^{00}$\\
-$19^{00}$\\
-$20^{00}$\\
-$21^{00}$\\
-%required to prevent new line
-  }
-\end{weekdaybox} 
-% Friday
-\begin{weekdaybox}
-  Friday~07.08\\
-  {\tcbfontsize{0.5} 
-  \vfill
-  $07^{00}$\\
-$08^{00}$\\
-$09^{00}$\\
-$10^{00}$\\
-$11^{00}$\\
-$12^{00}$\\
-$13^{00}$\\
-$14^{00}$\\
-$15^{00}$\\
-$16^{00}$\\
-$17^{00}$\\
-$18^{00}$\\
-$19^{00}$\\
-$20^{00}$\\
-$21^{00}$\\
-%required to prevent new line
-  }
-\end{weekdaybox}
-% Saturday and Sunday
-\begin{weekendbox}
-  Saturday~08.08
-  \tcblower
-  Sunday~09.08
-\end{weekendbox} %single space required here
-% Notes
-\begin{notebox}
-  Notes
-\end{notebox}
-\clearpage
-%no code allowed below here, 
 %no code above here
 % Week number
 \begin{headerbox}
@@ -7440,7 +7165,7 @@ $21^{00}$\\
   \node[font=\fontsize{4}{5.5}\selectfont](thetable) [clip,inner sep=.5\pgflinewidth]{%
     \color{textgray}
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Fri Aug 07 15:43:43 2015
+% Fri Aug 07 16:00:04 2015
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
@@ -7559,7 +7284,7 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
   \node[font=\fontsize{4}{5.5}\selectfont](thetable) [clip,inner sep=.5\pgflinewidth]{%
     \color{textgray}
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Fri Aug 07 15:43:43 2015
+% Fri Aug 07 16:00:04 2015
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
@@ -7678,7 +7403,7 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
   \node[font=\fontsize{4}{5.5}\selectfont](thetable) [clip,inner sep=.5\pgflinewidth]{%
     \color{textgray}
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Fri Aug 07 15:43:43 2015
+% Fri Aug 07 16:00:04 2015
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
@@ -7797,7 +7522,7 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
   \node[font=\fontsize{4}{5.5}\selectfont](thetable) [clip,inner sep=.5\pgflinewidth]{%
     \color{textgray}
 % latex table generated in R 3.2.0 by xtable 1.7-4 package
-% Fri Aug 07 15:43:43 2015
+% Fri Aug 07 16:00:04 2015
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
