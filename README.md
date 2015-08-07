@@ -3,7 +3,7 @@
 I could not find the agenda that I wanted, so I decided to knit one. 
 Can be printed and bound at any good (online) copy-shop.
 
-*NOTE*: Will rewrite some code more neatly if I find the time. Feel free to use in the meantime and make changes on your own. Provided as is without any guarantees.
+**NOTE**: Make sure to check out the [**updated agenda**](https://github.com/FlorianWanders/agenda/tree/master/Update), which was developed with a greater focus on functional design. The updated agenda overcomes many of the restrictions of the current agenda. 
 
 ## Features: 
 
