@@ -13,7 +13,7 @@
 \begin{tikzpicture}[local bounding box=picture, baseline=(picture.south), line width=.1mm,rounded corners=.5em]  %thanks to Mark Wibrow (http://tex.stackexchange.com/a/258203/62746)
   \node[font=\fontsize{4}{5.5}\selectfont](thetable) [clip,inner sep=.5\pgflinewidth]{%
     \color{textgray}
-<<echo=FALSE, results='asis', message=FALSE>>=
+<<echo=FALSE, results='asis', message=FALSE, warning=FALSE>>=
 library(xtable)
 library(abind)
 
