@@ -71,6 +71,7 @@
     sidebyside, sidebyside gap=6mm, lower separated=false}
 \newtcolorbox{notebox}{
 		height=(\textheight-2em)/6}
+
     
 
 % Master-Child structure from: 
@@ -80,12 +81,12 @@
 ################################################################################
 ## Cusomizable input ###########################################################
 ################################################################################
-start <- "10.08.2015" # any date around which the agenda should begin (dd.mm.yyyy)
-monthly_pages <- 4 # number of PAGES for the monthly overview (1 PAGE = 6 MONTHS)
+start <- "23.08.2016" # any date around which the agenda should begin (dd.mm.yyyy)
+monthly_pages <- 6 # number of PAGES for the monthly overview (1 PAGE = 6 MONTHS)
 weekly_pages <- "12 months" #number of MONTHS for the week-on-2-pages agenda
 
-day_start <- 7 #first hour in the week-on-2-pages agenda
-day_end <- 21 #last hour in the week-on-2-pages agenda
+day_start <- 8 #first hour in the week-on-2-pages agenda
+day_end <- 22 #last hour in the week-on-2-pages agenda
 
 ################################################################################
 ## Set-Up, packages, and custom functions ######################################
@@ -295,7 +296,16 @@ for (i in rev(d1)) {
 #rev() because the overview pages will be appended to the end of the agenda in 
 #reversed order
 #change for loop http://yihui.name/en/2010/10/on-the-gory-loops-in-r/
+################################################################################
+## Notes #######################################################################
+################################################################################
+#notes <- NULL
+#notes.pages <- 20
+#notes.range <- 1 : notes.pages
+#for (i in notes.range) {notes = c(notes, knit_child('calendarNotes.Rnw'))}
+#notes = knit_child('calendarNotes.Rnw')
 @
+
 
 \usepackage{listings} 
 \def\lsin{\lstinline[basicstyle=\ttfamily,breaklines=true,]}%for inline verbatim
@@ -328,9 +338,55 @@ for (i in rev(d1)) {
 % Weekly overview
 \Sexpr{paste0(week)}
 
+% Notes
+\centering{{\color{gray}Notes}}
+\clearpage
+\centering{{\color{gray}Notes}}
+\clearpage
+\centering{{\color{gray}Notes}}
+\clearpage
+\centering{{\color{gray}Notes}}
+\clearpage
+\centering{{\color{gray}Notes}}
+\clearpage
+\centering{{\color{gray}Notes}}
+\clearpage
+\centering{{\color{gray}Notes}}
+\clearpage
+\centering{{\color{gray}Notes}}
+\clearpage
+\centering{{\color{gray}Notes}}
+\clearpage
+\centering{{\color{gray}Notes}}
+\clearpage
+\centering{{\color{gray}Notes}}
+\clearpage
+\centering{{\color{gray}Notes}}
+\clearpage
+\centering{{\color{gray}Notes}}
+\clearpage
+\centering{{\color{gray}Notes}}
+\clearpage
+\centering{{\color{gray}Notes}}
+\clearpage
+\centering{{\color{gray}Notes}}
+\clearpage
+\centering{{\color{gray}Notes}}
+\clearpage
+\centering{{\color{gray}Notes}}
+\clearpage
+\centering{{\color{gray}Notes}}
+\clearpage
+\centering{{\color{gray}Notes}}
+\clearpage
+%\Sexpr{paste0(notes)}
+
+
 % Monthly overview
 \begin{landscape}
 \Sexpr{paste0(monthc)}
 \end{landscape}
+
+
 
 \end{document}
