@@ -6,7 +6,7 @@ Can be printed and bound for ca. 12&#8364; at any good (online) copy-shop.
 
 <img alt="cover_and_back" src="photos/cover_and_back.jpg" width="300"> |  <img alt="cover" src="photos/cover.jpg" width="300">
 :---------------------------------------------------------------------:|:-------------------------------------------------------:
-<img alt="back" src="photos/back.jpg" width="300">                     |  <img alt="inside" src="photos/inside.jpg" width="300">
+<img alt="inside" src="photos/inside.jpg" width="300"> 				   |  <img alt="back" src="photos/back.jpg" width="300">   
 
 
 
@@ -15,13 +15,13 @@ Can be printed and bound for ca. 12&#8364; at any good (online) copy-shop.
 
 
 
-## Featuresgit  
+## Features
 
 - A4 agenda<sup>[1](#flexibility)<sup>
 - one week on two pages 
 - monthly overview with weeknumbers and highlighted weekends
-- monthly overview can be viewed at the back of the agenda without opening the agenda (choose a transparent foil when printing)
-- monthly overview stays up to date by tearing outdated overview pages
+- monthly overview can be viewed at the back of the agenda **without opening the agenda** (choose a transparent foil when printing)
+- monthly overview stays **up to date** by tearing outdated overview pages
 - soft cover (when printed at a copy shop)
 
 Search for "Cusomizable input" in the [Master file](https://github.com/FlorianWanders/agenda/blob/master/calendarMaster.Rnw) to
