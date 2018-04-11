@@ -1,6 +1,8 @@
+.Rproj.user
+Thumbs.db
 *.Rhistory
 *.RData
 *.Ruserdata
 *synctex.gz
-*concordance.text
+*concordance.tex
 *.log
