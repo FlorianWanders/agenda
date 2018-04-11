@@ -4,13 +4,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%% Packages and Settings %%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[11pt,a4paper]{book} %must be first line of code
+\documentclass[11pt, a4paper]{book} %must be first line of code
 \pagenumbering{gobble}      %remove page numbers (and reset to 1)
 \pagestyle{plain}           %remove page numbers
 \setlength{\parindent}{0pt} %no indenting of first line
 
-\usepackage[inner=2.5cm, outer=2cm, top=2cm, bottom=2cm]{geometry}%showframe
+\usepackage[inner=1cm, outer=0.5cm, top=0.5cm, bottom=0.5cm]{geometry}%showframe
 \usepackage{lscape} %pdflscape to turn pages
+
 %used for testing only: 
 % %pdflscape only turns page, but does not ajdust frame
 % %fix from http://tex.stackexchange.com/a/116521
@@ -81,12 +82,12 @@
 ################################################################################
 ## Cusomizable input ###########################################################
 ################################################################################
-start <- "23.08.2016" # any date around which the agenda should begin (dd.mm.yyyy)
+start <- "02.08.2017" # any date around which the agenda should begin (dd.mm.yyyy)
 monthly_pages <- 6 # number of PAGES for the monthly overview (1 PAGE = 6 MONTHS)
 weekly_pages <- "12 months" #number of MONTHS for the week-on-2-pages agenda
 
-day_start <- 8 #first hour in the week-on-2-pages agenda
-day_end <- 22 #last hour in the week-on-2-pages agenda
+day_start <- 7 #first hour in the week-on-2-pages agenda
+day_end <- 23 #last hour in the week-on-2-pages agenda
 
 ################################################################################
 ## Set-Up, packages, and custom functions ######################################
@@ -174,7 +175,7 @@ monthly_end <- ymd(monthly_end)
 weekly_start <- prevbestmonday(start)
 weekly_end <- seq.Date(as.Date(monthly_start), 
                         length=2, 
-                        by=weekly_pages, #defined in the customizable section
+                        by=weekly_pages #defined in the customizable section
                         )[2] - 1
 weekly_end <- ymd(weekly_end)
 #--------------------------------------------------
@@ -334,6 +335,8 @@ for (i in rev(d1)) {
 \date{}
 \maketitle
 \end{titlepage}
+
+
 
 % Weekly overview
 \Sexpr{paste0(week)}

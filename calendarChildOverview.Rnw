@@ -11,7 +11,7 @@
   \node(thetable) [clip,inner sep=.5\pgflinewidth] {%
     \color{textgray}\tiny
 <<echo=FALSE, results='asis', message=FALSE>>=
-library(xtable)
+suppressWarnings(suppressMessages(library(xtable)))
 library(abind)
 
 #Color for weekends in overview with abind (result: overviewcol(ored))

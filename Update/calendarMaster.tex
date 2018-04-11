@@ -4,7 +4,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%% Packages and Settings %%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[11pt,a4paper]{book}\usepackage[]{graphicx}\usepackage[]{color}
+\documentclass[11pt, a4paper]{book}\usepackage[]{graphicx}\usepackage[]{color}
 %% maxwidth is the original width if it is less than linewidth
 %% otherwise use linewidth (to make sure the graphics do not exceed the margin)
 \makeatletter
@@ -27,6 +27,7 @@
 \newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
 \newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
 \newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
 
 \usepackage{framed}
 \makeatletter
@@ -58,8 +59,9 @@
 \pagestyle{plain}           %remove page numbers
 \setlength{\parindent}{0pt} %no indenting of first line
 
-\usepackage[inner=2.5cm, outer=2cm, top=2cm, bottom=2cm]{geometry}%showframe
+\usepackage[inner=1cm, outer=0.5cm, top=0.5cm, bottom=0.5cm]{geometry}%showframe
 \usepackage{lscape} %pdflscape to turn pages
+
 %used for testing only: 
 % %pdflscape only turns page, but does not ajdust frame
 % %fix from http://tex.stackexchange.com/a/116521
@@ -144,7 +146,7 @@
 \title{\parbox{\linewidth}{%http://tex.stackexchange.com/a/63385/62746
   \centering%
   Agenda\endgraf
-  August 2016 - July 2017\endgraf\bigskip
+  August 2017 - July 2018\endgraf\bigskip
   Created with \lsin{knitR} and \XeLaTeX
   }
 }
@@ -158,8 +160,451 @@
 \maketitle
 \end{titlepage}
 
+
+
 % Weekly overview
 
+%no code above here
+% Week number
+\begin{headerbox}
+  \centering{{\color{gray}Week~31}}
+\end{headerbox}
+% Monday
+\begin{weekdaybox}
+  Monday~31.07\\
+  {\tcbfontsize{0.5} 
+  \vfill
+  $07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$\\
+$22^{00}$\\
+$23^{00}$\\
+%required to prevent new line
+  }
+\end{weekdaybox}
+% Tuesday
+\begin{weekdaybox}
+  Tuesday~01.08\\
+  {\tcbfontsize{0.5} 
+  \vfill
+  $07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$\\
+$22^{00}$\\
+$23^{00}$\\
+%required to prevent new line
+  }
+\end{weekdaybox}
+% Wednesday
+\begin{weekdaybox}
+  Wednesday~02.08\\
+  {\tcbfontsize{0.5} 
+  \vfill
+  $07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$\\
+$22^{00}$\\
+$23^{00}$\\
+%required to prevent new line
+  }
+\end{weekdaybox}
+\clearpage
+% Month and Year
+\begin{headerbox}
+\centering{\color{gray}July~2017}
+\end{headerbox}
+% Thursday 
+\begin{weekdaybox}
+  Thursday~03.08\\
+  {\tcbfontsize{0.5} 
+  \vfill
+  $07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$\\
+$22^{00}$\\
+$23^{00}$\\
+%required to prevent new line
+  }
+\end{weekdaybox} 
+% Friday
+\begin{weekdaybox}
+  Friday~04.08\\
+  {\tcbfontsize{0.5} 
+  \vfill
+  $07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$\\
+$22^{00}$\\
+$23^{00}$\\
+%required to prevent new line
+  }
+\end{weekdaybox}
+% Saturday and Sunday
+\begin{weekendbox}
+  Saturday~05.08
+  \tcblower
+  Sunday~06.08
+\end{weekendbox} %single space required here
+% Notes
+\begin{notebox}
+  Notes
+\end{notebox}
+\clearpage
+%no code allowed below here, 
+%no code above here
+% Week number
+\begin{headerbox}
+  \centering{{\color{gray}Week~32}}
+\end{headerbox}
+% Monday
+\begin{weekdaybox}
+  Monday~07.08\\
+  {\tcbfontsize{0.5} 
+  \vfill
+  $07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$\\
+$22^{00}$\\
+$23^{00}$\\
+%required to prevent new line
+  }
+\end{weekdaybox}
+% Tuesday
+\begin{weekdaybox}
+  Tuesday~08.08\\
+  {\tcbfontsize{0.5} 
+  \vfill
+  $07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$\\
+$22^{00}$\\
+$23^{00}$\\
+%required to prevent new line
+  }
+\end{weekdaybox}
+% Wednesday
+\begin{weekdaybox}
+  Wednesday~09.08\\
+  {\tcbfontsize{0.5} 
+  \vfill
+  $07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$\\
+$22^{00}$\\
+$23^{00}$\\
+%required to prevent new line
+  }
+\end{weekdaybox}
+\clearpage
+% Month and Year
+\begin{headerbox}
+\centering{\color{gray}August~2017}
+\end{headerbox}
+% Thursday 
+\begin{weekdaybox}
+  Thursday~10.08\\
+  {\tcbfontsize{0.5} 
+  \vfill
+  $07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$\\
+$22^{00}$\\
+$23^{00}$\\
+%required to prevent new line
+  }
+\end{weekdaybox} 
+% Friday
+\begin{weekdaybox}
+  Friday~11.08\\
+  {\tcbfontsize{0.5} 
+  \vfill
+  $07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$\\
+$22^{00}$\\
+$23^{00}$\\
+%required to prevent new line
+  }
+\end{weekdaybox}
+% Saturday and Sunday
+\begin{weekendbox}
+  Saturday~12.08
+  \tcblower
+  Sunday~13.08
+\end{weekendbox} %single space required here
+% Notes
+\begin{notebox}
+  Notes
+\end{notebox}
+\clearpage
+%no code allowed below here, 
+%no code above here
+% Week number
+\begin{headerbox}
+  \centering{{\color{gray}Week~33}}
+\end{headerbox}
+% Monday
+\begin{weekdaybox}
+  Monday~14.08\\
+  {\tcbfontsize{0.5} 
+  \vfill
+  $07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$\\
+$22^{00}$\\
+$23^{00}$\\
+%required to prevent new line
+  }
+\end{weekdaybox}
+% Tuesday
+\begin{weekdaybox}
+  Tuesday~15.08\\
+  {\tcbfontsize{0.5} 
+  \vfill
+  $07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$\\
+$22^{00}$\\
+$23^{00}$\\
+%required to prevent new line
+  }
+\end{weekdaybox}
+% Wednesday
+\begin{weekdaybox}
+  Wednesday~16.08\\
+  {\tcbfontsize{0.5} 
+  \vfill
+  $07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$\\
+$22^{00}$\\
+$23^{00}$\\
+%required to prevent new line
+  }
+\end{weekdaybox}
+\clearpage
+% Month and Year
+\begin{headerbox}
+\centering{\color{gray}August~2017}
+\end{headerbox}
+% Thursday 
+\begin{weekdaybox}
+  Thursday~17.08\\
+  {\tcbfontsize{0.5} 
+  \vfill
+  $07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$\\
+$22^{00}$\\
+$23^{00}$\\
+%required to prevent new line
+  }
+\end{weekdaybox} 
+% Friday
+\begin{weekdaybox}
+  Friday~18.08\\
+  {\tcbfontsize{0.5} 
+  \vfill
+  $07^{00}$\\
+$08^{00}$\\
+$09^{00}$\\
+$10^{00}$\\
+$11^{00}$\\
+$12^{00}$\\
+$13^{00}$\\
+$14^{00}$\\
+$15^{00}$\\
+$16^{00}$\\
+$17^{00}$\\
+$18^{00}$\\
+$19^{00}$\\
+$20^{00}$\\
+$21^{00}$\\
+$22^{00}$\\
+$23^{00}$\\
+%required to prevent new line
+  }
+\end{weekdaybox}
+% Saturday and Sunday
+\begin{weekendbox}
+  Saturday~19.08
+  \tcblower
+  Sunday~20.08
+\end{weekendbox} %single space required here
+% Notes
+\begin{notebox}
+  Notes
+\end{notebox}
+\clearpage
+%no code allowed below here, 
 %no code above here
 % Week number
 \begin{headerbox}
@@ -167,10 +612,11 @@
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~22.08\\
+  Monday~21.08\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -185,15 +631,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~23.08\\
+  Tuesday~22.08\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -208,15 +656,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~24.08\\
+  Wednesday~23.08\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -231,20 +681,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}August~2016}
+\centering{\color{gray}August~2017}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~25.08\\
+  Thursday~24.08\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -259,15 +711,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~26.08\\
+  Friday~25.08\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -282,14 +736,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~27.08
+  Saturday~26.08
   \tcblower
-  Sunday~28.08
+  Sunday~27.08
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -304,10 +759,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~29.08\\
+  Monday~28.08\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -322,15 +778,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~30.08\\
+  Tuesday~29.08\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -345,15 +803,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~31.08\\
+  Wednesday~30.08\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -368,20 +828,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}August~2016}
+\centering{\color{gray}August~2017}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~01.09\\
+  Thursday~31.08\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -396,15 +858,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~02.09\\
+  Friday~01.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -419,14 +883,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~03.09
+  Saturday~02.09
   \tcblower
-  Sunday~04.09
+  Sunday~03.09
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -441,10 +906,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~05.09\\
+  Monday~04.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -459,15 +925,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~06.09\\
+  Tuesday~05.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -482,15 +950,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~07.09\\
+  Wednesday~06.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -505,20 +975,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}September~2016}
+\centering{\color{gray}September~2017}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~08.09\\
+  Thursday~07.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -533,15 +1005,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~09.09\\
+  Friday~08.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -556,14 +1030,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~10.09
+  Saturday~09.09
   \tcblower
-  Sunday~11.09
+  Sunday~10.09
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -578,10 +1053,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~12.09\\
+  Monday~11.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -596,15 +1072,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~13.09\\
+  Tuesday~12.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -619,15 +1097,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~14.09\\
+  Wednesday~13.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -642,20 +1122,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}September~2016}
+\centering{\color{gray}September~2017}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~15.09\\
+  Thursday~14.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -670,15 +1152,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~16.09\\
+  Friday~15.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -693,14 +1177,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~17.09
+  Saturday~16.09
   \tcblower
-  Sunday~18.09
+  Sunday~17.09
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -715,10 +1200,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~19.09\\
+  Monday~18.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -733,15 +1219,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~20.09\\
+  Tuesday~19.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -756,15 +1244,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~21.09\\
+  Wednesday~20.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -779,20 +1269,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}September~2016}
+\centering{\color{gray}September~2017}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~22.09\\
+  Thursday~21.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -807,15 +1299,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~23.09\\
+  Friday~22.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -830,14 +1324,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~24.09
+  Saturday~23.09
   \tcblower
-  Sunday~25.09
+  Sunday~24.09
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -852,10 +1347,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~26.09\\
+  Monday~25.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -870,15 +1366,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~27.09\\
+  Tuesday~26.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -893,15 +1391,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~28.09\\
+  Wednesday~27.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -916,20 +1416,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}September~2016}
+\centering{\color{gray}September~2017}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~29.09\\
+  Thursday~28.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -944,15 +1446,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~30.09\\
+  Friday~29.09\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -967,14 +1471,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~01.10
+  Saturday~30.09
   \tcblower
-  Sunday~02.10
+  Sunday~01.10
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -989,10 +1494,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~03.10\\
+  Monday~02.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1007,15 +1513,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~04.10\\
+  Tuesday~03.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1030,15 +1538,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~05.10\\
+  Wednesday~04.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1053,20 +1563,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}October~2016}
+\centering{\color{gray}October~2017}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~06.10\\
+  Thursday~05.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1081,15 +1593,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~07.10\\
+  Friday~06.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1104,14 +1618,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~08.10
+  Saturday~07.10
   \tcblower
-  Sunday~09.10
+  Sunday~08.10
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -1126,10 +1641,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~10.10\\
+  Monday~09.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1144,15 +1660,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~11.10\\
+  Tuesday~10.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1167,15 +1685,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~12.10\\
+  Wednesday~11.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1190,20 +1710,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}October~2016}
+\centering{\color{gray}October~2017}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~13.10\\
+  Thursday~12.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1218,15 +1740,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~14.10\\
+  Friday~13.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1241,14 +1765,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~15.10
+  Saturday~14.10
   \tcblower
-  Sunday~16.10
+  Sunday~15.10
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -1263,10 +1788,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~17.10\\
+  Monday~16.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1281,15 +1807,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~18.10\\
+  Tuesday~17.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1304,15 +1832,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~19.10\\
+  Wednesday~18.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1327,20 +1857,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}October~2016}
+\centering{\color{gray}October~2017}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~20.10\\
+  Thursday~19.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1355,15 +1887,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~21.10\\
+  Friday~20.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1378,14 +1912,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~22.10
+  Saturday~21.10
   \tcblower
-  Sunday~23.10
+  Sunday~22.10
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -1400,10 +1935,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~24.10\\
+  Monday~23.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1418,15 +1954,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~25.10\\
+  Tuesday~24.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1441,15 +1979,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~26.10\\
+  Wednesday~25.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1464,20 +2004,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}October~2016}
+\centering{\color{gray}October~2017}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~27.10\\
+  Thursday~26.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1492,15 +2034,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~28.10\\
+  Friday~27.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1515,14 +2059,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~29.10
+  Saturday~28.10
   \tcblower
-  Sunday~30.10
+  Sunday~29.10
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -1537,10 +2082,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~31.10\\
+  Monday~30.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1555,15 +2101,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~01.11\\
+  Tuesday~31.10\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1578,15 +2126,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~02.11\\
+  Wednesday~01.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1601,20 +2151,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}October~2016}
+\centering{\color{gray}October~2017}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~03.11\\
+  Thursday~02.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1629,15 +2181,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~04.11\\
+  Friday~03.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1652,14 +2206,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~05.11
+  Saturday~04.11
   \tcblower
-  Sunday~06.11
+  Sunday~05.11
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -1674,10 +2229,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~07.11\\
+  Monday~06.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1692,15 +2248,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~08.11\\
+  Tuesday~07.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1715,15 +2273,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~09.11\\
+  Wednesday~08.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1738,20 +2298,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}November~2016}
+\centering{\color{gray}November~2017}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~10.11\\
+  Thursday~09.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1766,15 +2328,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~11.11\\
+  Friday~10.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1789,14 +2353,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~12.11
+  Saturday~11.11
   \tcblower
-  Sunday~13.11
+  Sunday~12.11
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -1811,10 +2376,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~14.11\\
+  Monday~13.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1829,15 +2395,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~15.11\\
+  Tuesday~14.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1852,15 +2420,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~16.11\\
+  Wednesday~15.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1875,20 +2445,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}November~2016}
+\centering{\color{gray}November~2017}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~17.11\\
+  Thursday~16.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1903,15 +2475,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~18.11\\
+  Friday~17.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1926,14 +2500,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~19.11
+  Saturday~18.11
   \tcblower
-  Sunday~20.11
+  Sunday~19.11
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -1948,10 +2523,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~21.11\\
+  Monday~20.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1966,15 +2542,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~22.11\\
+  Tuesday~21.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -1989,15 +2567,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~23.11\\
+  Wednesday~22.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2012,20 +2592,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}November~2016}
+\centering{\color{gray}November~2017}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~24.11\\
+  Thursday~23.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2040,15 +2622,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~25.11\\
+  Friday~24.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2063,14 +2647,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~26.11
+  Saturday~25.11
   \tcblower
-  Sunday~27.11
+  Sunday~26.11
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -2085,10 +2670,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~28.11\\
+  Monday~27.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2103,15 +2689,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~29.11\\
+  Tuesday~28.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2126,15 +2714,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~30.11\\
+  Wednesday~29.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2149,20 +2739,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}November~2016}
+\centering{\color{gray}November~2017}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~01.12\\
+  Thursday~30.11\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2177,15 +2769,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~02.12\\
+  Friday~01.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2200,14 +2794,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~03.12
+  Saturday~02.12
   \tcblower
-  Sunday~04.12
+  Sunday~03.12
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -2222,10 +2817,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~05.12\\
+  Monday~04.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2240,15 +2836,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~06.12\\
+  Tuesday~05.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2263,15 +2861,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~07.12\\
+  Wednesday~06.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2286,20 +2886,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}December~2016}
+\centering{\color{gray}December~2017}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~08.12\\
+  Thursday~07.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2314,15 +2916,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~09.12\\
+  Friday~08.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2337,14 +2941,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~10.12
+  Saturday~09.12
   \tcblower
-  Sunday~11.12
+  Sunday~10.12
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -2359,10 +2964,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~12.12\\
+  Monday~11.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2377,15 +2983,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~13.12\\
+  Tuesday~12.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2400,15 +3008,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~14.12\\
+  Wednesday~13.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2423,20 +3033,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}December~2016}
+\centering{\color{gray}December~2017}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~15.12\\
+  Thursday~14.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2451,15 +3063,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~16.12\\
+  Friday~15.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2474,14 +3088,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~17.12
+  Saturday~16.12
   \tcblower
-  Sunday~18.12
+  Sunday~17.12
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -2496,10 +3111,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~19.12\\
+  Monday~18.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2514,15 +3130,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~20.12\\
+  Tuesday~19.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2537,15 +3155,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~21.12\\
+  Wednesday~20.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2560,20 +3180,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}December~2016}
+\centering{\color{gray}December~2017}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~22.12\\
+  Thursday~21.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2588,15 +3210,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~23.12\\
+  Friday~22.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2611,14 +3235,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~24.12
+  Saturday~23.12
   \tcblower
-  Sunday~25.12
+  Sunday~24.12
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -2633,10 +3258,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~26.12\\
+  Monday~25.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2651,15 +3277,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~27.12\\
+  Tuesday~26.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2674,15 +3302,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~28.12\\
+  Wednesday~27.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2697,20 +3327,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}December~2016}
+\centering{\color{gray}December~2017}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~29.12\\
+  Thursday~28.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2725,15 +3357,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~30.12\\
+  Friday~29.12\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2748,14 +3382,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~31.12
+  Saturday~30.12
   \tcblower
-  Sunday~01.01
+  Sunday~31.12
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -2770,10 +3405,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~02.01\\
+  Monday~01.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2788,15 +3424,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~03.01\\
+  Tuesday~02.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2811,15 +3449,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~04.01\\
+  Wednesday~03.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2834,20 +3474,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}January~2017}
+\centering{\color{gray}January~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~05.01\\
+  Thursday~04.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2862,15 +3504,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~06.01\\
+  Friday~05.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2885,14 +3529,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~07.01
+  Saturday~06.01
   \tcblower
-  Sunday~08.01
+  Sunday~07.01
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -2907,10 +3552,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~09.01\\
+  Monday~08.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2925,15 +3571,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~10.01\\
+  Tuesday~09.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2948,15 +3596,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~11.01\\
+  Wednesday~10.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2971,20 +3621,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}January~2017}
+\centering{\color{gray}January~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~12.01\\
+  Thursday~11.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -2999,15 +3651,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~13.01\\
+  Friday~12.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3022,14 +3676,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~14.01
+  Saturday~13.01
   \tcblower
-  Sunday~15.01
+  Sunday~14.01
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -3044,10 +3699,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~16.01\\
+  Monday~15.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3062,15 +3718,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~17.01\\
+  Tuesday~16.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3085,15 +3743,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~18.01\\
+  Wednesday~17.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3108,20 +3768,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}January~2017}
+\centering{\color{gray}January~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~19.01\\
+  Thursday~18.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3136,15 +3798,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~20.01\\
+  Friday~19.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3159,14 +3823,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~21.01
+  Saturday~20.01
   \tcblower
-  Sunday~22.01
+  Sunday~21.01
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -3181,10 +3846,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~23.01\\
+  Monday~22.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3199,15 +3865,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~24.01\\
+  Tuesday~23.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3222,15 +3890,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~25.01\\
+  Wednesday~24.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3245,20 +3915,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}January~2017}
+\centering{\color{gray}January~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~26.01\\
+  Thursday~25.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3273,15 +3945,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~27.01\\
+  Friday~26.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3296,14 +3970,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~28.01
+  Saturday~27.01
   \tcblower
-  Sunday~29.01
+  Sunday~28.01
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -3318,10 +3993,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~30.01\\
+  Monday~29.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3336,15 +4012,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~31.01\\
+  Tuesday~30.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3359,15 +4037,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~01.02\\
+  Wednesday~31.01\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3382,20 +4062,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}January~2017}
+\centering{\color{gray}January~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~02.02\\
+  Thursday~01.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3410,15 +4092,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~03.02\\
+  Friday~02.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3433,14 +4117,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~04.02
+  Saturday~03.02
   \tcblower
-  Sunday~05.02
+  Sunday~04.02
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -3455,10 +4140,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~06.02\\
+  Monday~05.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3473,15 +4159,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~07.02\\
+  Tuesday~06.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3496,15 +4184,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~08.02\\
+  Wednesday~07.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3519,20 +4209,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}February~2017}
+\centering{\color{gray}February~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~09.02\\
+  Thursday~08.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3547,15 +4239,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~10.02\\
+  Friday~09.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3570,14 +4264,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~11.02
+  Saturday~10.02
   \tcblower
-  Sunday~12.02
+  Sunday~11.02
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -3592,10 +4287,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~13.02\\
+  Monday~12.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3610,15 +4306,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~14.02\\
+  Tuesday~13.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3633,15 +4331,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~15.02\\
+  Wednesday~14.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3656,20 +4356,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}February~2017}
+\centering{\color{gray}February~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~16.02\\
+  Thursday~15.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3684,15 +4386,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~17.02\\
+  Friday~16.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3707,14 +4411,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~18.02
+  Saturday~17.02
   \tcblower
-  Sunday~19.02
+  Sunday~18.02
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -3729,10 +4434,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~20.02\\
+  Monday~19.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3747,15 +4453,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~21.02\\
+  Tuesday~20.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3770,15 +4478,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~22.02\\
+  Wednesday~21.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3793,20 +4503,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}February~2017}
+\centering{\color{gray}February~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~23.02\\
+  Thursday~22.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3821,15 +4533,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~24.02\\
+  Friday~23.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3844,14 +4558,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~25.02
+  Saturday~24.02
   \tcblower
-  Sunday~26.02
+  Sunday~25.02
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -3866,10 +4581,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~27.02\\
+  Monday~26.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3884,15 +4600,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~28.02\\
+  Tuesday~27.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3907,15 +4625,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~01.03\\
+  Wednesday~28.02\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3930,20 +4650,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}February~2017}
+\centering{\color{gray}February~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~02.03\\
+  Thursday~01.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3958,15 +4680,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~03.03\\
+  Friday~02.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -3981,14 +4705,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~04.03
+  Saturday~03.03
   \tcblower
-  Sunday~05.03
+  Sunday~04.03
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -4003,10 +4728,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~06.03\\
+  Monday~05.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4021,15 +4747,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~07.03\\
+  Tuesday~06.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4044,15 +4772,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~08.03\\
+  Wednesday~07.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4067,20 +4797,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}March~2017}
+\centering{\color{gray}March~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~09.03\\
+  Thursday~08.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4095,15 +4827,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~10.03\\
+  Friday~09.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4118,14 +4852,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~11.03
+  Saturday~10.03
   \tcblower
-  Sunday~12.03
+  Sunday~11.03
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -4140,10 +4875,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~13.03\\
+  Monday~12.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4158,15 +4894,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~14.03\\
+  Tuesday~13.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4181,15 +4919,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~15.03\\
+  Wednesday~14.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4204,20 +4944,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}March~2017}
+\centering{\color{gray}March~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~16.03\\
+  Thursday~15.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4232,15 +4974,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~17.03\\
+  Friday~16.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4255,14 +4999,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~18.03
+  Saturday~17.03
   \tcblower
-  Sunday~19.03
+  Sunday~18.03
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -4277,10 +5022,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~20.03\\
+  Monday~19.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4295,15 +5041,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~21.03\\
+  Tuesday~20.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4318,15 +5066,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~22.03\\
+  Wednesday~21.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4341,20 +5091,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}March~2017}
+\centering{\color{gray}March~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~23.03\\
+  Thursday~22.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4369,15 +5121,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~24.03\\
+  Friday~23.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4392,14 +5146,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~25.03
+  Saturday~24.03
   \tcblower
-  Sunday~26.03
+  Sunday~25.03
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -4414,10 +5169,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~27.03\\
+  Monday~26.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4432,15 +5188,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~28.03\\
+  Tuesday~27.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4455,15 +5213,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~29.03\\
+  Wednesday~28.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4478,20 +5238,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}March~2017}
+\centering{\color{gray}March~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~30.03\\
+  Thursday~29.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4506,15 +5268,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~31.03\\
+  Friday~30.03\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4529,14 +5293,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~01.04
+  Saturday~31.03
   \tcblower
-  Sunday~02.04
+  Sunday~01.04
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -4551,10 +5316,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~03.04\\
+  Monday~02.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4569,15 +5335,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~04.04\\
+  Tuesday~03.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4592,15 +5360,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~05.04\\
+  Wednesday~04.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4615,20 +5385,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}April~2017}
+\centering{\color{gray}April~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~06.04\\
+  Thursday~05.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4643,15 +5415,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~07.04\\
+  Friday~06.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4666,14 +5440,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~08.04
+  Saturday~07.04
   \tcblower
-  Sunday~09.04
+  Sunday~08.04
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -4688,10 +5463,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~10.04\\
+  Monday~09.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4706,15 +5482,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~11.04\\
+  Tuesday~10.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4729,15 +5507,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~12.04\\
+  Wednesday~11.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4752,20 +5532,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}April~2017}
+\centering{\color{gray}April~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~13.04\\
+  Thursday~12.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4780,15 +5562,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~14.04\\
+  Friday~13.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4803,14 +5587,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~15.04
+  Saturday~14.04
   \tcblower
-  Sunday~16.04
+  Sunday~15.04
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -4825,10 +5610,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~17.04\\
+  Monday~16.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4843,15 +5629,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~18.04\\
+  Tuesday~17.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4866,15 +5654,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~19.04\\
+  Wednesday~18.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4889,20 +5679,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}April~2017}
+\centering{\color{gray}April~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~20.04\\
+  Thursday~19.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4917,15 +5709,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~21.04\\
+  Friday~20.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4940,14 +5734,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~22.04
+  Saturday~21.04
   \tcblower
-  Sunday~23.04
+  Sunday~22.04
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -4962,10 +5757,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~24.04\\
+  Monday~23.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -4980,15 +5776,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~25.04\\
+  Tuesday~24.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5003,15 +5801,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~26.04\\
+  Wednesday~25.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5026,20 +5826,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}April~2017}
+\centering{\color{gray}April~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~27.04\\
+  Thursday~26.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5054,15 +5856,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~28.04\\
+  Friday~27.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5077,14 +5881,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~29.04
+  Saturday~28.04
   \tcblower
-  Sunday~30.04
+  Sunday~29.04
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -5099,10 +5904,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~01.05\\
+  Monday~30.04\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5117,15 +5923,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~02.05\\
+  Tuesday~01.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5140,15 +5948,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~03.05\\
+  Wednesday~02.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5163,20 +5973,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}May~2017}
+\centering{\color{gray}April~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~04.05\\
+  Thursday~03.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5191,15 +6003,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~05.05\\
+  Friday~04.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5214,14 +6028,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~06.05
+  Saturday~05.05
   \tcblower
-  Sunday~07.05
+  Sunday~06.05
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -5236,10 +6051,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~08.05\\
+  Monday~07.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5254,15 +6070,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~09.05\\
+  Tuesday~08.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5277,15 +6095,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~10.05\\
+  Wednesday~09.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5300,20 +6120,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}May~2017}
+\centering{\color{gray}May~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~11.05\\
+  Thursday~10.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5328,15 +6150,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~12.05\\
+  Friday~11.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5351,14 +6175,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~13.05
+  Saturday~12.05
   \tcblower
-  Sunday~14.05
+  Sunday~13.05
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -5373,10 +6198,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~15.05\\
+  Monday~14.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5391,15 +6217,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~16.05\\
+  Tuesday~15.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5414,15 +6242,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~17.05\\
+  Wednesday~16.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5437,20 +6267,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}May~2017}
+\centering{\color{gray}May~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~18.05\\
+  Thursday~17.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5465,15 +6297,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~19.05\\
+  Friday~18.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5488,14 +6322,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~20.05
+  Saturday~19.05
   \tcblower
-  Sunday~21.05
+  Sunday~20.05
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -5510,10 +6345,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~22.05\\
+  Monday~21.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5528,15 +6364,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~23.05\\
+  Tuesday~22.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5551,15 +6389,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~24.05\\
+  Wednesday~23.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5574,20 +6414,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}May~2017}
+\centering{\color{gray}May~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~25.05\\
+  Thursday~24.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5602,15 +6444,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~26.05\\
+  Friday~25.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5625,14 +6469,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~27.05
+  Saturday~26.05
   \tcblower
-  Sunday~28.05
+  Sunday~27.05
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -5647,10 +6492,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~29.05\\
+  Monday~28.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5665,15 +6511,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~30.05\\
+  Tuesday~29.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5688,15 +6536,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~31.05\\
+  Wednesday~30.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5711,20 +6561,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}May~2017}
+\centering{\color{gray}May~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~01.06\\
+  Thursday~31.05\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5739,15 +6591,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~02.06\\
+  Friday~01.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5762,14 +6616,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~03.06
+  Saturday~02.06
   \tcblower
-  Sunday~04.06
+  Sunday~03.06
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -5784,10 +6639,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~05.06\\
+  Monday~04.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5802,15 +6658,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~06.06\\
+  Tuesday~05.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5825,15 +6683,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~07.06\\
+  Wednesday~06.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5848,20 +6708,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}June~2017}
+\centering{\color{gray}June~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~08.06\\
+  Thursday~07.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5876,15 +6738,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~09.06\\
+  Friday~08.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5899,14 +6763,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~10.06
+  Saturday~09.06
   \tcblower
-  Sunday~11.06
+  Sunday~10.06
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -5921,10 +6786,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~12.06\\
+  Monday~11.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5939,15 +6805,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~13.06\\
+  Tuesday~12.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5962,15 +6830,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~14.06\\
+  Wednesday~13.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -5985,20 +6855,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}June~2017}
+\centering{\color{gray}June~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~15.06\\
+  Thursday~14.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6013,15 +6885,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~16.06\\
+  Friday~15.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6036,14 +6910,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~17.06
+  Saturday~16.06
   \tcblower
-  Sunday~18.06
+  Sunday~17.06
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -6058,10 +6933,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~19.06\\
+  Monday~18.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6076,15 +6952,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~20.06\\
+  Tuesday~19.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6099,15 +6977,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~21.06\\
+  Wednesday~20.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6122,20 +7002,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}June~2017}
+\centering{\color{gray}June~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~22.06\\
+  Thursday~21.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6150,15 +7032,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~23.06\\
+  Friday~22.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6173,14 +7057,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~24.06
+  Saturday~23.06
   \tcblower
-  Sunday~25.06
+  Sunday~24.06
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -6195,10 +7080,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~26.06\\
+  Monday~25.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6213,15 +7099,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~27.06\\
+  Tuesday~26.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6236,15 +7124,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~28.06\\
+  Wednesday~27.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6259,20 +7149,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}June~2017}
+\centering{\color{gray}June~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~29.06\\
+  Thursday~28.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6287,15 +7179,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~30.06\\
+  Friday~29.06\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6310,14 +7204,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~01.07
+  Saturday~30.06
   \tcblower
-  Sunday~02.07
+  Sunday~01.07
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -6332,10 +7227,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~03.07\\
+  Monday~02.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6350,15 +7246,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~04.07\\
+  Tuesday~03.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6373,15 +7271,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~05.07\\
+  Wednesday~04.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6396,20 +7296,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}July~2017}
+\centering{\color{gray}July~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~06.07\\
+  Thursday~05.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6424,15 +7326,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~07.07\\
+  Friday~06.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6447,14 +7351,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~08.07
+  Saturday~07.07
   \tcblower
-  Sunday~09.07
+  Sunday~08.07
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -6469,10 +7374,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~10.07\\
+  Monday~09.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6487,15 +7393,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~11.07\\
+  Tuesday~10.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6510,15 +7418,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~12.07\\
+  Wednesday~11.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6533,20 +7443,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}July~2017}
+\centering{\color{gray}July~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~13.07\\
+  Thursday~12.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6561,15 +7473,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~14.07\\
+  Friday~13.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6584,14 +7498,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~15.07
+  Saturday~14.07
   \tcblower
-  Sunday~16.07
+  Sunday~15.07
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -6606,10 +7521,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~17.07\\
+  Monday~16.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6624,15 +7540,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~18.07\\
+  Tuesday~17.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6647,15 +7565,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~19.07\\
+  Wednesday~18.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6670,20 +7590,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}July~2017}
+\centering{\color{gray}July~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~20.07\\
+  Thursday~19.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6698,15 +7620,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~21.07\\
+  Friday~20.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6721,14 +7645,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~22.07
+  Saturday~21.07
   \tcblower
-  Sunday~23.07
+  Sunday~22.07
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -6743,10 +7668,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~24.07\\
+  Monday~23.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6761,15 +7687,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~25.07\\
+  Tuesday~24.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6784,15 +7712,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~26.07\\
+  Wednesday~25.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6807,20 +7737,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}July~2017}
+\centering{\color{gray}July~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~27.07\\
+  Thursday~26.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6835,15 +7767,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~28.07\\
+  Friday~27.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6858,14 +7792,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~29.07
+  Saturday~28.07
   \tcblower
-  Sunday~30.07
+  Sunday~29.07
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -6880,10 +7815,11 @@ $22^{00}$\\
 \end{headerbox}
 % Monday
 \begin{weekdaybox}
-  Monday~31.07\\
+  Monday~30.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6898,15 +7834,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Tuesday
 \begin{weekdaybox}
-  Tuesday~01.08\\
+  Tuesday~31.07\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6921,15 +7859,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Wednesday
 \begin{weekdaybox}
-  Wednesday~02.08\\
+  Wednesday~01.08\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6944,20 +7884,22 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 \clearpage
 % Month and Year
 \begin{headerbox}
-\centering{\color{gray}July~2017}
+\centering{\color{gray}July~2018}
 \end{headerbox}
 % Thursday 
 \begin{weekdaybox}
-  Thursday~03.08\\
+  Thursday~02.08\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6972,15 +7914,17 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox} 
 % Friday
 \begin{weekdaybox}
-  Friday~04.08\\
+  Friday~03.08\\
   {\tcbfontsize{0.5} 
   \vfill
-  $08^{00}$\\
+  $07^{00}$\\
+$08^{00}$\\
 $09^{00}$\\
 $10^{00}$\\
 $11^{00}$\\
@@ -6995,14 +7939,15 @@ $19^{00}$\\
 $20^{00}$\\
 $21^{00}$\\
 $22^{00}$\\
+$23^{00}$\\
 %required to prevent new line
   }
 \end{weekdaybox}
 % Saturday and Sunday
 \begin{weekendbox}
-  Saturday~05.08
+  Saturday~04.08
   \tcblower
-  Sunday~06.08
+  Sunday~05.08
 \end{weekendbox} %single space required here
 % Notes
 \begin{notebox}
@@ -7073,8 +8018,246 @@ $22^{00}$\\
 \begin{tikzpicture}[local bounding box=picture, baseline=(picture.south), line width=.1mm,rounded corners=.5em]  %thanks to Mark Wibrow (http://tex.stackexchange.com/a/258203/62746)
   \node[font=\fontsize{4}{5.5}\selectfont](thetable) [clip,inner sep=.5\pgflinewidth]{%
     \color{textgray}
-% latex table generated in R 3.2.3 by xtable 1.8-2 package
-% Tue Aug 23 08:17:10 2016
+% latex table generated in R 3.3.2 by xtable 1.8-2 package
+% Fri Aug 04 12:37:12 2017
+\begin{tabular}{p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth -
+                                           7\arrayrulewidth - 
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                       \dimexpr 
+                                       \linewidth - 
+                                       7\arrayrulewidth
+                                       -12\tabcolsep\relax}}
+ February 2020 & March & April & May & June & July \\ 
+  \hline
+\cellcolor[gray]{0.80}01 Sat & \cellcolor[gray]{0.65}01 Sun & 01 Wed & 01 Fri & 01 Mon \hfill \supertiny{22} & 01 Wed \\ 
+   \hline
+\cellcolor[gray]{0.65}02 Sun & 02 Mon \hfill \supertiny{09} & 02 Thu & \cellcolor[gray]{0.80}02 Sat & 02 Tue & 02 Thu \\ 
+   \hline
+03 Mon \hfill \supertiny{05} & 03 Tue & 03 Fri & \cellcolor[gray]{0.65}03 Sun & 03 Wed & 03 Fri \\ 
+   \hline
+04 Tue & 04 Wed & \cellcolor[gray]{0.80}04 Sat & 04 Mon \hfill \supertiny{18} & 04 Thu & \cellcolor[gray]{0.80}04 Sat \\ 
+   \hline
+05 Wed & 05 Thu & \cellcolor[gray]{0.65}05 Sun & 05 Tue & 05 Fri & \cellcolor[gray]{0.65}05 Sun \\ 
+   \hline
+06 Thu & 06 Fri & 06 Mon \hfill \supertiny{14} & 06 Wed & \cellcolor[gray]{0.80}06 Sat & 06 Mon \hfill \supertiny{27} \\ 
+   \hline
+07 Fri & \cellcolor[gray]{0.80}07 Sat & 07 Tue & 07 Thu & \cellcolor[gray]{0.65}07 Sun & 07 Tue \\ 
+   \hline
+\cellcolor[gray]{0.80}08 Sat & \cellcolor[gray]{0.65}08 Sun & 08 Wed & 08 Fri & 08 Mon \hfill \supertiny{23} & 08 Wed \\ 
+   \hline
+\cellcolor[gray]{0.65}09 Sun & 09 Mon \hfill \supertiny{10} & 09 Thu & \cellcolor[gray]{0.80}09 Sat & 09 Tue & 09 Thu \\ 
+   \hline
+10 Mon \hfill \supertiny{06} & 10 Tue & 10 Fri & \cellcolor[gray]{0.65}10 Sun & 10 Wed & 10 Fri \\ 
+   \hline
+11 Tue & 11 Wed & \cellcolor[gray]{0.80}11 Sat & 11 Mon \hfill \supertiny{19} & 11 Thu & \cellcolor[gray]{0.80}11 Sat \\ 
+   \hline
+12 Wed & 12 Thu & \cellcolor[gray]{0.65}12 Sun & 12 Tue & 12 Fri & \cellcolor[gray]{0.65}12 Sun \\ 
+   \hline
+13 Thu & 13 Fri & 13 Mon \hfill \supertiny{15} & 13 Wed & \cellcolor[gray]{0.80}13 Sat & 13 Mon \hfill \supertiny{28} \\ 
+   \hline
+14 Fri & \cellcolor[gray]{0.80}14 Sat & 14 Tue & 14 Thu & \cellcolor[gray]{0.65}14 Sun & 14 Tue \\ 
+   \hline
+\cellcolor[gray]{0.80}15 Sat & \cellcolor[gray]{0.65}15 Sun & 15 Wed & 15 Fri & 15 Mon \hfill \supertiny{24} & 15 Wed \\ 
+   \hline
+\cellcolor[gray]{0.65}16 Sun & 16 Mon \hfill \supertiny{11} & 16 Thu & \cellcolor[gray]{0.80}16 Sat & 16 Tue & 16 Thu \\ 
+   \hline
+17 Mon \hfill \supertiny{07} & 17 Tue & 17 Fri & \cellcolor[gray]{0.65}17 Sun & 17 Wed & 17 Fri \\ 
+   \hline
+18 Tue & 18 Wed & \cellcolor[gray]{0.80}18 Sat & 18 Mon \hfill \supertiny{20} & 18 Thu & \cellcolor[gray]{0.80}18 Sat \\ 
+   \hline
+19 Wed & 19 Thu & \cellcolor[gray]{0.65}19 Sun & 19 Tue & 19 Fri & \cellcolor[gray]{0.65}19 Sun \\ 
+   \hline
+20 Thu & 20 Fri & 20 Mon \hfill \supertiny{16} & 20 Wed & \cellcolor[gray]{0.80}20 Sat & 20 Mon \hfill \supertiny{29} \\ 
+   \hline
+21 Fri & \cellcolor[gray]{0.80}21 Sat & 21 Tue & 21 Thu & \cellcolor[gray]{0.65}21 Sun & 21 Tue \\ 
+   \hline
+\cellcolor[gray]{0.80}22 Sat & \cellcolor[gray]{0.65}22 Sun & 22 Wed & 22 Fri & 22 Mon \hfill \supertiny{25} & 22 Wed \\ 
+   \hline
+\cellcolor[gray]{0.65}23 Sun & 23 Mon \hfill \supertiny{12} & 23 Thu & \cellcolor[gray]{0.80}23 Sat & 23 Tue & 23 Thu \\ 
+   \hline
+24 Mon \hfill \supertiny{08} & 24 Tue & 24 Fri & \cellcolor[gray]{0.65}24 Sun & 24 Wed & 24 Fri \\ 
+   \hline
+25 Tue & 25 Wed & \cellcolor[gray]{0.80}25 Sat & 25 Mon \hfill \supertiny{21} & 25 Thu & \cellcolor[gray]{0.80}25 Sat \\ 
+   \hline
+26 Wed & 26 Thu & \cellcolor[gray]{0.65}26 Sun & 26 Tue & 26 Fri & \cellcolor[gray]{0.65}26 Sun \\ 
+   \hline
+27 Thu & 27 Fri & 27 Mon \hfill \supertiny{17} & 27 Wed & \cellcolor[gray]{0.80}27 Sat & 27 Mon \hfill \supertiny{30} \\ 
+   \hline
+28 Fri & \cellcolor[gray]{0.80}28 Sat & 28 Tue & 28 Thu & \cellcolor[gray]{0.65}28 Sun & 28 Tue \\ 
+   \hline
+\cellcolor[gray]{0.80}29 Sat & \cellcolor[gray]{0.65}29 Sun & 29 Wed & 29 Fri & 29 Mon \hfill \supertiny{26} & 29 Wed \\ 
+   \hline
+ & 30 Mon \hfill \supertiny{13} & 30 Thu & \cellcolor[gray]{0.80}30 Sat & 30 Tue & 30 Thu \\ 
+   \hline
+ & 31 Tue &  & \cellcolor[gray]{0.65}31 Sun &  & 31 Fri \\ 
+  \end{tabular}
+
+};
+\draw [textgray]([draw=textgray, fill=white, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
+rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
+\end{tikzpicture}
+\end{adjustbox}
+\end{minipage}}
+\ifstrequal{notlastpage}{lastpage}
+{}
+{\newpage 
+\null 
+\newpage}%
+%, 
+%rotate even pages in the overview so that the spiral binding is never on the 
+%palm site in the updated agenda, all overview pages are even, so I commented 
+%out the \checkoddpage bit
+%\checkoddpage
+%\ifoddpage
+%{\begin{minipage}{\linewidth} 
+%\else
+\rotatebox{180}{\begin{minipage}{\linewidth} 
+%\fi
+\label{notlastpage}
+\renewcommand{\arraystretch}{1.2} %increase cell height here. If added later, clipping with tikz won't work. Increasing cell height means less scaling through adjustbox, which means the font stays smaller
+\begin{adjustbox}{width = \linewidth, totalheight=\textheight}% scale table to fill height and width (width already defined with dimexpr below, but height required here)
+\begin{tikzpicture}[local bounding box=picture, baseline=(picture.south), line width=.1mm,rounded corners=.5em]  %thanks to Mark Wibrow (http://tex.stackexchange.com/a/258203/62746)
+  \node[font=\fontsize{4}{5.5}\selectfont](thetable) [clip,inner sep=.5\pgflinewidth]{%
+    \color{textgray}
+% latex table generated in R 3.3.2 by xtable 1.8-2 package
+% Fri Aug 04 12:37:12 2017
+\begin{tabular}{p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth -
+                                           7\arrayrulewidth - 
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                           \dimexpr 
+                                           \linewidth - 
+                                           7\arrayrulewidth -
+                                           12\tabcolsep\relax}|p{0.166666666666666666
+                                       \dimexpr 
+                                       \linewidth - 
+                                       7\arrayrulewidth
+                                       -12\tabcolsep\relax}}
+ August 2019 & September & October & November & December & January 2020 \\ 
+  \hline
+01 Thu & \cellcolor[gray]{0.65}01 Sun & 01 Tue & 01 Fri & \cellcolor[gray]{0.65}01 Sun & 01 Wed \\ 
+   \hline
+02 Fri & 02 Mon \hfill \supertiny{35} & 02 Wed & \cellcolor[gray]{0.80}02 Sat & 02 Mon \hfill \supertiny{48} & 02 Thu \\ 
+   \hline
+\cellcolor[gray]{0.80}03 Sat & 03 Tue & 03 Thu & \cellcolor[gray]{0.65}03 Sun & 03 Tue & 03 Fri \\ 
+   \hline
+\cellcolor[gray]{0.65}04 Sun & 04 Wed & 04 Fri & 04 Mon \hfill \supertiny{44} & 04 Wed & \cellcolor[gray]{0.80}04 Sat \\ 
+   \hline
+05 Mon \hfill \supertiny{31} & 05 Thu & \cellcolor[gray]{0.80}05 Sat & 05 Tue & 05 Thu & \cellcolor[gray]{0.65}05 Sun \\ 
+   \hline
+06 Tue & 06 Fri & \cellcolor[gray]{0.65}06 Sun & 06 Wed & 06 Fri & 06 Mon \hfill \supertiny{01} \\ 
+   \hline
+07 Wed & \cellcolor[gray]{0.80}07 Sat & 07 Mon \hfill \supertiny{40} & 07 Thu & \cellcolor[gray]{0.80}07 Sat & 07 Tue \\ 
+   \hline
+08 Thu & \cellcolor[gray]{0.65}08 Sun & 08 Tue & 08 Fri & \cellcolor[gray]{0.65}08 Sun & 08 Wed \\ 
+   \hline
+09 Fri & 09 Mon \hfill \supertiny{36} & 09 Wed & \cellcolor[gray]{0.80}09 Sat & 09 Mon \hfill \supertiny{49} & 09 Thu \\ 
+   \hline
+\cellcolor[gray]{0.80}10 Sat & 10 Tue & 10 Thu & \cellcolor[gray]{0.65}10 Sun & 10 Tue & 10 Fri \\ 
+   \hline
+\cellcolor[gray]{0.65}11 Sun & 11 Wed & 11 Fri & 11 Mon \hfill \supertiny{45} & 11 Wed & \cellcolor[gray]{0.80}11 Sat \\ 
+   \hline
+12 Mon \hfill \supertiny{32} & 12 Thu & \cellcolor[gray]{0.80}12 Sat & 12 Tue & 12 Thu & \cellcolor[gray]{0.65}12 Sun \\ 
+   \hline
+13 Tue & 13 Fri & \cellcolor[gray]{0.65}13 Sun & 13 Wed & 13 Fri & 13 Mon \hfill \supertiny{02} \\ 
+   \hline
+14 Wed & \cellcolor[gray]{0.80}14 Sat & 14 Mon \hfill \supertiny{41} & 14 Thu & \cellcolor[gray]{0.80}14 Sat & 14 Tue \\ 
+   \hline
+15 Thu & \cellcolor[gray]{0.65}15 Sun & 15 Tue & 15 Fri & \cellcolor[gray]{0.65}15 Sun & 15 Wed \\ 
+   \hline
+16 Fri & 16 Mon \hfill \supertiny{37} & 16 Wed & \cellcolor[gray]{0.80}16 Sat & 16 Mon \hfill \supertiny{50} & 16 Thu \\ 
+   \hline
+\cellcolor[gray]{0.80}17 Sat & 17 Tue & 17 Thu & \cellcolor[gray]{0.65}17 Sun & 17 Tue & 17 Fri \\ 
+   \hline
+\cellcolor[gray]{0.65}18 Sun & 18 Wed & 18 Fri & 18 Mon \hfill \supertiny{46} & 18 Wed & \cellcolor[gray]{0.80}18 Sat \\ 
+   \hline
+19 Mon \hfill \supertiny{33} & 19 Thu & \cellcolor[gray]{0.80}19 Sat & 19 Tue & 19 Thu & \cellcolor[gray]{0.65}19 Sun \\ 
+   \hline
+20 Tue & 20 Fri & \cellcolor[gray]{0.65}20 Sun & 20 Wed & 20 Fri & 20 Mon \hfill \supertiny{03} \\ 
+   \hline
+21 Wed & \cellcolor[gray]{0.80}21 Sat & 21 Mon \hfill \supertiny{42} & 21 Thu & \cellcolor[gray]{0.80}21 Sat & 21 Tue \\ 
+   \hline
+22 Thu & \cellcolor[gray]{0.65}22 Sun & 22 Tue & 22 Fri & \cellcolor[gray]{0.65}22 Sun & 22 Wed \\ 
+   \hline
+23 Fri & 23 Mon \hfill \supertiny{38} & 23 Wed & \cellcolor[gray]{0.80}23 Sat & 23 Mon \hfill \supertiny{51} & 23 Thu \\ 
+   \hline
+\cellcolor[gray]{0.80}24 Sat & 24 Tue & 24 Thu & \cellcolor[gray]{0.65}24 Sun & 24 Tue & 24 Fri \\ 
+   \hline
+\cellcolor[gray]{0.65}25 Sun & 25 Wed & 25 Fri & 25 Mon \hfill \supertiny{47} & 25 Wed & \cellcolor[gray]{0.80}25 Sat \\ 
+   \hline
+26 Mon \hfill \supertiny{34} & 26 Thu & \cellcolor[gray]{0.80}26 Sat & 26 Tue & 26 Thu & \cellcolor[gray]{0.65}26 Sun \\ 
+   \hline
+27 Tue & 27 Fri & \cellcolor[gray]{0.65}27 Sun & 27 Wed & 27 Fri & 27 Mon \hfill \supertiny{04} \\ 
+   \hline
+28 Wed & \cellcolor[gray]{0.80}28 Sat & 28 Mon \hfill \supertiny{43} & 28 Thu & \cellcolor[gray]{0.80}28 Sat & 28 Tue \\ 
+   \hline
+29 Thu & \cellcolor[gray]{0.65}29 Sun & 29 Tue & 29 Fri & \cellcolor[gray]{0.65}29 Sun & 29 Wed \\ 
+   \hline
+30 Fri & 30 Mon \hfill \supertiny{39} & 30 Wed & \cellcolor[gray]{0.80}30 Sat & 30 Mon \hfill \supertiny{52} & 30 Thu \\ 
+   \hline
+\cellcolor[gray]{0.80}31 Sat &  & 31 Thu &  & 31 Tue & 31 Fri \\ 
+  \end{tabular}
+
+};
+\draw [textgray]([draw=textgray, fill=white, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
+rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
+\end{tikzpicture}
+\end{adjustbox}
+\end{minipage}}
+\ifstrequal{notlastpage}{lastpage}
+{}
+{\newpage 
+\null 
+\newpage}%
+%, 
+%rotate even pages in the overview so that the spiral binding is never on the 
+%palm site in the updated agenda, all overview pages are even, so I commented 
+%out the \checkoddpage bit
+%\checkoddpage
+%\ifoddpage
+%{\begin{minipage}{\linewidth} 
+%\else
+\rotatebox{180}{\begin{minipage}{\linewidth} 
+%\fi
+\label{notlastpage}
+\renewcommand{\arraystretch}{1.2} %increase cell height here. If added later, clipping with tikz won't work. Increasing cell height means less scaling through adjustbox, which means the font stays smaller
+\begin{adjustbox}{width = \linewidth, totalheight=\textheight}% scale table to fill height and width (width already defined with dimexpr below, but height required here)
+\begin{tikzpicture}[local bounding box=picture, baseline=(picture.south), line width=.1mm,rounded corners=.5em]  %thanks to Mark Wibrow (http://tex.stackexchange.com/a/258203/62746)
+  \node[font=\fontsize{4}{5.5}\selectfont](thetable) [clip,inner sep=.5\pgflinewidth]{%
+    \color{textgray}
+% latex table generated in R 3.3.2 by xtable 1.8-2 package
+% Fri Aug 04 12:37:13 2017
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
@@ -7192,8 +8375,8 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 \begin{tikzpicture}[local bounding box=picture, baseline=(picture.south), line width=.1mm,rounded corners=.5em]  %thanks to Mark Wibrow (http://tex.stackexchange.com/a/258203/62746)
   \node[font=\fontsize{4}{5.5}\selectfont](thetable) [clip,inner sep=.5\pgflinewidth]{%
     \color{textgray}
-% latex table generated in R 3.2.3 by xtable 1.8-2 package
-% Tue Aug 23 08:17:10 2016
+% latex table generated in R 3.3.2 by xtable 1.8-2 package
+% Fri Aug 04 12:37:13 2017
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
@@ -7311,8 +8494,8 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 \begin{tikzpicture}[local bounding box=picture, baseline=(picture.south), line width=.1mm,rounded corners=.5em]  %thanks to Mark Wibrow (http://tex.stackexchange.com/a/258203/62746)
   \node[font=\fontsize{4}{5.5}\selectfont](thetable) [clip,inner sep=.5\pgflinewidth]{%
     \color{textgray}
-% latex table generated in R 3.2.3 by xtable 1.8-2 package
-% Tue Aug 23 08:17:10 2016
+% latex table generated in R 3.3.2 by xtable 1.8-2 package
+% Fri Aug 04 12:37:13 2017
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
@@ -7424,14 +8607,14 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 %\else
 \rotatebox{180}{\begin{minipage}{\linewidth} 
 %\fi
-\label{notlastpage}
+\label{lastpage}
 \renewcommand{\arraystretch}{1.2} %increase cell height here. If added later, clipping with tikz won't work. Increasing cell height means less scaling through adjustbox, which means the font stays smaller
 \begin{adjustbox}{width = \linewidth, totalheight=\textheight}% scale table to fill height and width (width already defined with dimexpr below, but height required here)
 \begin{tikzpicture}[local bounding box=picture, baseline=(picture.south), line width=.1mm,rounded corners=.5em]  %thanks to Mark Wibrow (http://tex.stackexchange.com/a/258203/62746)
   \node[font=\fontsize{4}{5.5}\selectfont](thetable) [clip,inner sep=.5\pgflinewidth]{%
     \color{textgray}
-% latex table generated in R 3.2.3 by xtable 1.8-2 package
-% Tue Aug 23 08:17:10 2016
+% latex table generated in R 3.3.2 by xtable 1.8-2 package
+% Fri Aug 04 12:37:13 2017
 \begin{tabular}{p{0.166666666666666666
                                            \dimexpr 
                                            \linewidth -
@@ -7520,244 +8703,6 @@ rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east
 30 Wed & \cellcolor[gray]{0.80}30 Sat & 30 Mon \hfill \supertiny{44} & 30 Thu & \cellcolor[gray]{0.80}30 Sat & 30 Tue \\ 
    \hline
 31 Thu &  & 31 Tue &  & \cellcolor[gray]{0.65}31 Sun & 31 Wed \\ 
-  \end{tabular}
-
-};
-\draw [textgray]([draw=textgray, fill=white, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
-rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
-\end{tikzpicture}
-\end{adjustbox}
-\end{minipage}}
-\ifstrequal{notlastpage}{lastpage}
-{}
-{\newpage 
-\null 
-\newpage}%
-%, 
-%rotate even pages in the overview so that the spiral binding is never on the 
-%palm site in the updated agenda, all overview pages are even, so I commented 
-%out the \checkoddpage bit
-%\checkoddpage
-%\ifoddpage
-%{\begin{minipage}{\linewidth} 
-%\else
-\rotatebox{180}{\begin{minipage}{\linewidth} 
-%\fi
-\label{notlastpage}
-\renewcommand{\arraystretch}{1.2} %increase cell height here. If added later, clipping with tikz won't work. Increasing cell height means less scaling through adjustbox, which means the font stays smaller
-\begin{adjustbox}{width = \linewidth, totalheight=\textheight}% scale table to fill height and width (width already defined with dimexpr below, but height required here)
-\begin{tikzpicture}[local bounding box=picture, baseline=(picture.south), line width=.1mm,rounded corners=.5em]  %thanks to Mark Wibrow (http://tex.stackexchange.com/a/258203/62746)
-  \node[font=\fontsize{4}{5.5}\selectfont](thetable) [clip,inner sep=.5\pgflinewidth]{%
-    \color{textgray}
-% latex table generated in R 3.2.3 by xtable 1.8-2 package
-% Tue Aug 23 08:17:10 2016
-\begin{tabular}{p{0.166666666666666666
-                                           \dimexpr 
-                                           \linewidth -
-                                           7\arrayrulewidth - 
-                                           12\tabcolsep\relax}|p{0.166666666666666666
-                                           \dimexpr 
-                                           \linewidth - 
-                                           7\arrayrulewidth -
-                                           12\tabcolsep\relax}|p{0.166666666666666666
-                                           \dimexpr 
-                                           \linewidth - 
-                                           7\arrayrulewidth -
-                                           12\tabcolsep\relax}|p{0.166666666666666666
-                                           \dimexpr 
-                                           \linewidth - 
-                                           7\arrayrulewidth -
-                                           12\tabcolsep\relax}|p{0.166666666666666666
-                                           \dimexpr 
-                                           \linewidth - 
-                                           7\arrayrulewidth -
-                                           12\tabcolsep\relax}|p{0.166666666666666666
-                                       \dimexpr 
-                                       \linewidth - 
-                                       7\arrayrulewidth
-                                       -12\tabcolsep\relax}}
- February 2017 & March & April & May & June & July \\ 
-  \hline
-01 Wed & 01 Wed & \cellcolor[gray]{0.80}01 Sat & 01 Mon \hfill \supertiny{18} & 01 Thu & \cellcolor[gray]{0.80}01 Sat \\ 
-   \hline
-02 Thu & 02 Thu & \cellcolor[gray]{0.65}02 Sun & 02 Tue & 02 Fri & \cellcolor[gray]{0.65}02 Sun \\ 
-   \hline
-03 Fri & 03 Fri & 03 Mon \hfill \supertiny{14} & 03 Wed & \cellcolor[gray]{0.80}03 Sat & 03 Mon \hfill \supertiny{27} \\ 
-   \hline
-\cellcolor[gray]{0.80}04 Sat & \cellcolor[gray]{0.80}04 Sat & 04 Tue & 04 Thu & \cellcolor[gray]{0.65}04 Sun & 04 Tue \\ 
-   \hline
-\cellcolor[gray]{0.65}05 Sun & \cellcolor[gray]{0.65}05 Sun & 05 Wed & 05 Fri & 05 Mon \hfill \supertiny{23} & 05 Wed \\ 
-   \hline
-06 Mon \hfill \supertiny{06} & 06 Mon \hfill \supertiny{10} & 06 Thu & \cellcolor[gray]{0.80}06 Sat & 06 Tue & 06 Thu \\ 
-   \hline
-07 Tue & 07 Tue & 07 Fri & \cellcolor[gray]{0.65}07 Sun & 07 Wed & 07 Fri \\ 
-   \hline
-08 Wed & 08 Wed & \cellcolor[gray]{0.80}08 Sat & 08 Mon \hfill \supertiny{19} & 08 Thu & \cellcolor[gray]{0.80}08 Sat \\ 
-   \hline
-09 Thu & 09 Thu & \cellcolor[gray]{0.65}09 Sun & 09 Tue & 09 Fri & \cellcolor[gray]{0.65}09 Sun \\ 
-   \hline
-10 Fri & 10 Fri & 10 Mon \hfill \supertiny{15} & 10 Wed & \cellcolor[gray]{0.80}10 Sat & 10 Mon \hfill \supertiny{28} \\ 
-   \hline
-\cellcolor[gray]{0.80}11 Sat & \cellcolor[gray]{0.80}11 Sat & 11 Tue & 11 Thu & \cellcolor[gray]{0.65}11 Sun & 11 Tue \\ 
-   \hline
-\cellcolor[gray]{0.65}12 Sun & \cellcolor[gray]{0.65}12 Sun & 12 Wed & 12 Fri & 12 Mon \hfill \supertiny{24} & 12 Wed \\ 
-   \hline
-13 Mon \hfill \supertiny{07} & 13 Mon \hfill \supertiny{11} & 13 Thu & \cellcolor[gray]{0.80}13 Sat & 13 Tue & 13 Thu \\ 
-   \hline
-14 Tue & 14 Tue & 14 Fri & \cellcolor[gray]{0.65}14 Sun & 14 Wed & 14 Fri \\ 
-   \hline
-15 Wed & 15 Wed & \cellcolor[gray]{0.80}15 Sat & 15 Mon \hfill \supertiny{20} & 15 Thu & \cellcolor[gray]{0.80}15 Sat \\ 
-   \hline
-16 Thu & 16 Thu & \cellcolor[gray]{0.65}16 Sun & 16 Tue & 16 Fri & \cellcolor[gray]{0.65}16 Sun \\ 
-   \hline
-17 Fri & 17 Fri & 17 Mon \hfill \supertiny{16} & 17 Wed & \cellcolor[gray]{0.80}17 Sat & 17 Mon \hfill \supertiny{29} \\ 
-   \hline
-\cellcolor[gray]{0.80}18 Sat & \cellcolor[gray]{0.80}18 Sat & 18 Tue & 18 Thu & \cellcolor[gray]{0.65}18 Sun & 18 Tue \\ 
-   \hline
-\cellcolor[gray]{0.65}19 Sun & \cellcolor[gray]{0.65}19 Sun & 19 Wed & 19 Fri & 19 Mon \hfill \supertiny{25} & 19 Wed \\ 
-   \hline
-20 Mon \hfill \supertiny{08} & 20 Mon \hfill \supertiny{12} & 20 Thu & \cellcolor[gray]{0.80}20 Sat & 20 Tue & 20 Thu \\ 
-   \hline
-21 Tue & 21 Tue & 21 Fri & \cellcolor[gray]{0.65}21 Sun & 21 Wed & 21 Fri \\ 
-   \hline
-22 Wed & 22 Wed & \cellcolor[gray]{0.80}22 Sat & 22 Mon \hfill \supertiny{21} & 22 Thu & \cellcolor[gray]{0.80}22 Sat \\ 
-   \hline
-23 Thu & 23 Thu & \cellcolor[gray]{0.65}23 Sun & 23 Tue & 23 Fri & \cellcolor[gray]{0.65}23 Sun \\ 
-   \hline
-24 Fri & 24 Fri & 24 Mon \hfill \supertiny{17} & 24 Wed & \cellcolor[gray]{0.80}24 Sat & 24 Mon \hfill \supertiny{30} \\ 
-   \hline
-\cellcolor[gray]{0.80}25 Sat & \cellcolor[gray]{0.80}25 Sat & 25 Tue & 25 Thu & \cellcolor[gray]{0.65}25 Sun & 25 Tue \\ 
-   \hline
-\cellcolor[gray]{0.65}26 Sun & \cellcolor[gray]{0.65}26 Sun & 26 Wed & 26 Fri & 26 Mon \hfill \supertiny{26} & 26 Wed \\ 
-   \hline
-27 Mon \hfill \supertiny{09} & 27 Mon \hfill \supertiny{13} & 27 Thu & \cellcolor[gray]{0.80}27 Sat & 27 Tue & 27 Thu \\ 
-   \hline
-28 Tue & 28 Tue & 28 Fri & \cellcolor[gray]{0.65}28 Sun & 28 Wed & 28 Fri \\ 
-   \hline
- & 29 Wed & \cellcolor[gray]{0.80}29 Sat & 29 Mon \hfill \supertiny{22} & 29 Thu & \cellcolor[gray]{0.80}29 Sat \\ 
-   \hline
- & 30 Thu & \cellcolor[gray]{0.65}30 Sun & 30 Tue & 30 Fri & \cellcolor[gray]{0.65}30 Sun \\ 
-   \hline
- & 31 Fri &  & 31 Wed &  & 31 Mon \hfill \supertiny{31} \\ 
-  \end{tabular}
-
-};
-\draw [textgray]([draw=textgray, fill=white, xshift=.5*\pgflinewidth,yshift=-.5*\pgflinewidth]thetable.north west) 
-rectangle ([xshift=-.5*\pgflinewidth,yshift=.5*\pgflinewidth]thetable.south east);
-\end{tikzpicture}
-\end{adjustbox}
-\end{minipage}}
-\ifstrequal{notlastpage}{lastpage}
-{}
-{\newpage 
-\null 
-\newpage}%
-%, 
-%rotate even pages in the overview so that the spiral binding is never on the 
-%palm site in the updated agenda, all overview pages are even, so I commented 
-%out the \checkoddpage bit
-%\checkoddpage
-%\ifoddpage
-%{\begin{minipage}{\linewidth} 
-%\else
-\rotatebox{180}{\begin{minipage}{\linewidth} 
-%\fi
-\label{lastpage}
-\renewcommand{\arraystretch}{1.2} %increase cell height here. If added later, clipping with tikz won't work. Increasing cell height means less scaling through adjustbox, which means the font stays smaller
-\begin{adjustbox}{width = \linewidth, totalheight=\textheight}% scale table to fill height and width (width already defined with dimexpr below, but height required here)
-\begin{tikzpicture}[local bounding box=picture, baseline=(picture.south), line width=.1mm,rounded corners=.5em]  %thanks to Mark Wibrow (http://tex.stackexchange.com/a/258203/62746)
-  \node[font=\fontsize{4}{5.5}\selectfont](thetable) [clip,inner sep=.5\pgflinewidth]{%
-    \color{textgray}
-% latex table generated in R 3.2.3 by xtable 1.8-2 package
-% Tue Aug 23 08:17:10 2016
-\begin{tabular}{p{0.166666666666666666
-                                           \dimexpr 
-                                           \linewidth -
-                                           7\arrayrulewidth - 
-                                           12\tabcolsep\relax}|p{0.166666666666666666
-                                           \dimexpr 
-                                           \linewidth - 
-                                           7\arrayrulewidth -
-                                           12\tabcolsep\relax}|p{0.166666666666666666
-                                           \dimexpr 
-                                           \linewidth - 
-                                           7\arrayrulewidth -
-                                           12\tabcolsep\relax}|p{0.166666666666666666
-                                           \dimexpr 
-                                           \linewidth - 
-                                           7\arrayrulewidth -
-                                           12\tabcolsep\relax}|p{0.166666666666666666
-                                           \dimexpr 
-                                           \linewidth - 
-                                           7\arrayrulewidth -
-                                           12\tabcolsep\relax}|p{0.166666666666666666
-                                       \dimexpr 
-                                       \linewidth - 
-                                       7\arrayrulewidth
-                                       -12\tabcolsep\relax}}
- August 2016 & September & October & November & December & January 2017 \\ 
-  \hline
-01 Mon \hfill \supertiny{31} & 01 Thu & \cellcolor[gray]{0.80}01 Sat & 01 Tue & 01 Thu & \cellcolor[gray]{0.65}01 Sun \\ 
-   \hline
-02 Tue & 02 Fri & \cellcolor[gray]{0.65}02 Sun & 02 Wed & 02 Fri & 02 Mon \hfill \supertiny{01} \\ 
-   \hline
-03 Wed & \cellcolor[gray]{0.80}03 Sat & 03 Mon \hfill \supertiny{40} & 03 Thu & \cellcolor[gray]{0.80}03 Sat & 03 Tue \\ 
-   \hline
-04 Thu & \cellcolor[gray]{0.65}04 Sun & 04 Tue & 04 Fri & \cellcolor[gray]{0.65}04 Sun & 04 Wed \\ 
-   \hline
-05 Fri & 05 Mon \hfill \supertiny{36} & 05 Wed & \cellcolor[gray]{0.80}05 Sat & 05 Mon \hfill \supertiny{49} & 05 Thu \\ 
-   \hline
-\cellcolor[gray]{0.80}06 Sat & 06 Tue & 06 Thu & \cellcolor[gray]{0.65}06 Sun & 06 Tue & 06 Fri \\ 
-   \hline
-\cellcolor[gray]{0.65}07 Sun & 07 Wed & 07 Fri & 07 Mon \hfill \supertiny{45} & 07 Wed & \cellcolor[gray]{0.80}07 Sat \\ 
-   \hline
-08 Mon \hfill \supertiny{32} & 08 Thu & \cellcolor[gray]{0.80}08 Sat & 08 Tue & 08 Thu & \cellcolor[gray]{0.65}08 Sun \\ 
-   \hline
-09 Tue & 09 Fri & \cellcolor[gray]{0.65}09 Sun & 09 Wed & 09 Fri & 09 Mon \hfill \supertiny{02} \\ 
-   \hline
-10 Wed & \cellcolor[gray]{0.80}10 Sat & 10 Mon \hfill \supertiny{41} & 10 Thu & \cellcolor[gray]{0.80}10 Sat & 10 Tue \\ 
-   \hline
-11 Thu & \cellcolor[gray]{0.65}11 Sun & 11 Tue & 11 Fri & \cellcolor[gray]{0.65}11 Sun & 11 Wed \\ 
-   \hline
-12 Fri & 12 Mon \hfill \supertiny{37} & 12 Wed & \cellcolor[gray]{0.80}12 Sat & 12 Mon \hfill \supertiny{50} & 12 Thu \\ 
-   \hline
-\cellcolor[gray]{0.80}13 Sat & 13 Tue & 13 Thu & \cellcolor[gray]{0.65}13 Sun & 13 Tue & 13 Fri \\ 
-   \hline
-\cellcolor[gray]{0.65}14 Sun & 14 Wed & 14 Fri & 14 Mon \hfill \supertiny{46} & 14 Wed & \cellcolor[gray]{0.80}14 Sat \\ 
-   \hline
-15 Mon \hfill \supertiny{33} & 15 Thu & \cellcolor[gray]{0.80}15 Sat & 15 Tue & 15 Thu & \cellcolor[gray]{0.65}15 Sun \\ 
-   \hline
-16 Tue & 16 Fri & \cellcolor[gray]{0.65}16 Sun & 16 Wed & 16 Fri & 16 Mon \hfill \supertiny{03} \\ 
-   \hline
-17 Wed & \cellcolor[gray]{0.80}17 Sat & 17 Mon \hfill \supertiny{42} & 17 Thu & \cellcolor[gray]{0.80}17 Sat & 17 Tue \\ 
-   \hline
-18 Thu & \cellcolor[gray]{0.65}18 Sun & 18 Tue & 18 Fri & \cellcolor[gray]{0.65}18 Sun & 18 Wed \\ 
-   \hline
-19 Fri & 19 Mon \hfill \supertiny{38} & 19 Wed & \cellcolor[gray]{0.80}19 Sat & 19 Mon \hfill \supertiny{51} & 19 Thu \\ 
-   \hline
-\cellcolor[gray]{0.80}20 Sat & 20 Tue & 20 Thu & \cellcolor[gray]{0.65}20 Sun & 20 Tue & 20 Fri \\ 
-   \hline
-\cellcolor[gray]{0.65}21 Sun & 21 Wed & 21 Fri & 21 Mon \hfill \supertiny{47} & 21 Wed & \cellcolor[gray]{0.80}21 Sat \\ 
-   \hline
-22 Mon \hfill \supertiny{34} & 22 Thu & \cellcolor[gray]{0.80}22 Sat & 22 Tue & 22 Thu & \cellcolor[gray]{0.65}22 Sun \\ 
-   \hline
-23 Tue & 23 Fri & \cellcolor[gray]{0.65}23 Sun & 23 Wed & 23 Fri & 23 Mon \hfill \supertiny{04} \\ 
-   \hline
-24 Wed & \cellcolor[gray]{0.80}24 Sat & 24 Mon \hfill \supertiny{43} & 24 Thu & \cellcolor[gray]{0.80}24 Sat & 24 Tue \\ 
-   \hline
-25 Thu & \cellcolor[gray]{0.65}25 Sun & 25 Tue & 25 Fri & \cellcolor[gray]{0.65}25 Sun & 25 Wed \\ 
-   \hline
-26 Fri & 26 Mon \hfill \supertiny{39} & 26 Wed & \cellcolor[gray]{0.80}26 Sat & 26 Mon \hfill \supertiny{52} & 26 Thu \\ 
-   \hline
-\cellcolor[gray]{0.80}27 Sat & 27 Tue & 27 Thu & \cellcolor[gray]{0.65}27 Sun & 27 Tue & 27 Fri \\ 
-   \hline
-\cellcolor[gray]{0.65}28 Sun & 28 Wed & 28 Fri & 28 Mon \hfill \supertiny{48} & 28 Wed & \cellcolor[gray]{0.80}28 Sat \\ 
-   \hline
-29 Mon \hfill \supertiny{35} & 29 Thu & \cellcolor[gray]{0.80}29 Sat & 29 Tue & 29 Thu & \cellcolor[gray]{0.65}29 Sun \\ 
-   \hline
-30 Tue & 30 Fri & \cellcolor[gray]{0.65}30 Sun & 30 Wed & 30 Fri & 30 Mon \hfill \supertiny{05} \\ 
-   \hline
-31 Wed &  & 31 Mon \hfill \supertiny{44} &  & \cellcolor[gray]{0.80}31 Sat & 31 Tue \\ 
   \end{tabular}
 
 };
