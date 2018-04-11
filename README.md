@@ -1,17 +1,42 @@
-# Information about the updated agenda
+# Custom Paper Agenda
 
-* The monthly overview is appended at the back. Chosing a transparent foil for the back cover at your (online) print shop will allow you to immediately see your appointments. 
-* The date range for the monthly and the weekly agenda may now differ. Personally, I am using 2 years for the overview and 1 year for the weekly agenda. 
+I could not find the agenda that I wanted, so I decided to knit one. 
+Can be printed and bound for ca. 12&#8364; at any good (online) copy-shop.
 
-### Summary of changes compared to the first agenda in the main forlder: 
-* Appended the overview to the back instead of having it appear first in the agenda. Reversed the order and introduced blank pages so that past overview pages can be removed from the agenda. 
-* You can now choose as little/many overview pages as you like (an unneven number was required in the first agenda).
-* Fixed the font-size command for the overview (an incorrect command was ignored in the previous version) and reduced the font-size in the overview. 
-* Added separate cell colors for Saturdays and Sundays (both colors are darker than the shared color for weekends in the original agenda, which was not very visible in a trial print). 
+![cover_and_back](photos/cover_and_back.jpg)
+![cover](photos/cover.jpg)
+![back](photos/back.jpg)
+![inside](photos/inside.jpg)
 
-# TODO
 
-Use \Sexpr to define the name to be displayed on the agenda. Right now you have to edit the "Title page" section of the master file to change the name. Might do this sometime in the (far, far) future. 
+## Features: 
+
+- A4 agenda<sup>[1](#flexibility)<sup>
+- one week on two pages 
+- monthly overview with weeknumbers and highlighted weekends
+- monthly overview can be viewed at the back of the agenda without opening the agenda (choose a transparent foil when printing)
+- monthly overview stays up to date by tearing outdated overview pages
+- soft cover (when printed at a copy shop)
+
+Search for "Cusomizable input" in the [Master file](https://github.com/FlorianWanders/agenda/blob/master/calendarMaster.Rnw) to
+
+- enter a date at which the agenda should start (can be literally any date)
+- specify how many monthly overview sheets you would like 
+- enter the first and last hour you would like to see in the weekly agenda
+
+[Preview the agenda](https://github.com/FlorianWanders/agenda/blob/master/calendarMaster.pdf)
+
+## Set-Up
+
+1. Download or clone this repository.
+2. In [R-Studio](https://www.rstudio.com/products/rstudio/download/#download), set the Sweave Options (under Global Options) to XeLaTeX. 
+Then run calendarMaster.Rnw to knit the agenda.
+
+
+<a name="flexibility">1</a>: All relevant heights/widths are relative, so if you want to change the format, the agenda should still be displayed correctly. 
+
+
+
 
 
 
