@@ -3,10 +3,14 @@
 I could not find the agenda that I wanted, so I decided to knit one. 
 Can be printed and bound for ca. 12&#8364; at any good (online) copy-shop.
 
-<img alt="cover_and_back" src="photos/cover_and_back.jpg" width="80">
-<img alt="cover" src="photos/cover.jpg" width="80">
-<img alt="back" src="photos/back.jpg" width="80">
-<img alt="inside" src="photos/inside.jpg" width="80">
+
+<img alt="cover_and_back" src="photos/cover_and_back.jpg" width="300"> |  <img alt="cover" src="photos/cover.jpg" width="300">
+:---------------------------------------------------------------------:|:-------------------------------------------------------:
+<img alt="back" src="photos/back.jpg" width="300">                     |  <img alt="inside" src="photos/inside.jpg" width="300">
+
+
+
+
 
 
 
