@@ -1,6 +1,6 @@
-.Rhistory
-.RData
-.Ruserdata
-synctex.gz
-concordance.text
-.log
+*.Rhistory
+*.RData
+*.Ruserdata
+*synctex.gz
+*concordance.text
+*.log
