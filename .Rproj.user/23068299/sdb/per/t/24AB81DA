@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "%no code above here\n% Week number\n\\begin{headerbox}\n  \\centering{{\\color{gray}Week~\\Sexpr{weekly_df$weeks[i]}}}\n\\end{headerbox}\n% Monday\n\\begin{weekdaybox}\n  \\Sexpr{weekly_df$days[i]}~\\Sexpr{weekly_df$dates[i]}\\\\\n  {\\tcbfontsize{0.5} \n  \\vfill\n  \\Sexpr{hours}%required to prevent new line\n  }\n\\end{weekdaybox}\n% Tuesday\n\\begin{weekdaybox}\n  \\Sexpr{weekly_df$days[i+1]}~\\Sexpr{weekly_df$dates[i+1]}\\\\\n  {\\tcbfontsize{0.5} \n  \\vfill\n  \\Sexpr{hours}%required to prevent new line\n  }\n\\end{weekdaybox}\n% Wednesday\n\\begin{weekdaybox}\n  \\Sexpr{weekly_df$days[i+2]}~\\Sexpr{weekly_df$dates[i+2]}\\\\\n  {\\tcbfontsize{0.5} \n  \\vfill\n  \\Sexpr{hours}%required to prevent new line\n  }\n\\end{weekdaybox}\n\\clearpage\n% Month and Year\n\\begin{headerbox}\n\\centering{\\color{gray}\\Sexpr{weekly_df$months[i]}~\\Sexpr{weekly_df$years[i]}}\n\\end{headerbox}\n% Thursday \n\\begin{weekdaybox}\n  \\Sexpr{weekly_df$days[i+3]}~\\Sexpr{weekly_df$dates[i+3]}\\\\\n  {\\tcbfontsize{0.5} \n  \\vfill\n  \\Sexpr{hours}%required to prevent new line\n  }\n\\end{weekdaybox} \n% Friday\n\\begin{weekdaybox}\n  \\Sexpr{weekly_df$days[i+4]}~\\Sexpr{weekly_df$dates[i+4]}\\\\\n  {\\tcbfontsize{0.5} \n  \\vfill\n  \\Sexpr{hours}%required to prevent new line\n  }\n\\end{weekdaybox}\n% Saturday and Sunday\n\\begin{weekendbox}\n  \\Sexpr{weekly_df$days[i+5]}~\\Sexpr{weekly_df$dates[i+5]}\n  \\tcblower\n  \\Sexpr{weekly_df$days[i+6]}~\\Sexpr{weekly_df$dates[i+6]}\n\\end{weekendbox} %single space required here\n% Notes\n\\begin{notebox}\n  Notes\n\\end{notebox}\n\\clearpage\n%no code allowed below here",
+    "created" : 1436729345061.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1325032254",
+    "id" : "24AB81DA",
+    "lastKnownWriteTime" : 1438873419,
+    "last_content_update" : 0,
+    "path" : "C:/Users/Florian/Dropbox/data science/calendar/calendar1/Update/calendarChild.Rnw",
+    "project_path" : "Update/calendarChild.Rnw",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "sweave"
+}

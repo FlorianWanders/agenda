@@ -1,4 +1,0 @@
-%%no code above here
-\centering{{\color{gray}Notes}}
-\clearpage
-%no code allowed below here
