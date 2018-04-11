@@ -14,8 +14,8 @@
   \node[font=\fontsize{4}{5.5}\selectfont](thetable) [clip,inner sep=.5\pgflinewidth]{%
     \color{textgray}
 <<echo=FALSE, results='asis', message=FALSE, warning=FALSE>>=
-library(xtable)
-library(abind)
+# library(xtable)
+# library(abind)
 
 #Color for weekends in overview with abind (result: overviewcol(ored))
 colwknds <- ifelse(Saturdays, "\\cellcolor[gray]{0.80}", 

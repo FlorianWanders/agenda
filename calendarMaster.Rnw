@@ -94,9 +94,11 @@ day_end <- 23 #last hour in the week-on-2-pages agenda
 ################################################################################
 invisible(Sys.setlocale("LC_ALL","English"))
 
-library(dplyr)
-library(reshape2)
-library(lubridate)
+wants <- c("abind", "dplyr", "lubridate", "reshape2", "xtable")
+## installing packages (set-up from http://www.uni-kiel.de/psychologie/rexrepos)
+has   <- wants %in% rownames(installed.packages())
+suppressWarnings(suppressMessages(if(any(!has)) install.packages(wants[!has])))
+suppressWarnings(suppressMessages(lapply(wants, require, character.only = TRUE)))
 
 # from Hadley's comment on http://stackoverflow.com/a/6669237/4798582: 
 safe.ifelse <- function(cond, yes, no) {
