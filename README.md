@@ -10,11 +10,6 @@ Can be printed and bound for ca. 12&#8364; at any good (online) copy-shop.
 
 
 
-
-
-
-
-
 ## Features
 
 - A4 agenda<sup>[1](#flexibility)<sup>
