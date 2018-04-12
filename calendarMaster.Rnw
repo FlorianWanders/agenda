@@ -80,8 +80,9 @@
 %https://github.com/yihui/knitr-examples/blob/master/020-for-template.rnw
 <<master, include=FALSE>>=
 ################################################################################
-## Cusomizable input ###########################################################
+## Customizable input ###########################################################
 ################################################################################
+# also change the name in the section "Main document"
 start <- "02.08.2017" # any date around which the agenda should begin (dd.mm.yyyy)
 monthly_pages <- 6 # number of PAGES for the monthly overview (1 PAGE = 6 MONTHS)
 weekly_pages <- "12 months" #number of MONTHS for the week-on-2-pages agenda

@@ -12,14 +12,14 @@ Can be printed and bound for ca. 12&#8364; at any good (online) copy-shop.
 
 ## Features
 
-- A4 agenda<sup>[1](#flexibility)<sup>
-- one week on two pages 
-- monthly overview with weeknumbers and highlighted weekends
-- monthly overview can be viewed at the back of the agenda **without opening the agenda** (choose a transparent foil when printing)
-- monthly overview stays **up to date** by tearing outdated overview pages
-- soft cover (when printed at a copy shop)
+- A4 agenda.<sup>[1](#flexibility)<sup>
+- One week on two pages.
+- Monthly overview with week numbers and highlighted weekends.
+- Monthly overview can be viewed at the back of the agenda **without opening the agenda** (choose a transparent foil when printing).
+- Monthly overview stays **up to date** by tearing outdated overview pages.
+- Soft cover (when printed at a copy shop).
 
-Search for "Cusomizable input" in `calendarMaster.Rnw` to
+Search for "Customizable input" in `calendarMaster.Rnw` to
 
 - enter a date at which the agenda should start (can be literally any date)
 - specify how many monthly overview sheets you would like 
